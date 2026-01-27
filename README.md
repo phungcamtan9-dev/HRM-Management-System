@@ -3,9 +3,10 @@
 
 ### Mô tả đề tài:
 - Dự án xây dựng hệ thống quản lý nhân sự sử dụng ngôn ngữ C# và .NET Framework.
-- Các chức năng chính: Quản lý hồ sơ nhân viên, chấm công, tính lương, quản lý phòng ban... (Bro tự điền thêm vào nhé).
+- Các chức năng chính: Quản lý hồ sơ nhân viên, chấm công, tính lương, quản lý phòng ban... 
 
 ### Thành viên nhóm:
-- Tên Bro (Trưởng nhóm)
-- Thành viên A
-- Thành viên B
+- Phùng Cẩm Tân
+- Dương Hoàng Sâm
+- Phạm Thiên Long
+- Nguyễn Duy Thành Tài
