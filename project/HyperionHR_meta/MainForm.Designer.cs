@@ -38,7 +38,6 @@ namespace HyperionHR_meta
         /// </summary>
         private void InitializeComponent()
         {
-            pnlMenuBar = new Panel();
             lblSupport = new Label();
             lblSetting = new Label();
             iConSupport = new PictureBox();
@@ -61,12 +60,7 @@ namespace HyperionHR_meta
             lblReport = new Label();
             lblDashboard = new Label();
             lblMenuTittle = new Label();
-            pnlTopBar = new Panel();
-            picUserAvatar = new PictureBox();
-            lblWelcome = new Label();
-            cardTotalEmployees = new Panel();
-            cardDepartments = new Panel();
-            pnlMenuBar.SuspendLayout();
+            pnlSideMenu = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
             ((System.ComponentModel.ISupportInitialize)iConSupport).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iConSetting).BeginInit();
             grbPayroll_Fiance.SuspendLayout();
@@ -79,36 +73,16 @@ namespace HyperionHR_meta
             grbOverviewMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iConReport).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iConDashBoard).BeginInit();
-            pnlTopBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)picUserAvatar).BeginInit();
+            pnlSideMenu.SuspendLayout();
             SuspendLayout();
-            // 
-            // pnlMenuBar
-            // 
-            pnlMenuBar.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            pnlMenuBar.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            pnlMenuBar.BackColor = Color.FromArgb(121, 152, 81);
-            pnlMenuBar.Controls.Add(lblSupport);
-            pnlMenuBar.Controls.Add(lblSetting);
-            pnlMenuBar.Controls.Add(iConSupport);
-            pnlMenuBar.Controls.Add(iConSetting);
-            pnlMenuBar.Controls.Add(grbPayroll_Fiance);
-            pnlMenuBar.Controls.Add(grbManagement);
-            pnlMenuBar.Controls.Add(grbOverviewMenu);
-            pnlMenuBar.Controls.Add(lblMenuTittle);
-            pnlMenuBar.Location = new Point(10, 9);
-            pnlMenuBar.Margin = new Padding(3, 2, 3, 2);
-            pnlMenuBar.Name = "pnlMenuBar";
-            pnlMenuBar.Size = new Size(219, 743);
-            pnlMenuBar.TabIndex = 0;
             // 
             // lblSupport
             // 
             lblSupport.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             lblSupport.AutoSize = true;
             lblSupport.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblSupport.ForeColor = Color.White;
-            lblSupport.Location = new Point(62, 712);
+            lblSupport.ForeColor = Color.FromArgb(31, 45, 61);
+            lblSupport.Location = new Point(51, 741);
             lblSupport.Name = "lblSupport";
             lblSupport.Size = new Size(70, 23);
             lblSupport.TabIndex = 8;
@@ -120,8 +94,8 @@ namespace HyperionHR_meta
             lblSetting.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             lblSetting.AutoSize = true;
             lblSetting.Font = new Font("Inter", 12F);
-            lblSetting.ForeColor = Color.White;
-            lblSetting.Location = new Point(62, 681);
+            lblSetting.ForeColor = Color.FromArgb(31, 45, 61);
+            lblSetting.Location = new Point(51, 710);
             lblSetting.Name = "lblSetting";
             lblSetting.Size = new Size(62, 23);
             lblSetting.TabIndex = 6;
@@ -131,7 +105,7 @@ namespace HyperionHR_meta
             // iConSupport
             // 
             iConSupport.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            iConSupport.Location = new Point(32, 712);
+            iConSupport.Location = new Point(21, 741);
             iConSupport.Margin = new Padding(3, 2, 3, 2);
             iConSupport.Name = "iConSupport";
             iConSupport.Size = new Size(25, 22);
@@ -142,7 +116,7 @@ namespace HyperionHR_meta
             // iConSetting
             // 
             iConSetting.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            iConSetting.Location = new Point(32, 680);
+            iConSetting.Location = new Point(21, 709);
             iConSetting.Margin = new Padding(3, 2, 3, 2);
             iConSetting.Name = "iConSetting";
             iConSetting.Size = new Size(25, 22);
@@ -158,8 +132,8 @@ namespace HyperionHR_meta
             grbPayroll_Fiance.Controls.Add(lblSalaryStructure);
             grbPayroll_Fiance.Controls.Add(lblPayroll);
             grbPayroll_Fiance.Font = new Font("Inter Medium", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            grbPayroll_Fiance.ForeColor = Color.White;
-            grbPayroll_Fiance.Location = new Point(4, 342);
+            grbPayroll_Fiance.ForeColor = Color.FromArgb(31, 45, 61);
+            grbPayroll_Fiance.Location = new Point(6, 322);
             grbPayroll_Fiance.Margin = new Padding(3, 2, 3, 2);
             grbPayroll_Fiance.Name = "grbPayroll_Fiance";
             grbPayroll_Fiance.Padding = new Padding(3, 2, 3, 2);
@@ -192,6 +166,7 @@ namespace HyperionHR_meta
             // 
             lblSalaryStructure.AutoSize = true;
             lblSalaryStructure.Font = new Font("Inter", 12F);
+            lblSalaryStructure.ForeColor = Color.FromArgb(31, 45, 61);
             lblSalaryStructure.Location = new Point(58, 68);
             lblSalaryStructure.Name = "lblSalaryStructure";
             lblSalaryStructure.Size = new Size(130, 23);
@@ -203,6 +178,7 @@ namespace HyperionHR_meta
             // 
             lblPayroll.AutoSize = true;
             lblPayroll.Font = new Font("Inter", 12F);
+            lblPayroll.ForeColor = Color.FromArgb(31, 45, 61);
             lblPayroll.Location = new Point(58, 35);
             lblPayroll.Name = "lblPayroll";
             lblPayroll.Size = new Size(62, 23);
@@ -220,8 +196,8 @@ namespace HyperionHR_meta
             grbManagement.Controls.Add(lblDepartments);
             grbManagement.Controls.Add(lblEmployees);
             grbManagement.Font = new Font("Inter Medium", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            grbManagement.ForeColor = Color.White;
-            grbManagement.Location = new Point(4, 184);
+            grbManagement.ForeColor = Color.FromArgb(31, 45, 61);
+            grbManagement.Location = new Point(6, 180);
             grbManagement.Margin = new Padding(3, 2, 3, 2);
             grbManagement.Name = "grbManagement";
             grbManagement.Padding = new Padding(3, 2, 3, 2);
@@ -254,6 +230,7 @@ namespace HyperionHR_meta
             // 
             lblContracts.AutoSize = true;
             lblContracts.Font = new Font("Inter", 12F);
+            lblContracts.ForeColor = Color.FromArgb(31, 45, 61);
             lblContracts.Location = new Point(58, 100);
             lblContracts.Name = "lblContracts";
             lblContracts.Size = new Size(83, 23);
@@ -275,6 +252,7 @@ namespace HyperionHR_meta
             // 
             lblDepartments.AutoSize = true;
             lblDepartments.Font = new Font("Inter", 12F);
+            lblDepartments.ForeColor = Color.FromArgb(31, 45, 61);
             lblDepartments.Location = new Point(58, 68);
             lblDepartments.Name = "lblDepartments";
             lblDepartments.Size = new Size(106, 23);
@@ -286,6 +264,7 @@ namespace HyperionHR_meta
             // 
             lblEmployees.AutoSize = true;
             lblEmployees.Font = new Font("Inter", 12F);
+            lblEmployees.ForeColor = Color.FromArgb(31, 45, 61);
             lblEmployees.Location = new Point(58, 35);
             lblEmployees.Name = "lblEmployees";
             lblEmployees.Size = new Size(93, 23);
@@ -301,8 +280,8 @@ namespace HyperionHR_meta
             grbOverviewMenu.Controls.Add(lblReport);
             grbOverviewMenu.Controls.Add(lblDashboard);
             grbOverviewMenu.Font = new Font("Inter Medium", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            grbOverviewMenu.ForeColor = Color.White;
-            grbOverviewMenu.Location = new Point(4, 64);
+            grbOverviewMenu.ForeColor = Color.FromArgb(31, 45, 61);
+            grbOverviewMenu.Location = new Point(6, 76);
             grbOverviewMenu.Margin = new Padding(3, 2, 3, 2);
             grbOverviewMenu.Name = "grbOverviewMenu";
             grbOverviewMenu.Padding = new Padding(3, 2, 3, 2);
@@ -335,6 +314,7 @@ namespace HyperionHR_meta
             // 
             lblReport.AutoSize = true;
             lblReport.Font = new Font("Inter", 12F);
+            lblReport.ForeColor = Color.FromArgb(31, 45, 61);
             lblReport.Location = new Point(58, 68);
             lblReport.Name = "lblReport";
             lblReport.Size = new Size(60, 23);
@@ -346,6 +326,7 @@ namespace HyperionHR_meta
             // 
             lblDashboard.AutoSize = true;
             lblDashboard.Font = new Font("Inter", 12F);
+            lblDashboard.ForeColor = Color.FromArgb(31, 45, 61);
             lblDashboard.Location = new Point(58, 35);
             lblDashboard.Name = "lblDashboard";
             lblDashboard.Size = new Size(93, 23);
@@ -357,80 +338,46 @@ namespace HyperionHR_meta
             // 
             lblMenuTittle.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblMenuTittle.Font = new Font("Inter SemiBold", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblMenuTittle.Location = new Point(0, 3);
+            lblMenuTittle.ForeColor = Color.FromArgb(31, 45, 61);
+            lblMenuTittle.Location = new Point(3, 13);
             lblMenuTittle.Name = "lblMenuTittle";
-            lblMenuTittle.Size = new Size(219, 42);
+            lblMenuTittle.Size = new Size(214, 42);
             lblMenuTittle.TabIndex = 0;
             lblMenuTittle.Text = "HyperionHR";
             lblMenuTittle.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // pnlTopBar
+            // pnlSideMenu
             // 
-            pnlTopBar.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            pnlTopBar.BackColor = Color.White;
-            pnlTopBar.Controls.Add(picUserAvatar);
-            pnlTopBar.Controls.Add(lblWelcome);
-            pnlTopBar.Location = new Point(234, 9);
-            pnlTopBar.Margin = new Padding(3, 2, 3, 2);
-            pnlTopBar.Name = "pnlTopBar";
-            pnlTopBar.Size = new Size(1104, 45);
-            pnlTopBar.TabIndex = 1;
-            // 
-            // picUserAvatar
-            // 
-            picUserAvatar.Location = new Point(868, 4);
-            picUserAvatar.Margin = new Padding(3, 2, 3, 2);
-            picUserAvatar.Name = "picUserAvatar";
-            picUserAvatar.Size = new Size(44, 38);
-            picUserAvatar.SizeMode = PictureBoxSizeMode.StretchImage;
-            picUserAvatar.TabIndex = 4;
-            picUserAvatar.TabStop = false;
-            // 
-            // lblWelcome
-            // 
-            lblWelcome.AutoSize = true;
-            lblWelcome.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblWelcome.Location = new Point(10, 13);
-            lblWelcome.Name = "lblWelcome";
-            lblWelcome.Size = new Size(132, 23);
-            lblWelcome.TabIndex = 0;
-            lblWelcome.Text = "Welcome back, ";
-            // 
-            // cardTotalEmployees
-            // 
-            cardTotalEmployees.BackColor = Color.White;
-            cardTotalEmployees.Location = new Point(234, 68);
-            cardTotalEmployees.Margin = new Padding(3, 2, 3, 2);
-            cardTotalEmployees.Name = "cardTotalEmployees";
-            cardTotalEmployees.Size = new Size(219, 94);
-            cardTotalEmployees.TabIndex = 2;
-            // 
-            // cardDepartments
-            // 
-            cardDepartments.BackColor = Color.White;
-            cardDepartments.Location = new Point(473, 68);
-            cardDepartments.Margin = new Padding(3, 2, 3, 2);
-            cardDepartments.Name = "cardDepartments";
-            cardDepartments.Size = new Size(219, 94);
-            cardDepartments.TabIndex = 3;
+            pnlSideMenu.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            pnlSideMenu.BackColor = Color.FromArgb(156, 193, 250);
+            pnlSideMenu.BorderRadius = 20;
+            pnlSideMenu.Controls.Add(lblSetting);
+            pnlSideMenu.Controls.Add(lblMenuTittle);
+            pnlSideMenu.Controls.Add(iConSetting);
+            pnlSideMenu.Controls.Add(lblSupport);
+            pnlSideMenu.Controls.Add(grbPayroll_Fiance);
+            pnlSideMenu.Controls.Add(iConSupport);
+            pnlSideMenu.Controls.Add(grbOverviewMenu);
+            pnlSideMenu.Controls.Add(grbManagement);
+            pnlSideMenu.ForeColor = Color.FromArgb(31, 45, 61);
+            pnlSideMenu.Location = new Point(12, 9);
+            pnlSideMenu.Name = "pnlSideMenu";
+            pnlSideMenu.Size = new Size(220, 779);
+            pnlSideMenu.TabIndex = 9;
             // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(223, 221, 209);
-            ClientSize = new Size(1350, 761);
-            Controls.Add(cardDepartments);
-            Controls.Add(cardTotalEmployees);
-            Controls.Add(pnlTopBar);
-            Controls.Add(pnlMenuBar);
+            BackColor = Color.FromArgb(216, 228, 245);
+            ClientSize = new Size(1366, 800);
+            Controls.Add(pnlSideMenu);
+            FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 2, 3, 2);
             Name = "MainForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "HyperionHR";
             WindowState = FormWindowState.Maximized;
-            pnlMenuBar.ResumeLayout(false);
-            pnlMenuBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)iConSupport).EndInit();
             ((System.ComponentModel.ISupportInitialize)iConSetting).EndInit();
             grbPayroll_Fiance.ResumeLayout(false);
@@ -446,15 +393,12 @@ namespace HyperionHR_meta
             grbOverviewMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)iConReport).EndInit();
             ((System.ComponentModel.ISupportInitialize)iConDashBoard).EndInit();
-            pnlTopBar.ResumeLayout(false);
-            pnlTopBar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)picUserAvatar).EndInit();
+            pnlSideMenu.ResumeLayout(false);
+            pnlSideMenu.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
-
-        private Panel pnlMenuBar;
         private Label lblMenuTittle;
         private GroupBox grbOverviewMenu;
         private GroupBox grbManagement;
@@ -477,10 +421,6 @@ namespace HyperionHR_meta
         private Label lblSetting;
         private PictureBox iConSupport;
         private PictureBox iConSetting;
-        private Panel pnlTopBar;
-        private PictureBox picUserAvatar;
-        private Label lblWelcome;
-        private Panel cardTotalEmployees;
-        private Panel cardDepartments;
+        private Scripts.MakeupScripts.RoundedPanel pnlSideMenu;
     }
 }

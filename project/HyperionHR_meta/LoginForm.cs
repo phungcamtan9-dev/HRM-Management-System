@@ -57,7 +57,7 @@ namespace HyperionHR_meta
 
         private void btnclose_Click_1(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void btnHide_Click(object sender, EventArgs e)

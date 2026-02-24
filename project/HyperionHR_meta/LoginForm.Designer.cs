@@ -133,6 +133,7 @@ namespace HyperionHR_meta
             // 
             lblForgotPassword.AutoSize = true;
             lblForgotPassword.Font = new Font("Inter Light", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblForgotPassword.ForeColor = Color.FromArgb(90, 156, 255);
             lblForgotPassword.ImageAlign = ContentAlignment.MiddleRight;
             lblForgotPassword.Location = new Point(68, 347);
             lblForgotPassword.Name = "lblForgotPassword";
@@ -184,12 +185,13 @@ namespace HyperionHR_meta
             // 
             lblPassword.AutoSize = true;
             lblPassword.Font = new Font("Inter SemiBold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblPassword.ForeColor = Color.FromArgb(31, 45, 61);
             lblPassword.ImageAlign = ContentAlignment.MiddleRight;
             lblPassword.Location = new Point(68, 264);
             lblPassword.Name = "lblPassword";
-            lblPassword.Size = new Size(122, 30);
+            lblPassword.Size = new Size(115, 30);
             lblPassword.TabIndex = 0;
-            lblPassword.Text = "Password:";
+            lblPassword.Text = "Password";
             lblPassword.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // pnlEmail
@@ -220,18 +222,20 @@ namespace HyperionHR_meta
             // 
             lblEmail.AutoSize = true;
             lblEmail.Font = new Font("Inter SemiBold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblEmail.ForeColor = Color.FromArgb(31, 45, 61);
             lblEmail.ImageAlign = ContentAlignment.MiddleRight;
             lblEmail.Location = new Point(68, 181);
             lblEmail.Name = "lblEmail";
-            lblEmail.Size = new Size(74, 30);
+            lblEmail.Size = new Size(67, 30);
             lblEmail.TabIndex = 0;
-            lblEmail.Text = "Email:";
+            lblEmail.Text = "Email";
             lblEmail.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // lblLoginTittle1
             // 
             lblLoginTittle1.AutoSize = true;
             lblLoginTittle1.Font = new Font("Inter", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblLoginTittle1.ForeColor = Color.FromArgb(31, 45, 61);
             lblLoginTittle1.Location = new Point(68, 125);
             lblLoginTittle1.Name = "lblLoginTittle1";
             lblLoginTittle1.Size = new Size(90, 39);
