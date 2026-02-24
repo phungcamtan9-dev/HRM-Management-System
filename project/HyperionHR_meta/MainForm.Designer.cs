@@ -61,6 +61,9 @@ namespace HyperionHR_meta
             lblDashboard = new Label();
             lblMenuTittle = new Label();
             pnlSideMenu = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            roundedPanel1 = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            roundedPanel2 = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            lblWelcomeUser = new Label();
             ((System.ComponentModel.ISupportInitialize)iConSupport).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iConSetting).BeginInit();
             grbPayroll_Fiance.SuspendLayout();
@@ -74,6 +77,7 @@ namespace HyperionHR_meta
             ((System.ComponentModel.ISupportInitialize)iConReport).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iConDashBoard).BeginInit();
             pnlSideMenu.SuspendLayout();
+            roundedPanel2.SuspendLayout();
             SuspendLayout();
             // 
             // lblSupport
@@ -351,6 +355,7 @@ namespace HyperionHR_meta
             pnlSideMenu.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             pnlSideMenu.BackColor = Color.FromArgb(156, 193, 250);
             pnlSideMenu.BorderRadius = 20;
+            pnlSideMenu.Controls.Add(roundedPanel1);
             pnlSideMenu.Controls.Add(lblSetting);
             pnlSideMenu.Controls.Add(lblMenuTittle);
             pnlSideMenu.Controls.Add(iConSetting);
@@ -365,12 +370,44 @@ namespace HyperionHR_meta
             pnlSideMenu.Size = new Size(220, 779);
             pnlSideMenu.TabIndex = 9;
             // 
+            // roundedPanel1
+            // 
+            roundedPanel1.BorderRadius = 20;
+            roundedPanel1.Location = new Point(222, 3);
+            roundedPanel1.Name = "roundedPanel1";
+            roundedPanel1.Size = new Size(200, 100);
+            roundedPanel1.TabIndex = 10;
+            // 
+            // roundedPanel2
+            // 
+            roundedPanel2.BackColor = Color.FromArgb(156, 193, 250);
+            roundedPanel2.BorderRadius = 20;
+            roundedPanel2.Controls.Add(lblWelcomeUser);
+            roundedPanel2.Location = new Point(244, 9);
+            roundedPanel2.Name = "roundedPanel2";
+            roundedPanel2.Size = new Size(1110, 63);
+            roundedPanel2.TabIndex = 10;
+            // 
+            // lblWelcomeUser
+            // 
+            lblWelcomeUser.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            lblWelcomeUser.Font = new Font("Inter SemiBold", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblWelcomeUser.ForeColor = Color.FromArgb(31, 45, 61);
+            lblWelcomeUser.ImageAlign = ContentAlignment.MiddleLeft;
+            lblWelcomeUser.Location = new Point(13, 13);
+            lblWelcomeUser.Name = "lblWelcomeUser";
+            lblWelcomeUser.Size = new Size(436, 42);
+            lblWelcomeUser.TabIndex = 11;
+            lblWelcomeUser.Text = "Welcome back, ";
+            lblWelcomeUser.TextAlign = ContentAlignment.MiddleLeft;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(216, 228, 245);
             ClientSize = new Size(1366, 800);
+            Controls.Add(roundedPanel2);
             Controls.Add(pnlSideMenu);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 2, 3, 2);
@@ -395,6 +432,7 @@ namespace HyperionHR_meta
             ((System.ComponentModel.ISupportInitialize)iConDashBoard).EndInit();
             pnlSideMenu.ResumeLayout(false);
             pnlSideMenu.PerformLayout();
+            roundedPanel2.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -422,5 +460,8 @@ namespace HyperionHR_meta
         private PictureBox iConSupport;
         private PictureBox iConSetting;
         private Scripts.MakeupScripts.RoundedPanel pnlSideMenu;
+        private Scripts.MakeupScripts.RoundedPanel roundedPanel1;
+        private Scripts.MakeupScripts.RoundedPanel roundedPanel2;
+        private Label lblWelcomeUser;
     }
 }
