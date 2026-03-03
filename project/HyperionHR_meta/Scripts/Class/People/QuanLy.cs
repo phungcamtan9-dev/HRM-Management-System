@@ -29,5 +29,11 @@ namespace HyperionHR_meta.Scripts.Class.People
             this.phuCapQuanLy = phuCapQuanLy;
         }
 
+        public override double TinhLuong()
+        {
+            return base.TinhLuong() + phuCapQuanLy;
+        }
+
+
     }
 }

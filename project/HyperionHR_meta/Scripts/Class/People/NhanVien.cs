@@ -27,6 +27,6 @@ namespace HyperionHR_meta.Scripts.Class.People
             this.phongBan = phongBan;
         }
 
-
+        public abstract double TinhLuong();
     }
 }

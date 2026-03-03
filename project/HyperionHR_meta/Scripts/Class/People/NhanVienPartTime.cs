@@ -35,6 +35,11 @@ namespace HyperionHR_meta.Scripts.Class.People
             this.tongGioLam = tongGioLam;
         }
 
-        
+        public override double TinhLuong()
+        {
+            return luongTheoGio * tongGioLam;
+        }
+
+
     }
 }

@@ -36,6 +36,10 @@ namespace HyperionHR_meta.Scripts.Class.People
             this.phuCap = phuCap;
         }
 
-        
+        public override double TinhLuong()
+        {
+            return luongCoBan + phuCap;
+        }
+
     }
 }
