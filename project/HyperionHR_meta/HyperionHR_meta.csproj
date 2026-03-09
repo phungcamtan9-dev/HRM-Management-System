@@ -25,6 +25,7 @@
 
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Scripts\Class\ProjectManager\" />
   </ItemGroup>
 
 </Project>

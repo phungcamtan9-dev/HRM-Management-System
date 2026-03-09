@@ -1,4 +1,5 @@
 ﻿using System.Drawing.Drawing2D;
+using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace HyperionHR_meta
@@ -21,6 +22,19 @@ namespace HyperionHR_meta
             lblDateTime.Text = $"Hôm nay là {DateTime.Now.ToString("dddd, MMMM dd, yyyy")}";
             //Chào người dùng
             lblWelcome.Text = $"{GetGreeting()}, ";
+
+            //Bo gốc avatar
+            GraphicsPath gp = new GraphicsPath();
+            gp.AddEllipse(0, 0, picAva1.Width, picAva1.Height);
+            picAva1.Region = new Region(gp);
+            picAva1.Paint += (s, e) =>
+            {
+                e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+                e.Graphics.DrawEllipse(new Pen(Color.White, 2), 1, 1, picAva1.Width - 3, picAva1.Height - 3);
+            };
+
+            //Load giao diện ban đầu
+            LoadGiaoDien();
         }
 
         protected override void OnPaintBackground(PaintEventArgs e) //Gradient
@@ -49,7 +63,11 @@ namespace HyperionHR_meta
                 return "🌙 Chào buổi tối";
         }
 
-
+        //Panel control
+        public void LoadGiaoDien()
+        {
+            pnlLogout.Visible = false;
+        }
 
         /// <summary>
         /// Thao tác cơ bản
@@ -62,6 +80,19 @@ namespace HyperionHR_meta
         private void btnHide_Click(object sender, EventArgs e) // thu nhỏ
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void picAva1_Click(object sender, EventArgs e)
+        {
+            if (!pnlLogout.Visible) pnlLogout.Visible = true;
+            else pnlLogout.Visible = false;
+        }
+
+        private void lblLogout_Click(object sender, EventArgs e)
+        {
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+            this.Hide();
         }
 
     }

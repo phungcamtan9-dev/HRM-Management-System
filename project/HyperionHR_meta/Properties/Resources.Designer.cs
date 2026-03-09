@@ -63,9 +63,39 @@ namespace HyperionHR_meta.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap picAva {
+            get {
+                object obj = ResourceManager.GetObject("picAva", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap picIconLogout {
+            get {
+                object obj = ResourceManager.GetObject("picIconLogout", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap picLogin {
             get {
                 object obj = ResourceManager.GetObject("picLogin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap picScheduleIcon {
+            get {
+                object obj = ResourceManager.GetObject("picScheduleIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
