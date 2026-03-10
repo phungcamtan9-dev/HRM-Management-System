@@ -41,8 +41,8 @@ namespace HyperionHR_meta
         {
             using (LinearGradientBrush brush = new LinearGradientBrush(
                 this.ClientRectangle,
-                ColorTranslator.FromHtml("#FBFCFF"),
-                ColorTranslator.FromHtml("#9CC1FA"),
+                ColorTranslator.FromHtml("#B9D3FF"),
+                ColorTranslator.FromHtml("#9BC1FF"),
                 LinearGradientMode.BackwardDiagonal))
             {
                 e.Graphics.FillRectangle(brush, this.ClientRectangle);
@@ -95,5 +95,9 @@ namespace HyperionHR_meta
             this.Hide();
         }
 
+        private void lblDashboard_Click(object sender, EventArgs e)
+        {
+            pnlDashboard.BackColor = ColorTranslator.FromHtml("#D9E5FF");
+        }
     }
 }

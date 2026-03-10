@@ -47,9 +47,9 @@ namespace HyperionHR_meta
         {
             using (LinearGradientBrush brush = new LinearGradientBrush(
                 this.ClientRectangle,
-                ColorTranslator.FromHtml("#E3ECFF"),
                 ColorTranslator.FromHtml("#9BC1FF"),
-                   LinearGradientMode.Horizontal))
+                ColorTranslator.FromHtml("#9BC1FF"),
+                   LinearGradientMode.Vertical))
             {
                 e.Graphics.FillRectangle(brush, this.ClientRectangle);
             }
