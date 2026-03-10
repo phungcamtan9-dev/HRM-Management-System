@@ -6,27 +6,21 @@ using System.Threading.Tasks;
 
 namespace HyperionHR_meta.Scripts.Class.Payroll
 {
-    internal class Insurance
+    public class Insurance
     {
-        private string _maBaoHiem;
-    private string _loaiBaoHiem;
-    private double _tyLe;
+        public string MaBaoHiem { get; set; }
+        public string LoaiBaoHiem { get; set; }
+        public double TyLe { get; set; }
 
-    public string MaBaoHiem   { get => _maBaoHiem;   set => _maBaoHiem = value; }
-    public string LoaiBaoHiem { get => _loaiBaoHiem; set => _loaiBaoHiem = value; }
-    public double TyLe        { get => _tyLe;        set => _tyLe = value; }
+        public Insurance()
+        {
+        }
 
-    public Insurance(string maBaoHiem, string loaiBaoHiem, double tyLe)
-    {
-        _maBaoHiem   = maBaoHiem;
-        _loaiBaoHiem = loaiBaoHiem;
-        _tyLe        = tyLe;
-    }
-
-    public double TinhBaoHiemNV() 
-    {
-            return 0; 
-    }
-
+        public Insurance(string maBaoHiem, string loaiBaoHiem, double tyLe)
+        {
+            MaBaoHiem = maBaoHiem;
+            LoaiBaoHiem = loaiBaoHiem;
+            TyLe = tyLe;
+        }
     }
 }

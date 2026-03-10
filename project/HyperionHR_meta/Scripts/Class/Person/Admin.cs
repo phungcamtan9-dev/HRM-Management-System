@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace HyperionHR_meta.Scripts.Class.Person
 {
-    internal class Admin
+    public class Admin : Person
     {
+        public Admin()
+        {
+        }
+
+        public Admin(string id, string hoTen, DateTime ngaySinh, string email, string soDienThoai)
+            : base(id, hoTen, ngaySinh, email, soDienThoai)
+        {
+        }
     }
 }

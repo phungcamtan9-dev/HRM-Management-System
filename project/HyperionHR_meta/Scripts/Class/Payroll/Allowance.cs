@@ -6,23 +6,21 @@ using System.Threading.Tasks;
 
 namespace HyperionHR_meta.Scripts.Class.Payroll
 {
-    internal class Allowance
+    public class Allowance
     {
-    private string _maPhuCap;
-    private string _tenPhuCap;
-    private double _soTien;
+        public string MaPhuCap { get; set; }
+        public string TenPhuCap { get; set; }
+        public double SoTien { get; set; }
 
-    public string MaPhuCap  { get => _maPhuCap;  set => _maPhuCap = value; }
-    public string TenPhuCap { get => _tenPhuCap; set => _tenPhuCap = value; }
-    public double SoTien    { get => _soTien;    set => _soTien = value; }
+        public Allowance()
+        {
+        }
 
-    public Allowance(string maPhuCap, string tenPhuCap, double soTien)
-    {
-        _maPhuCap  = maPhuCap;
-        _tenPhuCap = tenPhuCap;
-        _soTien    = soTien;
-    }
-
-    public double TinhTongPhuCapNV() { return _soTien; }
+        public Allowance(string maPhuCap, string tenPhuCap, double soTien)
+        {
+            MaPhuCap = maPhuCap;
+            TenPhuCap = tenPhuCap;
+            SoTien = soTien;
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HyperionHR_meta.Scripts.Class.Person;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,41 +7,23 @@ using System.Threading.Tasks;
 
 namespace HyperionHR_meta.Scripts.Class.HR_Operations
 {
-    internal class LeaveRequest
+    public class LeaveRequest
     {
-        // Fields
-    private string _maDon;
-    private Employee _nhanVien;
-    private LeaveType _loaiNghiPhep;
-    private int _soNgayNghi;
+        public string MaDon { get; set; }
+        public Employee NhanVien { get; set; }
+        public LeaveType LoaiNghiPhep { get; set; }
+        public int SoNgayNghi { get; set; }
 
-    // Properties
-    public string MaDon { get { return _maDon; } set { _maDon = value; } }
-    public Employee NhanVien { get { return _nhanVien; } set { _nhanVien = value; } }
-    public LeaveType LoaiNghiPhep { get { return _loaiNghiPhep; } set { _loaiNghiPhep = value; } }
-    public int SoNgayNghi { get { return _soNgayNghi; } set { _soNgayNghi = value; } }
+        public LeaveRequest()
+        {
+        }
 
-    // Constructor
-    public LeaveRequest(string ma, Employee nv, LeaveType loai, int soNgay)
-    {
-        _maDon = ma;
-        _nhanVien = nv;
-        _loaiNghiPhep = loai;
-        _soNgayNghi = soNgay;
-    }
-
-    // Operations
-    public void PheDuyetDonNghi() 
-    { 
-        Console.WriteLine("Đơn nghỉ " + _maDon + " được phê duyệt."); 
-    }
-    public void TuChoiDonNghi() 
-    { 
-        Console.WriteLine("Đơn nghỉ " + _maDon + " bị từ chối."); 
-    }
-    public int TinhSoNgayNghi() 
-    { 
-        return _soNgayNghi; 
-    }
+        public LeaveRequest(string maDon, Employee nhanVien, LeaveType loaiNghiPhep, int soNgayNghi)
+        {
+            MaDon = maDon;
+            NhanVien = nhanVien;
+            LoaiNghiPhep = loaiNghiPhep;
+            SoNgayNghi = soNgayNghi;
+        }
     }
 }
