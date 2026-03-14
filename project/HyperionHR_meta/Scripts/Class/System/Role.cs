@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace HyperionHR_meta.Scripts.Class.System
 {
-    internal class Role
+    public enum Role
     {
+        Admin,
+        HR,
+        Manager,
+        Employee
     }
 }

@@ -1,3 +1,5 @@
+using HyperionHR_meta.Scripts.Class.System;
+
 namespace HyperionHR_meta.Scripts
 {
     internal static class Program
@@ -12,6 +14,8 @@ namespace HyperionHR_meta.Scripts
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new LoginForm());
+
+            HRSystem system = HRSystem.Instance; //Singleton
         }
     }
 }

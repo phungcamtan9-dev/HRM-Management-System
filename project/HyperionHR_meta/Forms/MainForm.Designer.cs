@@ -53,7 +53,7 @@ namespace HyperionHR_meta
             picAva2 = new HyperionHR_meta.Scripts.UI.CirclePictureBox();
             lblDateTime = new Label();
             lblWelcome = new Label();
-            pnlSideBar = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            pnlSideBar_HR = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
             pnlHoTro = new Panel();
             icoHoTro = new PictureBox();
             lblHoTro = new Label();
@@ -96,7 +96,7 @@ namespace HyperionHR_meta
             pnlScheduleButton.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picSchedule).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picAva2).BeginInit();
-            pnlSideBar.SuspendLayout();
+            pnlSideBar_HR.SuspendLayout();
             pnlHoTro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)icoHoTro).BeginInit();
             pnlCaiDat.SuspendLayout();
@@ -283,24 +283,24 @@ namespace HyperionHR_meta
             lblWelcome.Text = "       , Chào buổi sáng admin";
             lblWelcome.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // pnlSideBar
+            // pnlSideBar_HR
             // 
-            pnlSideBar.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            pnlSideBar.BackColor = Color.White;
-            pnlSideBar.BorderRadius = 20;
-            pnlSideBar.Controls.Add(pnlHoTro);
-            pnlSideBar.Controls.Add(pnlCaiDat);
-            pnlSideBar.Controls.Add(grbChucNang);
-            pnlSideBar.Controls.Add(grbMainMenu);
-            pnlSideBar.Controls.Add(picAva1);
-            pnlSideBar.Controls.Add(pnlLogout);
-            pnlSideBar.Controls.Add(lblUserName1);
-            pnlSideBar.Controls.Add(lblSystemName);
-            pnlSideBar.Controls.Add(lblUserGmail);
-            pnlSideBar.Location = new Point(25, 41);
-            pnlSideBar.Name = "pnlSideBar";
-            pnlSideBar.Size = new Size(240, 736);
-            pnlSideBar.TabIndex = 3;
+            pnlSideBar_HR.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            pnlSideBar_HR.BackColor = Color.White;
+            pnlSideBar_HR.BorderRadius = 20;
+            pnlSideBar_HR.Controls.Add(pnlHoTro);
+            pnlSideBar_HR.Controls.Add(pnlCaiDat);
+            pnlSideBar_HR.Controls.Add(grbChucNang);
+            pnlSideBar_HR.Controls.Add(grbMainMenu);
+            pnlSideBar_HR.Controls.Add(picAva1);
+            pnlSideBar_HR.Controls.Add(pnlLogout);
+            pnlSideBar_HR.Controls.Add(lblUserName1);
+            pnlSideBar_HR.Controls.Add(lblSystemName);
+            pnlSideBar_HR.Controls.Add(lblUserGmail);
+            pnlSideBar_HR.Location = new Point(25, 41);
+            pnlSideBar_HR.Name = "pnlSideBar_HR";
+            pnlSideBar_HR.Size = new Size(240, 736);
+            pnlSideBar_HR.TabIndex = 3;
             // 
             // pnlHoTro
             // 
@@ -659,7 +659,7 @@ namespace HyperionHR_meta
             BackColor = Color.FromArgb(216, 228, 245);
             ClientSize = new Size(1366, 800);
             Controls.Add(pnl_Dashboard);
-            Controls.Add(pnlSideBar);
+            Controls.Add(pnlSideBar_HR);
             Controls.Add(pnlWelcomeBar);
             Controls.Add(pnlFormBar);
             FormBorderStyle = FormBorderStyle.None;
@@ -677,7 +677,7 @@ namespace HyperionHR_meta
             pnlScheduleButton.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)picSchedule).EndInit();
             ((System.ComponentModel.ISupportInitialize)picAva2).EndInit();
-            pnlSideBar.ResumeLayout(false);
+            pnlSideBar_HR.ResumeLayout(false);
             pnlHoTro.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)icoHoTro).EndInit();
             pnlCaiDat.ResumeLayout(false);
@@ -715,7 +715,7 @@ namespace HyperionHR_meta
         private Label lblDateTime;
         private Label lblWelcome;
         private Label lblSystemName;
-        private Scripts.MakeupScripts.RoundedPanel pnlSideBar;
+        private Scripts.MakeupScripts.RoundedPanel pnlSideBar_HR;
         private Label label1;
         private Scripts.UI.CirclePictureBox picAva1;
         private Scripts.UI.CirclePictureBox picAva2;

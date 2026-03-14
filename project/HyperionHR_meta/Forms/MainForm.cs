@@ -1,4 +1,5 @@
-﻿using System.Drawing.Drawing2D;
+﻿using HyperionHR_meta.Scripts.Class.System;
+using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
@@ -6,10 +7,16 @@ namespace HyperionHR_meta
 {
     public partial class MainForm : Form
     {
+        //Khai báo toàn cục:
+
+
+
         public MainForm()
         {
             InitializeComponent();
             this.DoubleBuffered = true; // chống giật
+
+
         }
 
         /// <summary>
