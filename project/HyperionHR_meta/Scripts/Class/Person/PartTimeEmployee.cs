@@ -9,6 +9,7 @@ using System.Diagnostics.Contracts;
 
 namespace HyperionHR_meta.Scripts.Class.Person
 {
+    [Serializable]
     public class PartTimeEmployee : Employee
     {
         public double SoGioLam { get; set; }

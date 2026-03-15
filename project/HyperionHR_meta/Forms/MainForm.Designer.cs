@@ -668,6 +668,7 @@ namespace HyperionHR_meta
             StartPosition = FormStartPosition.CenterScreen;
             Text = "HyperionHR";
             WindowState = FormWindowState.Maximized;
+            FormClosing += MainForm_FormClosing;
             Load += MainForm_Load;
             pnlFormBar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)picLogo).EndInit();

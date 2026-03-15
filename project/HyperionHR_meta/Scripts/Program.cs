@@ -1,4 +1,4 @@
-using HyperionHR_meta.Scripts.Class.System;
+﻿using HyperionHR_meta.Scripts.Class.System;
 
 namespace HyperionHR_meta.Scripts
 {
@@ -10,12 +10,15 @@ namespace HyperionHR_meta.Scripts
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new LoginForm());
+
+            string fileName = "hrsystem.json"; // tên file lưu dữ liệu
 
             HRSystem system = HRSystem.Instance; //Singleton
+
+            system.Load(fileName); //bom dữ liệu
+
+            Application.Run(new LoginForm()); // chạy loginform
         }
     }
 }

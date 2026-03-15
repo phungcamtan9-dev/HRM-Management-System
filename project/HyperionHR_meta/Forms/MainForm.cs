@@ -1,5 +1,6 @@
 ﻿using HyperionHR_meta.Scripts.Class.System;
 using System.Drawing.Drawing2D;
+using System.Text;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
@@ -8,7 +9,7 @@ namespace HyperionHR_meta
     public partial class MainForm : Form
     {
         //Khai báo toàn cục:
-
+        HRSystem system = HRSystem.Instance;
 
 
         public MainForm()
@@ -24,13 +25,19 @@ namespace HyperionHR_meta
         /// </summary>
         private void MainForm_Load(object sender, EventArgs e)
         {
-            this.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25)); //Bo gốc
-            //Hiện ngày tháng trên welcomebar
-            lblDateTime.Text = $"Hôm nay là {DateTime.Now.ToString("dddd, MMMM dd, yyyy")}";
-            //Chào người dùng
-            lblWelcome.Text = $"{GetGreeting()}, ";
 
-            //Bo gốc avatar
+
+
+
+
+
+            //Load giao diện ban đầu
+            LoadGiaoDien();
+            BoGocAvatar();
+        }
+
+        public void BoGocAvatar()//Bo gốc avatar
+        {
             GraphicsPath gp = new GraphicsPath();
             gp.AddEllipse(0, 0, picAva1.Width, picAva1.Height);
             picAva1.Region = new Region(gp);
@@ -39,9 +46,6 @@ namespace HyperionHR_meta
                 e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
                 e.Graphics.DrawEllipse(new Pen(Color.White, 2), 1, 1, picAva1.Width - 3, picAva1.Height - 3);
             };
-
-            //Load giao diện ban đầu
-            LoadGiaoDien();
         }
 
         protected override void OnPaintBackground(PaintEventArgs e) //Gradient
@@ -73,6 +77,10 @@ namespace HyperionHR_meta
         //Panel control
         public void LoadGiaoDien()
         {
+            this.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25)); //Bo gốc
+            lblWelcome.Text = $"{GetGreeting()}, {system.CurrentUser.Username}"; //Chào người dùng
+            lblDateTime.Text = $"Hôm nay là {DateTime.Now.ToString("dddd, MMMM dd, yyyy")}"; //Hiện ngày tháng trên welcomebar
+
             pnlLogout.Visible = false;
         }
 
@@ -106,5 +114,19 @@ namespace HyperionHR_meta
         {
             pnlDashboard.BackColor = ColorTranslator.FromHtml("#D9E5FF");
         }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e) //Upadte dữ liệu khi đóng file và xác nhận thoát 
+        {
+            HRSystem.Instance.Save("hrsystem.json");
+
+            DialogResult result = MessageBox.Show("Dữ liệu của bạn đã được cập nhật, xác nhận thoát ?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes) e.Cancel = false;
+            else e.Cancel = true;
+        }
+
+
+
+
+
     }
 }

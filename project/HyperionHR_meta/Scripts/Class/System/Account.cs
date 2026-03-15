@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace HyperionHR_meta.Scripts.Class.System
 {
-    
+    [Serializable]
     public class Account
     {
         //thuộc tính
@@ -24,10 +24,6 @@ namespace HyperionHR_meta.Scripts.Class.System
         }
 
         //Methods:
-        public bool checkPassword(string passInput)
-        {
-            if ( passInput == Password ) return true;
-            return false;
-        }
+        
     }
 }

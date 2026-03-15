@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace HyperionHR_meta.Scripts.Class.Person
 {
+    [Serializable]
     public class FullTimeEmployee : Employee
     {
         public Insurance BaoHiem { get; set; }

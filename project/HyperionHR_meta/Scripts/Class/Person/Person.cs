@@ -7,6 +7,7 @@ using HyperionHR_meta.Scripts;
 
 namespace HyperionHR_meta.Scripts.Class.Person
 {
+    [Serializable]
     public abstract class Person
     {
         public string Id { get; set; }

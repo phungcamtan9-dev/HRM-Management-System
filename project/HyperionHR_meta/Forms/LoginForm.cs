@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HyperionHR_meta.Scripts.Class.System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,6 +25,7 @@ namespace HyperionHR_meta
         // ===========
         private void LoginForm_Load(object sender, EventArgs e)
         {
+
             this.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25)); //Bo gốc
         }
 
@@ -104,24 +106,24 @@ namespace HyperionHR_meta
             btnLogin.BackColor = ColorTranslator.FromHtml("#83BAFF");
         }
 
+        
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            // Giả sử kiểm tra đúng tài khoản
-            if (txtEmail.Text == "admin" && txtPassword.Text == "123")
+            if (HRSystem.Instance.Login(txtEmail.Text, txtPassword.Text))
             {
                 MainForm main = new MainForm();
                 main.Show();
-                this.Hide(); // Ẩn login
+                this.Hide();
             }
             else
             {
-                MessageBox.Show("Sai tài khoản hoặc mật khẩu!");
-            }
+                MessageBox.Show("Hãy kiểm tra lại tài khoản hoặc mật khẩu !","Đăng nhập thất bại",MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }    
         }
 
         private void lblForgotPassword_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Gáng nhớ đi ba !!!");
         }
     }
 }
