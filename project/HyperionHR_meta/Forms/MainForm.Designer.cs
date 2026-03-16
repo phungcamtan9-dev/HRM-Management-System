@@ -41,19 +41,27 @@ namespace HyperionHR_meta
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             pnlFormBar = new Panel();
             picLogo = new PictureBox();
-            label1 = new Label();
+            lblAppName = new Label();
             btnHide = new Button();
             btnclose = new Button();
             lblSystemName = new Label();
             pnlWelcomeBar = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            icoSystemManage = new PictureBox();
             icoNotifications = new PictureBox();
             pnlScheduleButton = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
             picSchedule = new PictureBox();
-            btnSchedule = new Label();
+            lblLichTrinh = new Label();
             picAva2 = new HyperionHR_meta.Scripts.UI.CirclePictureBox();
             lblDateTime = new Label();
             lblWelcome = new Label();
             pnlSideBar_HR = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            roundedPanel1 = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            pnlLogout = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            picIconLogout = new PictureBox();
+            lblLogout = new Label();
+            picAva1 = new HyperionHR_meta.Scripts.UI.CirclePictureBox();
+            lblUserName1 = new Label();
+            lblUserGmail = new Label();
             pnlHoTro = new Panel();
             icoHoTro = new PictureBox();
             lblHoTro = new Label();
@@ -61,65 +69,91 @@ namespace HyperionHR_meta
             icoCaiDat = new PictureBox();
             lblCaiDat = new Label();
             grbChucNang = new GroupBox();
-            panel3 = new Panel();
-            pictureBox4 = new PictureBox();
-            label6 = new Label();
-            panel1 = new Panel();
-            pictureBox1 = new PictureBox();
-            label2 = new Label();
-            panel2 = new Panel();
-            pictureBox2 = new PictureBox();
-            label4 = new Label();
+            pnlDonXin = new Panel();
+            icoDon = new PictureBox();
+            lblDonXin = new Label();
+            pnlLuong = new Panel();
+            icoLuong = new PictureBox();
+            lblLuong = new Label();
+            pnlDuAn = new Panel();
+            icoDuAn = new PictureBox();
+            lblDuAn = new Label();
+            pnlChamCong = new Panel();
+            icoChamCong = new PictureBox();
+            lblChamCong = new Label();
+            pnlHopDong = new Panel();
+            icoHopDong = new PictureBox();
+            lblHopDong = new Label();
+            pnlChucNang = new Panel();
+            icoToChuc = new PictureBox();
+            lblToChuc = new Label();
+            pnlNhanSu = new Panel();
+            icoNhanSu = new PictureBox();
+            lblNhanSu = new Label();
             grbMainMenu = new GroupBox();
-            pnlOrganization = new Panel();
-            icoOrganization = new PictureBox();
-            label3 = new Label();
+            pnlHoSoCaNhan = new Panel();
+            icoHoSoCaNhan = new PictureBox();
+            lblHoSoCaNhan = new Label();
             pnlDashboard = new Panel();
             icoDashBoard = new PictureBox();
             lblDashboard = new Label();
-            picAva1 = new HyperionHR_meta.Scripts.UI.CirclePictureBox();
-            pnlLogout = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
-            picIconLogout = new PictureBox();
-            lblLogout = new Label();
-            lblUserName1 = new Label();
-            lblUserGmail = new Label();
             pnl_Dashboard = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
             pnl_TopDashboard = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
-            label7 = new Label();
+            lbl_Dashboarđ = new Label();
             roundedPanel2 = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
             pictureBox3 = new PictureBox();
             label5 = new Label();
+            pnl_HoSoCaNhan = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            pnl_TopHoSo = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            lbl_TitleHoSo = new Label();
+            roundedPanel4 = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            pictureBox1 = new PictureBox();
+            label2 = new Label();
             pnlFormBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picLogo).BeginInit();
             pnlWelcomeBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)icoSystemManage).BeginInit();
             ((System.ComponentModel.ISupportInitialize)icoNotifications).BeginInit();
             pnlScheduleButton.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picSchedule).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picAva2).BeginInit();
             pnlSideBar_HR.SuspendLayout();
+            roundedPanel1.SuspendLayout();
+            pnlLogout.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)picIconLogout).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picAva1).BeginInit();
             pnlHoTro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)icoHoTro).BeginInit();
             pnlCaiDat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)icoCaiDat).BeginInit();
             grbChucNang.SuspendLayout();
-            panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            pnlDonXin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)icoDon).BeginInit();
+            pnlLuong.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)icoLuong).BeginInit();
+            pnlDuAn.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)icoDuAn).BeginInit();
+            pnlChamCong.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)icoChamCong).BeginInit();
+            pnlHopDong.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)icoHopDong).BeginInit();
+            pnlChucNang.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)icoToChuc).BeginInit();
+            pnlNhanSu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)icoNhanSu).BeginInit();
             grbMainMenu.SuspendLayout();
-            pnlOrganization.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)icoOrganization).BeginInit();
+            pnlHoSoCaNhan.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)icoHoSoCaNhan).BeginInit();
             pnlDashboard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)icoDashBoard).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)picAva1).BeginInit();
-            pnlLogout.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)picIconLogout).BeginInit();
             pnl_Dashboard.SuspendLayout();
             pnl_TopDashboard.SuspendLayout();
             roundedPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            pnl_HoSoCaNhan.SuspendLayout();
+            pnl_TopHoSo.SuspendLayout();
+            roundedPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pnlFormBar
@@ -127,7 +161,7 @@ namespace HyperionHR_meta
             pnlFormBar.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             pnlFormBar.BackColor = Color.FromArgb(173, 220, 255);
             pnlFormBar.Controls.Add(picLogo);
-            pnlFormBar.Controls.Add(label1);
+            pnlFormBar.Controls.Add(lblAppName);
             pnlFormBar.Controls.Add(btnHide);
             pnlFormBar.Controls.Add(btnclose);
             pnlFormBar.Location = new Point(0, 0);
@@ -143,15 +177,15 @@ namespace HyperionHR_meta
             picLogo.TabIndex = 3;
             picLogo.TabStop = false;
             // 
-            // label1
+            // lblAppName
             // 
-            label1.Font = new Font("Inter SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(33, 4);
-            label1.Name = "label1";
-            label1.Size = new Size(383, 27);
-            label1.TabIndex = 2;
-            label1.Text = "HyperionHR_meta";
-            label1.TextAlign = ContentAlignment.MiddleLeft;
+            lblAppName.Font = new Font("Inter SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblAppName.Location = new Point(33, 4);
+            lblAppName.Name = "lblAppName";
+            lblAppName.Size = new Size(383, 27);
+            lblAppName.TabIndex = 2;
+            lblAppName.Text = "HyperionHR_meta";
+            lblAppName.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // btnHide
             // 
@@ -200,6 +234,7 @@ namespace HyperionHR_meta
             pnlWelcomeBar.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             pnlWelcomeBar.BackColor = Color.White;
             pnlWelcomeBar.BorderRadius = 20;
+            pnlWelcomeBar.Controls.Add(icoSystemManage);
             pnlWelcomeBar.Controls.Add(icoNotifications);
             pnlWelcomeBar.Controls.Add(pnlScheduleButton);
             pnlWelcomeBar.Controls.Add(picAva2);
@@ -209,6 +244,17 @@ namespace HyperionHR_meta
             pnlWelcomeBar.Name = "pnlWelcomeBar";
             pnlWelcomeBar.Size = new Size(1054, 90);
             pnlWelcomeBar.TabIndex = 2;
+            // 
+            // icoSystemManage
+            // 
+            icoSystemManage.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            icoSystemManage.Image = (Image)resources.GetObject("icoSystemManage.Image");
+            icoSystemManage.Location = new Point(726, 25);
+            icoSystemManage.Name = "icoSystemManage";
+            icoSystemManage.Size = new Size(43, 43);
+            icoSystemManage.SizeMode = PictureBoxSizeMode.StretchImage;
+            icoSystemManage.TabIndex = 7;
+            icoSystemManage.TabStop = false;
             // 
             // icoNotifications
             // 
@@ -227,7 +273,7 @@ namespace HyperionHR_meta
             pnlScheduleButton.BackColor = Color.FromArgb(156, 193, 250);
             pnlScheduleButton.BorderRadius = 20;
             pnlScheduleButton.Controls.Add(picSchedule);
-            pnlScheduleButton.Controls.Add(btnSchedule);
+            pnlScheduleButton.Controls.Add(lblLichTrinh);
             pnlScheduleButton.Location = new Point(849, 15);
             pnlScheduleButton.Name = "pnlScheduleButton";
             pnlScheduleButton.Size = new Size(179, 62);
@@ -243,15 +289,15 @@ namespace HyperionHR_meta
             picSchedule.TabIndex = 1;
             picSchedule.TabStop = false;
             // 
-            // btnSchedule
+            // lblLichTrinh
             // 
-            btnSchedule.AutoSize = true;
-            btnSchedule.Font = new Font("Inter SemiBold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnSchedule.Location = new Point(59, 17);
-            btnSchedule.Name = "btnSchedule";
-            btnSchedule.Size = new Size(112, 30);
-            btnSchedule.TabIndex = 0;
-            btnSchedule.Text = "Lịch Trình";
+            lblLichTrinh.AutoSize = true;
+            lblLichTrinh.Font = new Font("Inter SemiBold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblLichTrinh.Location = new Point(59, 17);
+            lblLichTrinh.Name = "lblLichTrinh";
+            lblLichTrinh.Size = new Size(112, 30);
+            lblLichTrinh.TabIndex = 0;
+            lblLichTrinh.Text = "Lịch Trình";
             // 
             // picAva2
             // 
@@ -288,248 +334,29 @@ namespace HyperionHR_meta
             pnlSideBar_HR.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             pnlSideBar_HR.BackColor = Color.White;
             pnlSideBar_HR.BorderRadius = 20;
+            pnlSideBar_HR.Controls.Add(roundedPanel1);
             pnlSideBar_HR.Controls.Add(pnlHoTro);
             pnlSideBar_HR.Controls.Add(pnlCaiDat);
             pnlSideBar_HR.Controls.Add(grbChucNang);
             pnlSideBar_HR.Controls.Add(grbMainMenu);
-            pnlSideBar_HR.Controls.Add(picAva1);
-            pnlSideBar_HR.Controls.Add(pnlLogout);
-            pnlSideBar_HR.Controls.Add(lblUserName1);
             pnlSideBar_HR.Controls.Add(lblSystemName);
-            pnlSideBar_HR.Controls.Add(lblUserGmail);
             pnlSideBar_HR.Location = new Point(25, 41);
             pnlSideBar_HR.Name = "pnlSideBar_HR";
             pnlSideBar_HR.Size = new Size(240, 736);
             pnlSideBar_HR.TabIndex = 3;
             // 
-            // pnlHoTro
+            // roundedPanel1
             // 
-            pnlHoTro.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            pnlHoTro.Controls.Add(icoHoTro);
-            pnlHoTro.Controls.Add(lblHoTro);
-            pnlHoTro.Location = new Point(30, 597);
-            pnlHoTro.Name = "pnlHoTro";
-            pnlHoTro.Size = new Size(190, 35);
-            pnlHoTro.TabIndex = 7;
-            // 
-            // icoHoTro
-            // 
-            icoHoTro.Location = new Point(10, 5);
-            icoHoTro.Name = "icoHoTro";
-            icoHoTro.Size = new Size(25, 25);
-            icoHoTro.SizeMode = PictureBoxSizeMode.StretchImage;
-            icoHoTro.TabIndex = 1;
-            icoHoTro.TabStop = false;
-            // 
-            // lblHoTro
-            // 
-            lblHoTro.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblHoTro.Location = new Point(48, 5);
-            lblHoTro.Name = "lblHoTro";
-            lblHoTro.Size = new Size(139, 25);
-            lblHoTro.TabIndex = 0;
-            lblHoTro.Text = "Hỗ trợ";
-            // 
-            // pnlCaiDat
-            // 
-            pnlCaiDat.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            pnlCaiDat.Controls.Add(icoCaiDat);
-            pnlCaiDat.Controls.Add(lblCaiDat);
-            pnlCaiDat.Location = new Point(30, 638);
-            pnlCaiDat.Name = "pnlCaiDat";
-            pnlCaiDat.Size = new Size(190, 35);
-            pnlCaiDat.TabIndex = 6;
-            // 
-            // icoCaiDat
-            // 
-            icoCaiDat.Location = new Point(10, 5);
-            icoCaiDat.Name = "icoCaiDat";
-            icoCaiDat.Size = new Size(25, 25);
-            icoCaiDat.SizeMode = PictureBoxSizeMode.StretchImage;
-            icoCaiDat.TabIndex = 1;
-            icoCaiDat.TabStop = false;
-            // 
-            // lblCaiDat
-            // 
-            lblCaiDat.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblCaiDat.Location = new Point(48, 5);
-            lblCaiDat.Name = "lblCaiDat";
-            lblCaiDat.Size = new Size(139, 25);
-            lblCaiDat.TabIndex = 0;
-            lblCaiDat.Text = "Cài đặt";
-            // 
-            // grbChucNang
-            // 
-            grbChucNang.Controls.Add(panel3);
-            grbChucNang.Controls.Add(panel1);
-            grbChucNang.Controls.Add(panel2);
-            grbChucNang.Font = new Font("Inter", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            grbChucNang.Location = new Point(18, 225);
-            grbChucNang.Name = "grbChucNang";
-            grbChucNang.Size = new Size(208, 353);
-            grbChucNang.TabIndex = 13;
-            grbChucNang.TabStop = false;
-            grbChucNang.Text = "Chức năng";
-            // 
-            // panel3
-            // 
-            panel3.Controls.Add(pictureBox4);
-            panel3.Controls.Add(label6);
-            panel3.Location = new Point(12, 115);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(190, 35);
-            panel3.TabIndex = 6;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.Location = new Point(10, 5);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(25, 25);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 1;
-            pictureBox4.TabStop = false;
-            // 
-            // label6
-            // 
-            label6.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(48, 5);
-            label6.Name = "label6";
-            label6.Size = new Size(139, 25);
-            label6.TabIndex = 0;
-            label6.Text = "Hợp đồng";
-            // 
-            // panel1
-            // 
-            panel1.Controls.Add(pictureBox1);
-            panel1.Controls.Add(label2);
-            panel1.Location = new Point(12, 74);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(190, 35);
-            panel1.TabIndex = 5;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Location = new Point(10, 5);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(25, 25);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
-            // 
-            // label2
-            // 
-            label2.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(48, 5);
-            label2.Name = "label2";
-            label2.Size = new Size(139, 25);
-            label2.TabIndex = 0;
-            label2.Text = "Tổ chức";
-            // 
-            // panel2
-            // 
-            panel2.Controls.Add(pictureBox2);
-            panel2.Controls.Add(label4);
-            panel2.Location = new Point(12, 33);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(190, 35);
-            panel2.TabIndex = 4;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Location = new Point(10, 5);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(25, 25);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
-            // 
-            // label4
-            // 
-            label4.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(48, 5);
-            label4.Name = "label4";
-            label4.Size = new Size(139, 25);
-            label4.TabIndex = 0;
-            label4.Text = "Nhân sự";
-            // 
-            // grbMainMenu
-            // 
-            grbMainMenu.Controls.Add(pnlOrganization);
-            grbMainMenu.Controls.Add(pnlDashboard);
-            grbMainMenu.Font = new Font("Inter", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            grbMainMenu.Location = new Point(18, 96);
-            grbMainMenu.Name = "grbMainMenu";
-            grbMainMenu.Size = new Size(208, 123);
-            grbMainMenu.TabIndex = 12;
-            grbMainMenu.TabStop = false;
-            grbMainMenu.Text = "Tổng quan";
-            // 
-            // pnlOrganization
-            // 
-            pnlOrganization.Controls.Add(icoOrganization);
-            pnlOrganization.Controls.Add(label3);
-            pnlOrganization.Location = new Point(12, 74);
-            pnlOrganization.Name = "pnlOrganization";
-            pnlOrganization.Size = new Size(190, 35);
-            pnlOrganization.TabIndex = 5;
-            // 
-            // icoOrganization
-            // 
-            icoOrganization.Location = new Point(10, 5);
-            icoOrganization.Name = "icoOrganization";
-            icoOrganization.Size = new Size(25, 25);
-            icoOrganization.SizeMode = PictureBoxSizeMode.StretchImage;
-            icoOrganization.TabIndex = 1;
-            icoOrganization.TabStop = false;
-            // 
-            // label3
-            // 
-            label3.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(48, 5);
-            label3.Name = "label3";
-            label3.Size = new Size(139, 25);
-            label3.TabIndex = 0;
-            label3.Text = "Hồ sơ cá nhân";
-            // 
-            // pnlDashboard
-            // 
-            pnlDashboard.Controls.Add(icoDashBoard);
-            pnlDashboard.Controls.Add(lblDashboard);
-            pnlDashboard.Location = new Point(12, 33);
-            pnlDashboard.Name = "pnlDashboard";
-            pnlDashboard.Size = new Size(190, 35);
-            pnlDashboard.TabIndex = 4;
-            // 
-            // icoDashBoard
-            // 
-            icoDashBoard.Location = new Point(10, 5);
-            icoDashBoard.Name = "icoDashBoard";
-            icoDashBoard.Size = new Size(25, 25);
-            icoDashBoard.SizeMode = PictureBoxSizeMode.StretchImage;
-            icoDashBoard.TabIndex = 1;
-            icoDashBoard.TabStop = false;
-            // 
-            // lblDashboard
-            // 
-            lblDashboard.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblDashboard.Location = new Point(48, 5);
-            lblDashboard.Name = "lblDashboard";
-            lblDashboard.Size = new Size(139, 25);
-            lblDashboard.TabIndex = 0;
-            lblDashboard.Text = "Dashboard";
-            lblDashboard.Click += lblDashboard_Click;
-            // 
-            // picAva1
-            // 
-            picAva1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            picAva1.Image = Properties.Resources.picAva;
-            picAva1.Location = new Point(25, 681);
-            picAva1.Name = "picAva1";
-            picAva1.Size = new Size(36, 36);
-            picAva1.SizeMode = PictureBoxSizeMode.Zoom;
-            picAva1.TabIndex = 4;
-            picAva1.TabStop = false;
-            picAva1.Click += picAva1_Click;
+            roundedPanel1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            roundedPanel1.BorderRadius = 20;
+            roundedPanel1.Controls.Add(pnlLogout);
+            roundedPanel1.Controls.Add(picAva1);
+            roundedPanel1.Controls.Add(lblUserName1);
+            roundedPanel1.Controls.Add(lblUserGmail);
+            roundedPanel1.Location = new Point(0, 672);
+            roundedPanel1.Name = "roundedPanel1";
+            roundedPanel1.Size = new Size(240, 64);
+            roundedPanel1.TabIndex = 14;
             // 
             // pnlLogout
             // 
@@ -538,7 +365,7 @@ namespace HyperionHR_meta
             pnlLogout.BorderRadius = 20;
             pnlLogout.Controls.Add(picIconLogout);
             pnlLogout.Controls.Add(lblLogout);
-            pnlLogout.Location = new Point(147, 684);
+            pnlLogout.Location = new Point(139, 12);
             pnlLogout.Name = "pnlLogout";
             pnlLogout.Size = new Size(90, 30);
             pnlLogout.TabIndex = 11;
@@ -566,11 +393,23 @@ namespace HyperionHR_meta
             lblLogout.TextAlign = ContentAlignment.MiddleLeft;
             lblLogout.Click += lblLogout_Click;
             // 
+            // picAva1
+            // 
+            picAva1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            picAva1.Image = Properties.Resources.picAva;
+            picAva1.Location = new Point(17, 9);
+            picAva1.Name = "picAva1";
+            picAva1.Size = new Size(36, 36);
+            picAva1.SizeMode = PictureBoxSizeMode.Zoom;
+            picAva1.TabIndex = 4;
+            picAva1.TabStop = false;
+            picAva1.Click += picAva1_Click;
+            // 
             // lblUserName1
             // 
             lblUserName1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             lblUserName1.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblUserName1.Location = new Point(68, 676);
+            lblUserName1.Location = new Point(60, 4);
             lblUserName1.Name = "lblUserName1";
             lblUserName1.Size = new Size(144, 27);
             lblUserName1.TabIndex = 6;
@@ -582,11 +421,351 @@ namespace HyperionHR_meta
             lblUserGmail.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             lblUserGmail.Font = new Font("Inter", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblUserGmail.ForeColor = SystemColors.ControlDarkDark;
-            lblUserGmail.Location = new Point(68, 701);
+            lblUserGmail.Location = new Point(60, 29);
             lblUserGmail.Name = "lblUserGmail";
             lblUserGmail.Size = new Size(144, 24);
             lblUserGmail.TabIndex = 7;
             lblUserGmail.Text = "admin";
+            // 
+            // pnlHoTro
+            // 
+            pnlHoTro.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            pnlHoTro.Controls.Add(icoHoTro);
+            pnlHoTro.Controls.Add(lblHoTro);
+            pnlHoTro.Location = new Point(30, 590);
+            pnlHoTro.Name = "pnlHoTro";
+            pnlHoTro.Size = new Size(190, 35);
+            pnlHoTro.TabIndex = 7;
+            // 
+            // icoHoTro
+            // 
+            icoHoTro.Image = Properties.Resources.Screenshot_2026_03_16_125445;
+            icoHoTro.Location = new Point(10, 5);
+            icoHoTro.Name = "icoHoTro";
+            icoHoTro.Size = new Size(25, 25);
+            icoHoTro.SizeMode = PictureBoxSizeMode.StretchImage;
+            icoHoTro.TabIndex = 1;
+            icoHoTro.TabStop = false;
+            // 
+            // lblHoTro
+            // 
+            lblHoTro.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblHoTro.Location = new Point(48, 5);
+            lblHoTro.Name = "lblHoTro";
+            lblHoTro.Size = new Size(139, 25);
+            lblHoTro.TabIndex = 0;
+            lblHoTro.Text = "Hỗ trợ";
+            // 
+            // pnlCaiDat
+            // 
+            pnlCaiDat.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            pnlCaiDat.Controls.Add(icoCaiDat);
+            pnlCaiDat.Controls.Add(lblCaiDat);
+            pnlCaiDat.Location = new Point(30, 631);
+            pnlCaiDat.Name = "pnlCaiDat";
+            pnlCaiDat.Size = new Size(190, 35);
+            pnlCaiDat.TabIndex = 6;
+            // 
+            // icoCaiDat
+            // 
+            icoCaiDat.Image = Properties.Resources.Screenshot_2026_03_16_125354;
+            icoCaiDat.Location = new Point(10, 5);
+            icoCaiDat.Name = "icoCaiDat";
+            icoCaiDat.Size = new Size(25, 25);
+            icoCaiDat.SizeMode = PictureBoxSizeMode.StretchImage;
+            icoCaiDat.TabIndex = 1;
+            icoCaiDat.TabStop = false;
+            // 
+            // lblCaiDat
+            // 
+            lblCaiDat.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblCaiDat.Location = new Point(48, 5);
+            lblCaiDat.Name = "lblCaiDat";
+            lblCaiDat.Size = new Size(139, 25);
+            lblCaiDat.TabIndex = 0;
+            lblCaiDat.Text = "Cài đặt";
+            // 
+            // grbChucNang
+            // 
+            grbChucNang.Controls.Add(pnlDonXin);
+            grbChucNang.Controls.Add(pnlLuong);
+            grbChucNang.Controls.Add(pnlDuAn);
+            grbChucNang.Controls.Add(pnlChamCong);
+            grbChucNang.Controls.Add(pnlHopDong);
+            grbChucNang.Controls.Add(pnlChucNang);
+            grbChucNang.Controls.Add(pnlNhanSu);
+            grbChucNang.Font = new Font("Inter", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            grbChucNang.Location = new Point(18, 225);
+            grbChucNang.Name = "grbChucNang";
+            grbChucNang.Size = new Size(208, 325);
+            grbChucNang.TabIndex = 13;
+            grbChucNang.TabStop = false;
+            grbChucNang.Text = "Chức năng";
+            // 
+            // pnlDonXin
+            // 
+            pnlDonXin.Controls.Add(icoDon);
+            pnlDonXin.Controls.Add(lblDonXin);
+            pnlDonXin.Location = new Point(12, 156);
+            pnlDonXin.Name = "pnlDonXin";
+            pnlDonXin.Size = new Size(190, 35);
+            pnlDonXin.TabIndex = 7;
+            // 
+            // icoDon
+            // 
+            icoDon.Image = Properties.Resources.Screenshot_2026_03_16_132124;
+            icoDon.Location = new Point(10, 5);
+            icoDon.Name = "icoDon";
+            icoDon.Size = new Size(25, 25);
+            icoDon.SizeMode = PictureBoxSizeMode.StretchImage;
+            icoDon.TabIndex = 1;
+            icoDon.TabStop = false;
+            // 
+            // lblDonXin
+            // 
+            lblDonXin.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblDonXin.Location = new Point(48, 5);
+            lblDonXin.Name = "lblDonXin";
+            lblDonXin.Size = new Size(139, 25);
+            lblDonXin.TabIndex = 0;
+            lblDonXin.Text = "Đơn xin";
+            // 
+            // pnlLuong
+            // 
+            pnlLuong.Controls.Add(icoLuong);
+            pnlLuong.Controls.Add(lblLuong);
+            pnlLuong.Location = new Point(12, 279);
+            pnlLuong.Name = "pnlLuong";
+            pnlLuong.Size = new Size(190, 35);
+            pnlLuong.TabIndex = 9;
+            // 
+            // icoLuong
+            // 
+            icoLuong.Image = Properties.Resources.Screenshot_2026_03_16_132348;
+            icoLuong.Location = new Point(10, 5);
+            icoLuong.Name = "icoLuong";
+            icoLuong.Size = new Size(25, 25);
+            icoLuong.SizeMode = PictureBoxSizeMode.StretchImage;
+            icoLuong.TabIndex = 1;
+            icoLuong.TabStop = false;
+            // 
+            // lblLuong
+            // 
+            lblLuong.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblLuong.Location = new Point(48, 5);
+            lblLuong.Name = "lblLuong";
+            lblLuong.Size = new Size(139, 25);
+            lblLuong.TabIndex = 0;
+            lblLuong.Text = "Lương";
+            // 
+            // pnlDuAn
+            // 
+            pnlDuAn.Controls.Add(icoDuAn);
+            pnlDuAn.Controls.Add(lblDuAn);
+            pnlDuAn.Location = new Point(12, 238);
+            pnlDuAn.Name = "pnlDuAn";
+            pnlDuAn.Size = new Size(190, 35);
+            pnlDuAn.TabIndex = 8;
+            // 
+            // icoDuAn
+            // 
+            icoDuAn.Image = Properties.Resources.Screenshot_2026_03_16_132316;
+            icoDuAn.Location = new Point(10, 5);
+            icoDuAn.Name = "icoDuAn";
+            icoDuAn.Size = new Size(25, 25);
+            icoDuAn.SizeMode = PictureBoxSizeMode.StretchImage;
+            icoDuAn.TabIndex = 1;
+            icoDuAn.TabStop = false;
+            // 
+            // lblDuAn
+            // 
+            lblDuAn.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblDuAn.Location = new Point(48, 5);
+            lblDuAn.Name = "lblDuAn";
+            lblDuAn.Size = new Size(139, 25);
+            lblDuAn.TabIndex = 0;
+            lblDuAn.Text = "Dự án";
+            // 
+            // pnlChamCong
+            // 
+            pnlChamCong.Controls.Add(icoChamCong);
+            pnlChamCong.Controls.Add(lblChamCong);
+            pnlChamCong.Location = new Point(12, 197);
+            pnlChamCong.Name = "pnlChamCong";
+            pnlChamCong.Size = new Size(190, 35);
+            pnlChamCong.TabIndex = 7;
+            // 
+            // icoChamCong
+            // 
+            icoChamCong.Image = Properties.Resources.Screenshot_2026_03_16_132203;
+            icoChamCong.Location = new Point(10, 5);
+            icoChamCong.Name = "icoChamCong";
+            icoChamCong.Size = new Size(25, 25);
+            icoChamCong.SizeMode = PictureBoxSizeMode.StretchImage;
+            icoChamCong.TabIndex = 1;
+            icoChamCong.TabStop = false;
+            // 
+            // lblChamCong
+            // 
+            lblChamCong.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblChamCong.Location = new Point(48, 5);
+            lblChamCong.Name = "lblChamCong";
+            lblChamCong.Size = new Size(139, 25);
+            lblChamCong.TabIndex = 0;
+            lblChamCong.Text = "Chấm công";
+            // 
+            // pnlHopDong
+            // 
+            pnlHopDong.Controls.Add(icoHopDong);
+            pnlHopDong.Controls.Add(lblHopDong);
+            pnlHopDong.Location = new Point(12, 115);
+            pnlHopDong.Name = "pnlHopDong";
+            pnlHopDong.Size = new Size(190, 35);
+            pnlHopDong.TabIndex = 6;
+            // 
+            // icoHopDong
+            // 
+            icoHopDong.Image = Properties.Resources.Screenshot_2026_03_16_125040;
+            icoHopDong.Location = new Point(10, 5);
+            icoHopDong.Name = "icoHopDong";
+            icoHopDong.Size = new Size(25, 25);
+            icoHopDong.SizeMode = PictureBoxSizeMode.StretchImage;
+            icoHopDong.TabIndex = 1;
+            icoHopDong.TabStop = false;
+            // 
+            // lblHopDong
+            // 
+            lblHopDong.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblHopDong.Location = new Point(48, 5);
+            lblHopDong.Name = "lblHopDong";
+            lblHopDong.Size = new Size(139, 25);
+            lblHopDong.TabIndex = 0;
+            lblHopDong.Text = "Hợp đồng";
+            // 
+            // pnlChucNang
+            // 
+            pnlChucNang.Controls.Add(icoToChuc);
+            pnlChucNang.Controls.Add(lblToChuc);
+            pnlChucNang.Location = new Point(12, 74);
+            pnlChucNang.Name = "pnlChucNang";
+            pnlChucNang.Size = new Size(190, 35);
+            pnlChucNang.TabIndex = 5;
+            // 
+            // icoToChuc
+            // 
+            icoToChuc.Image = Properties.Resources.Screenshot_2026_03_16_132024;
+            icoToChuc.Location = new Point(10, 5);
+            icoToChuc.Name = "icoToChuc";
+            icoToChuc.Size = new Size(25, 25);
+            icoToChuc.SizeMode = PictureBoxSizeMode.StretchImage;
+            icoToChuc.TabIndex = 1;
+            icoToChuc.TabStop = false;
+            // 
+            // lblToChuc
+            // 
+            lblToChuc.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblToChuc.Location = new Point(48, 5);
+            lblToChuc.Name = "lblToChuc";
+            lblToChuc.Size = new Size(139, 25);
+            lblToChuc.TabIndex = 0;
+            lblToChuc.Text = "Tổ chức";
+            // 
+            // pnlNhanSu
+            // 
+            pnlNhanSu.Controls.Add(icoNhanSu);
+            pnlNhanSu.Controls.Add(lblNhanSu);
+            pnlNhanSu.Location = new Point(12, 33);
+            pnlNhanSu.Name = "pnlNhanSu";
+            pnlNhanSu.Size = new Size(190, 35);
+            pnlNhanSu.TabIndex = 4;
+            // 
+            // icoNhanSu
+            // 
+            icoNhanSu.Image = Properties.Resources.Screenshot_2026_03_16_131943;
+            icoNhanSu.Location = new Point(10, 5);
+            icoNhanSu.Name = "icoNhanSu";
+            icoNhanSu.Size = new Size(25, 25);
+            icoNhanSu.SizeMode = PictureBoxSizeMode.StretchImage;
+            icoNhanSu.TabIndex = 1;
+            icoNhanSu.TabStop = false;
+            // 
+            // lblNhanSu
+            // 
+            lblNhanSu.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblNhanSu.Location = new Point(48, 5);
+            lblNhanSu.Name = "lblNhanSu";
+            lblNhanSu.Size = new Size(139, 25);
+            lblNhanSu.TabIndex = 0;
+            lblNhanSu.Text = "Nhân sự";
+            // 
+            // grbMainMenu
+            // 
+            grbMainMenu.Controls.Add(pnlHoSoCaNhan);
+            grbMainMenu.Controls.Add(pnlDashboard);
+            grbMainMenu.Font = new Font("Inter", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            grbMainMenu.Location = new Point(18, 96);
+            grbMainMenu.Name = "grbMainMenu";
+            grbMainMenu.Size = new Size(208, 123);
+            grbMainMenu.TabIndex = 12;
+            grbMainMenu.TabStop = false;
+            grbMainMenu.Text = "Tổng quan";
+            // 
+            // pnlHoSoCaNhan
+            // 
+            pnlHoSoCaNhan.Controls.Add(icoHoSoCaNhan);
+            pnlHoSoCaNhan.Controls.Add(lblHoSoCaNhan);
+            pnlHoSoCaNhan.Location = new Point(12, 74);
+            pnlHoSoCaNhan.Name = "pnlHoSoCaNhan";
+            pnlHoSoCaNhan.Size = new Size(190, 35);
+            pnlHoSoCaNhan.TabIndex = 5;
+            // 
+            // icoHoSoCaNhan
+            // 
+            icoHoSoCaNhan.Image = Properties.Resources.Screenshot_2026_03_16_125129;
+            icoHoSoCaNhan.Location = new Point(10, 5);
+            icoHoSoCaNhan.Name = "icoHoSoCaNhan";
+            icoHoSoCaNhan.Size = new Size(25, 25);
+            icoHoSoCaNhan.SizeMode = PictureBoxSizeMode.StretchImage;
+            icoHoSoCaNhan.TabIndex = 1;
+            icoHoSoCaNhan.TabStop = false;
+            // 
+            // lblHoSoCaNhan
+            // 
+            lblHoSoCaNhan.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblHoSoCaNhan.Location = new Point(48, 5);
+            lblHoSoCaNhan.Name = "lblHoSoCaNhan";
+            lblHoSoCaNhan.Size = new Size(139, 25);
+            lblHoSoCaNhan.TabIndex = 0;
+            lblHoSoCaNhan.Text = "Hồ sơ cá nhân";
+            // 
+            // pnlDashboard
+            // 
+            pnlDashboard.Controls.Add(icoDashBoard);
+            pnlDashboard.Controls.Add(lblDashboard);
+            pnlDashboard.Location = new Point(12, 33);
+            pnlDashboard.Name = "pnlDashboard";
+            pnlDashboard.Size = new Size(190, 35);
+            pnlDashboard.TabIndex = 4;
+            // 
+            // icoDashBoard
+            // 
+            icoDashBoard.Image = Properties.Resources.Screenshot_2026_03_16_130224;
+            icoDashBoard.Location = new Point(10, 5);
+            icoDashBoard.Name = "icoDashBoard";
+            icoDashBoard.Size = new Size(25, 25);
+            icoDashBoard.SizeMode = PictureBoxSizeMode.StretchImage;
+            icoDashBoard.TabIndex = 1;
+            icoDashBoard.TabStop = false;
+            // 
+            // lblDashboard
+            // 
+            lblDashboard.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblDashboard.Location = new Point(48, 5);
+            lblDashboard.Name = "lblDashboard";
+            lblDashboard.Size = new Size(139, 25);
+            lblDashboard.TabIndex = 0;
+            lblDashboard.Text = "Dashboard";
+            lblDashboard.Click += lblDashboard_Click;
             // 
             // pnl_Dashboard
             // 
@@ -605,20 +784,20 @@ namespace HyperionHR_meta
             pnl_TopDashboard.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             pnl_TopDashboard.BackColor = Color.FromArgb(217, 229, 255);
             pnl_TopDashboard.BorderRadius = 20;
-            pnl_TopDashboard.Controls.Add(label7);
+            pnl_TopDashboard.Controls.Add(lbl_Dashboarđ);
             pnl_TopDashboard.Location = new Point(0, 0);
             pnl_TopDashboard.Name = "pnl_TopDashboard";
             pnl_TopDashboard.Size = new Size(1054, 41);
             pnl_TopDashboard.TabIndex = 7;
             // 
-            // label7
+            // lbl_Dashboarđ
             // 
-            label7.Font = new Font("Inter", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.Location = new Point(25, 9);
-            label7.Name = "label7";
-            label7.Size = new Size(139, 25);
-            label7.TabIndex = 2;
-            label7.Text = "Dashboard";
+            lbl_Dashboarđ.Font = new Font("Inter", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_Dashboarđ.Location = new Point(25, 9);
+            lbl_Dashboarđ.Name = "lbl_Dashboarđ";
+            lbl_Dashboarđ.Size = new Size(139, 25);
+            lbl_Dashboarđ.TabIndex = 2;
+            lbl_Dashboarđ.Text = "Dashboard";
             // 
             // roundedPanel2
             // 
@@ -652,16 +831,81 @@ namespace HyperionHR_meta
             label5.TabIndex = 0;
             label5.Text = "Lịch Trình";
             // 
+            // pnl_HoSoCaNhan
+            // 
+            pnl_HoSoCaNhan.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pnl_HoSoCaNhan.BackColor = Color.White;
+            pnl_HoSoCaNhan.BorderRadius = 20;
+            pnl_HoSoCaNhan.Controls.Add(pnl_TopHoSo);
+            pnl_HoSoCaNhan.Controls.Add(roundedPanel4);
+            pnl_HoSoCaNhan.Location = new Point(289, 137);
+            pnl_HoSoCaNhan.Name = "pnl_HoSoCaNhan";
+            pnl_HoSoCaNhan.Size = new Size(1054, 640);
+            pnl_HoSoCaNhan.TabIndex = 8;
+            // 
+            // pnl_TopHoSo
+            // 
+            pnl_TopHoSo.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pnl_TopHoSo.BackColor = Color.FromArgb(217, 229, 255);
+            pnl_TopHoSo.BorderRadius = 20;
+            pnl_TopHoSo.Controls.Add(lbl_TitleHoSo);
+            pnl_TopHoSo.Location = new Point(0, 0);
+            pnl_TopHoSo.Name = "pnl_TopHoSo";
+            pnl_TopHoSo.Size = new Size(1908, 41);
+            pnl_TopHoSo.TabIndex = 7;
+            // 
+            // lbl_TitleHoSo
+            // 
+            lbl_TitleHoSo.Font = new Font("Inter", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_TitleHoSo.Location = new Point(25, 9);
+            lbl_TitleHoSo.Name = "lbl_TitleHoSo";
+            lbl_TitleHoSo.Size = new Size(166, 25);
+            lbl_TitleHoSo.TabIndex = 2;
+            lbl_TitleHoSo.Text = "Hồ Sơ Cá Nhân";
+            // 
+            // roundedPanel4
+            // 
+            roundedPanel4.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            roundedPanel4.BackColor = Color.FromArgb(156, 193, 250);
+            roundedPanel4.BorderRadius = 20;
+            roundedPanel4.Controls.Add(pictureBox1);
+            roundedPanel4.Controls.Add(label2);
+            roundedPanel4.Location = new Point(2557, 15);
+            roundedPanel4.Name = "roundedPanel4";
+            roundedPanel4.Size = new Size(179, 62);
+            roundedPanel4.TabIndex = 6;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(13, 10);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(43, 43);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Inter SemiBold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(59, 17);
+            label2.Name = "label2";
+            label2.Size = new Size(112, 30);
+            label2.TabIndex = 0;
+            label2.Text = "Lịch Trình";
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(216, 228, 245);
             ClientSize = new Size(1366, 800);
-            Controls.Add(pnl_Dashboard);
             Controls.Add(pnlSideBar_HR);
             Controls.Add(pnlWelcomeBar);
             Controls.Add(pnlFormBar);
+            Controls.Add(pnl_Dashboard);
+            Controls.Add(pnl_HoSoCaNhan);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 2, 3, 2);
             Name = "MainForm";
@@ -673,37 +917,52 @@ namespace HyperionHR_meta
             pnlFormBar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)picLogo).EndInit();
             pnlWelcomeBar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)icoSystemManage).EndInit();
             ((System.ComponentModel.ISupportInitialize)icoNotifications).EndInit();
             pnlScheduleButton.ResumeLayout(false);
             pnlScheduleButton.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)picSchedule).EndInit();
             ((System.ComponentModel.ISupportInitialize)picAva2).EndInit();
             pnlSideBar_HR.ResumeLayout(false);
+            roundedPanel1.ResumeLayout(false);
+            pnlLogout.ResumeLayout(false);
+            pnlLogout.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)picIconLogout).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picAva1).EndInit();
             pnlHoTro.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)icoHoTro).EndInit();
             pnlCaiDat.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)icoCaiDat).EndInit();
             grbChucNang.ResumeLayout(false);
-            panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            pnlDonXin.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)icoDon).EndInit();
+            pnlLuong.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)icoLuong).EndInit();
+            pnlDuAn.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)icoDuAn).EndInit();
+            pnlChamCong.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)icoChamCong).EndInit();
+            pnlHopDong.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)icoHopDong).EndInit();
+            pnlChucNang.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)icoToChuc).EndInit();
+            pnlNhanSu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)icoNhanSu).EndInit();
             grbMainMenu.ResumeLayout(false);
-            pnlOrganization.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)icoOrganization).EndInit();
+            pnlHoSoCaNhan.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)icoHoSoCaNhan).EndInit();
             pnlDashboard.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)icoDashBoard).EndInit();
-            ((System.ComponentModel.ISupportInitialize)picAva1).EndInit();
-            pnlLogout.ResumeLayout(false);
-            pnlLogout.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)picIconLogout).EndInit();
             pnl_Dashboard.ResumeLayout(false);
             pnl_TopDashboard.ResumeLayout(false);
             roundedPanel2.ResumeLayout(false);
             roundedPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            pnl_HoSoCaNhan.ResumeLayout(false);
+            pnl_TopHoSo.ResumeLayout(false);
+            roundedPanel4.ResumeLayout(false);
+            roundedPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -717,7 +976,7 @@ namespace HyperionHR_meta
         private Label lblWelcome;
         private Label lblSystemName;
         private Scripts.MakeupScripts.RoundedPanel pnlSideBar_HR;
-        private Label label1;
+        private Label lblAppName;
         private Scripts.UI.CirclePictureBox picAva1;
         private Scripts.UI.CirclePictureBox picAva2;
         private Label lblUserGmail;
@@ -727,22 +986,22 @@ namespace HyperionHR_meta
         private PictureBox picIconLogout;
         private GroupBox grbMainMenu;
         private Scripts.MakeupScripts.RoundedPanel pnlScheduleButton;
-        private Label btnSchedule;
+        private Label lblLichTrinh;
         private PictureBox picSchedule;
         private PictureBox picLogo;
         private Label lblDashboard;
         private Panel pnlDashboard;
-        private Panel pnlOrganization;
-        private PictureBox icoOrganization;
-        private Label label3;
+        private Panel pnlHoSoCaNhan;
+        private PictureBox icoHoSoCaNhan;
+        private Label lblHoSoCaNhan;
         private PictureBox icoDashBoard;
         private GroupBox grbChucNang;
-        private Panel panel1;
-        private PictureBox pictureBox1;
-        private Label label2;
-        private Panel panel2;
-        private PictureBox pictureBox2;
-        private Label label4;
+        private Panel pnlChucNang;
+        private PictureBox icoToChuc;
+        private Label lblToChuc;
+        private Panel pnlNhanSu;
+        private PictureBox icoNhanSu;
+        private Label lblNhanSu;
         private Panel pnlHoTro;
         private PictureBox icoHoTro;
         private Label lblHoTro;
@@ -754,10 +1013,30 @@ namespace HyperionHR_meta
         private PictureBox pictureBox3;
         private Label label5;
         private PictureBox icoNotifications;
-        private Panel panel3;
-        private PictureBox pictureBox4;
-        private Label label6;
+        private Panel pnlHopDong;
+        private PictureBox icoHopDong;
+        private Label lblHopDong;
         private Scripts.MakeupScripts.RoundedPanel pnl_TopDashboard;
-        private Label label7;
+        private Label lbl_Dashboarđ;
+        private Panel pnlChamCong;
+        private PictureBox icoChamCong;
+        private Label lblChamCong;
+        private Panel pnlDuAn;
+        private PictureBox icoDuAn;
+        private Label lblDuAn;
+        private Panel pnlDonXin;
+        private PictureBox icoDon;
+        private Label lblDonXin;
+        private Panel pnlLuong;
+        private PictureBox icoLuong;
+        private Label lblLuong;
+        private PictureBox icoSystemManage;
+        private Scripts.MakeupScripts.RoundedPanel pnl_HoSoCaNhan;
+        private Scripts.MakeupScripts.RoundedPanel pnl_TopHoSo;
+        private Label lbl_TitleHoSo;
+        private Scripts.MakeupScripts.RoundedPanel roundedPanel4;
+        private PictureBox pictureBox1;
+        private Label label2;
+        private Scripts.MakeupScripts.RoundedPanel roundedPanel1;
     }
 }

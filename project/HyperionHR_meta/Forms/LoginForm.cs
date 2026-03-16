@@ -26,6 +26,8 @@ namespace HyperionHR_meta
         private void LoginForm_Load(object sender, EventArgs e)
         {
 
+
+
             this.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25)); //Bo gốc
         }
 
