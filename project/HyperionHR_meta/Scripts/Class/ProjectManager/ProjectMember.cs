@@ -7,10 +7,7 @@ using System.Threading.Tasks;
 
 namespace HyperionHR_meta.Scripts.Class.ProjectManager
 {
-    internal class Project
-    {
-
-public class ProjectMember
+    internal class ProjectMember
     {
         private Employee nhanVien;
         private ProjectRole vaiTro;
@@ -57,4 +54,4 @@ public class ProjectMember
         }
     }
 }
-}
+
