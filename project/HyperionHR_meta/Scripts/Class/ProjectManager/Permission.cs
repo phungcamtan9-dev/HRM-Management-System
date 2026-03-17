@@ -8,5 +8,19 @@ namespace HyperionHR_meta.Scripts.Class.ProjectManager
 {
     internal class Permission
     {
+        private string tenQuyen;
+
+        public Permission() { }
+
+        public Permission(string ten)
+        {
+            this.tenQuyen = ten;
+        }
+
+        public string TenQuyen
+        {
+            get { return tenQuyen; }
+            set { tenQuyen = value; }
+        }
     }
 }
