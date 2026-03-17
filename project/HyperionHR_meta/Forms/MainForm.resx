@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="icoSystemManage.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="icoBaoTriHeThong.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADQAAAA2CAYAAACIsLrgAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAAB6dJREFUaEPtmmWTFUcUhvkp4VNgCRIkhUtggRQEd1nc3X2xIAGCQ4AQQuGwuLu7
+        vAAADrwBlbxySQAAB6dJREFUaEPtmmWTFUcUhvkp4VNgCRIkhUtggRQEd1nc3X2xIAGCQ4AQQuGwuLu7
         uy7u7k5yUs+p6ltzu+cuuzC7e6H48Nbe6Z6eOW8f79kM7z+IfE3IYA986fhGKNrxjVAQePDwiYwYMVLi
         6tWXevUb6N+4uHr6d9Hipc79KUG6ELpw4ZI0a95Cjh47Iddv3A5h1+690qBhI3n3/j9nTXKR6oQeP3nu
         CHj8+Cnp2Kmz3L5zP2z8/PmLUr9BQ3nx8k3Y+Os37+Xlq7fOs/2QaoQQYOasOZIrV25p07adPHz0VAXF
@@ -160,7 +160,7 @@
   <data name="icoNotifications.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACcAAAA0CAYAAAAJ4SEAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vwAADr8BOAVTJAAABd9JREFUaEPtmPlTU1ccxf1DqlbFihbUIqKtnRbCEtQWKrLPyBJGdKqlIA1oQpwp
+        vAAADrwBlbxySQAABd9JREFUaEPtmPlTU1ccxf1DqlbFihbUIqKtnRbCEtQWKrLPyBJGdKqlIA1oQpwp
         IAEEtbK0uHRYQhEk0nEUw9LWKmUZiiKLUnBBwKAGkH0LcDr3aqf2voSsWH/gzJwZEt4930+Se+/7vrtE
         PQO8rV7CvvE22SxwLS33cCL1FITCaMTHJ+D67zcxrZ7jXGeoTYZTlFXAxmYTwsLCkJOdg7jYOHyw0QZp
         aZkmA5oEp+p7AU9PL+Tl5mFqagoqlQqjo6OoqanB8mXLcf/+I84YQ2wSXEXlr/DY7UmhTp08iV3uboiK

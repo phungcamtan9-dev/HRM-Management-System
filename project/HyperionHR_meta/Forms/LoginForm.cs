@@ -27,7 +27,6 @@ namespace HyperionHR_meta
         {
 
 
-
             this.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25)); //Bo gốc
         }
 

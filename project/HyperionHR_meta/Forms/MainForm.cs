@@ -25,8 +25,8 @@ namespace HyperionHR_meta
         /// </summary>
         private void MainForm_Load(object sender, EventArgs e)
         {
-
-
+            
+    
 
 
 
@@ -81,7 +81,65 @@ namespace HyperionHR_meta
             lblWelcome.Text = $"{GetGreeting()}, {system.CurrentUser.Username}"; //Chào người dùng
             lblDateTime.Text = $"Hôm nay là {DateTime.Now.ToString("dddd, MMMM dd, yyyy")}"; //Hiện ngày tháng trên welcomebar
 
+            CheckRole(); // Hiển thị UI theo cấp độ tài khoản
+
             pnlLogout.Visible = false;
+            pnlLogOut2.Visible = false;
+
+        }
+        // Hàm check quyền tài khoản
+        public void CheckRole()
+        {
+            switch (system.CurrentUser.Role)
+            {
+                case Role.Admin:
+                    //hiện
+                    icoBaoTriHeThong.Visible = true;
+                    pnlSideBar_HR.Visible = true;
+                    pnlBottomSideMenu.Visible = true;
+
+                    //ẩn
+                    pnlSideBar_Employee.Visible = false;
+                    pnlBottomSideBar_Employee.Visible = false;
+
+                    break;
+
+                case Role.HR:
+                    //hiện                    
+                    pnlSideBar_HR.Visible = true;
+                    pnlBottomSideMenu.Visible = true;
+
+                    //ẩn
+                    icoBaoTriHeThong.Visible = false;
+                    pnlSideBar_Employee.Visible = false;
+                    pnlBottomSideBar_Employee.Visible = false;
+
+                    break;
+
+                case Role.Manager:
+                    //hiện                    
+                    pnlSideBar_HR.Visible = true;
+                    pnlBottomSideMenu.Visible = true;
+
+                    //ẩn
+                    icoBaoTriHeThong.Visible = false;
+                    pnlSideBar_Employee.Visible = false;
+                    pnlBottomSideBar_Employee.Visible = false;
+
+                    break;
+
+                case Role.Employee:
+                    //hiện
+                    pnlSideBar_Employee.Visible = true;
+                    pnlBottomSideBar_Employee.Visible = true;
+                    
+                    //ẩn
+                    icoBaoTriHeThong.Visible = false;
+                    pnlSideBar_HR.Visible = false;
+                    pnlBottomSideMenu.Visible = false;
+
+                    break;
+            }
         }
 
         /// <summary>
