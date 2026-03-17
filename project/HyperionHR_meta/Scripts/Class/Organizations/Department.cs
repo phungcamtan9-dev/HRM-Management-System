@@ -1,28 +1,40 @@
 ﻿using HyperionHR_meta.Scripts.Class.Person;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace HyperionHR_meta.Scripts.Class.Organizations
+public class Department
 {
-    public class Department
+    public string MaPB { get; set; }
+    public string TenPB { get; set; }
+
+    public List<Employee> NhanVien { get; private set; }
+
+    public Department()
     {
-        public string MaPB { get; set; }
-        public string TenPB { get; set; }
-        public List<Employee> NhanVien { get; set; }
+        NhanVien = new List<Employee>();
+    }
 
-        public Department()
+    public Department(string maPB, string tenPB)
+    {
+        MaPB = maPB;
+        TenPB = tenPB;
+        NhanVien = new List<Employee>();
+    }
+
+    // ✅ Thêm nhân viên (quan trọng)
+    public void AddEmployee(Employee emp)
+    {
+        if (emp != null && !NhanVien.Contains(emp))
         {
-            NhanVien = new List<Employee>();
+            NhanVien.Add(emp);
+            emp.PhongBan = this; // đồng bộ 2 chiều
         }
+    }
 
-        public Department(string maPB, string tenPB, List<Employee> nhanVien)
+    // ✅ Xóa nhân viên
+    public void RemoveEmployee(Employee emp)
+    {
+        if (NhanVien.Contains(emp))
         {
-            MaPB = maPB;
-            TenPB = tenPB;
-            NhanVien = nhanVien;
+            NhanVien.Remove(emp);
+            emp.PhongBan = null; // tránh lỗi dữ liệu
         }
     }
 }
