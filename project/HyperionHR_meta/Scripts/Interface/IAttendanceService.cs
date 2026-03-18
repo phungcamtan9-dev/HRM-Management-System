@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace HyperionHR_meta.Scripts.Interface
 {
-    internal class IAttendanceService
+    public interface IAttendanceService
     {
+        void CheckIn(DateTime gioVao);
+        void CheckOut(DateTime gioRa);
+        double CalculateWorkingHours();
     }
 }

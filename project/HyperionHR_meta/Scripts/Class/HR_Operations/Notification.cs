@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HyperionHR_meta.Scripts.Class.Person;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,23 +7,22 @@ using System.Threading.Tasks;
 
 namespace HyperionHR_meta.Scripts.Class.HR_Operations
 {
+    [Serializable]
     public class Notification
     {
         public string MaThongBao { get; set; }
         public string NoiDung { get; set; }
-        public Version NguoiNhan { get; set; }
+        public Employee NguoiNhan { get; set; } // Sửa Version thành Employee
         public bool DaDoc { get; set; }
 
-        public Notification()
-        {
-        }
+        public Notification() { }
 
-        public Notification(string maThongBao, string noiDung, Version nguoiNhan, bool daDoc)
+        public Notification(string maThongBao, string noiDung, Employee nguoiNhan)
         {
             MaThongBao = maThongBao;
             NoiDung = noiDung;
             NguoiNhan = nguoiNhan;
-            DaDoc = daDoc;
+            DaDoc = false; // Mặc định khi tạo là chưa đọc
         }
     }
 }

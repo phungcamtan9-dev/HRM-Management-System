@@ -1,40 +1,76 @@
 ﻿using HyperionHR_meta.Scripts.Class.Person;
-public class Department
+using System;
+using System.Collections.Generic;
+
+namespace HyperionHR_meta.Scripts.Class.Organizations
 {
-    public string MaPB { get; set; }
-    public string TenPB { get; set; }
-
-    public List<Employee> NhanVien { get; private set; }
-
-    public Department()
+    [Serializable]
+    public class Department
     {
-        NhanVien = new List<Employee>();
-    }
+        public string MaPB { get; set; }
+        public string TenPB { get; set; }
 
-    public Department(string maPB, string tenPB)
-    {
-        MaPB = maPB;
-        TenPB = tenPB;
-        NhanVien = new List<Employee>();
-    }
+        public FullTimeEmployee NguoiQuanLy { get; private set; }
 
-    // ✅ Thêm nhân viên (quan trọng)
-    public void AddEmployee(Employee emp)
-    {
-        if (emp != null && !NhanVien.Contains(emp))
+        public List<Employee> NhanVien { get; private set; }
+
+        public Department()
         {
-            NhanVien.Add(emp);
-            emp.PhongBan = this; // đồng bộ 2 chiều
+            NhanVien = new List<Employee>();
         }
-    }
 
-    // ✅ Xóa nhân viên
-    public void RemoveEmployee(Employee emp)
-    {
-        if (NhanVien.Contains(emp))
+        public Department(string maPB, string tenPB)
         {
-            NhanVien.Remove(emp);
-            emp.PhongBan = null; // tránh lỗi dữ liệu
+            MaPB = maPB;
+            TenPB = tenPB;
+            NhanVien = new List<Employee>();
+        }
+
+        // ==========================================
+        // METHODS
+        // ==========================================
+
+        // Thêm nhân viên
+        public void AddEmployee(Employee emp)
+        {
+            if (emp != null && !NhanVien.Contains(emp))
+            {
+                NhanVien.Add(emp);
+                emp.PhongBan = this; // Đồng bộ 2 chiều
+            }
+        }
+
+        // Xóa nhân viên
+        public void RemoveEmployee(Employee emp)
+        {
+            if (NhanVien.Contains(emp))
+            {
+                NhanVien.Remove(emp);
+                emp.PhongBan = null; // Tránh lỗi dữ liệu
+            }
+        }
+
+        // Hàm bổ nhiệm Quản lý cho phòng ban
+        public void AssignManager(FullTimeEmployee manager)
+        {
+            if (manager != null)
+            {
+                // Ràng buộc nghiệp vụ: Kiểm tra mã chức vụ có chứa chữ "QL" không
+                if (manager.ChucVu != null && manager.ChucVu.MaChucVu.Contains("QL"))
+                {
+                    NguoiQuanLy = manager;
+
+                    // Nếu người quản lý chưa có trong danh sách nhân viên phòng ban thì thêm vào
+                    if (!NhanVien.Contains(manager))
+                    {
+                        AddEmployee(manager);
+                    }
+                }
+                else
+                {
+                    throw new Exception("Nhân viên này không có chức vụ Quản lý (Không có mã QL)!");
+                }
+            }
         }
     }
 }

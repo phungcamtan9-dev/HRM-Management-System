@@ -7,6 +7,7 @@ using HyperionHR_meta.Scripts.Class.Person;
 
 namespace HyperionHR_meta.Scripts.Class.HR_Operations
 {
+    [Serializable]
     public class AttendanceRecord
     {
         public DateTime Ngay { get; set; }

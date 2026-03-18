@@ -1,11 +1,6 @@
 ﻿using HyperionHR_meta.Scripts.Class.Organizations;
+using HyperionHR_meta.Scripts.Class.HR_Operations;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using HyperionHR_meta.Scripts.Class.Person;
-using System.Diagnostics.Contracts;
 
 namespace HyperionHR_meta.Scripts.Class.Person
 {
@@ -13,19 +8,32 @@ namespace HyperionHR_meta.Scripts.Class.Person
     public class PartTimeEmployee : Employee
     {
         public double SoGioLam { get; set; }
-        public double HeSoLuongGio { get; set; }
+        public double MucLuongTheoGio { get; set; } 
 
         public PartTimeEmployee()
         {
         }
 
         public PartTimeEmployee(string id, string hoTen, DateTime ngaySinh, string email, string soDienThoai,
-                                string maNhanVien, Department phongBan, Position chucVu,
-                                double soGioLam, double heSoLuongGio)
-            : base(id, hoTen, ngaySinh, email, soDienThoai, maNhanVien, phongBan, chucVu)
+                                string maNhanVien, Department phongBan, Position chucVu, Contract hopDong,
+                                double soGioLam, double mucLuongTheoGio)
+            : base(id, hoTen, ngaySinh, email, soDienThoai, maNhanVien, phongBan, chucVu, hopDong)
         {
             SoGioLam = soGioLam;
-            HeSoLuongGio = heSoLuongGio;
+            MucLuongTheoGio = mucLuongTheoGio;
+        }
+
+        public override string HienThiThongTin()
+        {
+            return base.HienThiThongTin() + " (Nhân viên Part-time)";
+        }
+
+        // ==========================================
+        // GHI ĐÈ HÀM TÍNH LƯƠNG CỦA PART-TIME
+        // ==========================================
+        public override double TinhLuong()
+        {
+            return SoGioLam * MucLuongTheoGio;
         }
     }
 }

@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HyperionHR_meta.Scripts.Class.Payroll
+namespace HyperionHR_meta.Scripts.Class.Payrolls
 {
+    [Serializable]
     public class Bonus
     {
         public string MaThuong { get; set; }

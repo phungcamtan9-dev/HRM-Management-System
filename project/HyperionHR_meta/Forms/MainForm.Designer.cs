@@ -157,6 +157,12 @@ namespace HyperionHR_meta
             pnlHopDong_Employee = new Panel();
             icoHopDong2 = new PictureBox();
             lblHopDong_Employee = new Label();
+            pnl_QuanLyNhanSu = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            pnl_TopQLNhanSu = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            lbl_TittleQLNhanSu = new Label();
+            roundedPanel7 = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            pictureBox6 = new PictureBox();
+            label9 = new Label();
             pnlFormBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picLogo).BeginInit();
             pnlWelcomeBar.SuspendLayout();
@@ -232,6 +238,10 @@ namespace HyperionHR_meta
             ((System.ComponentModel.ISupportInitialize)icoChamCong_2).BeginInit();
             pnlHopDong_Employee.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)icoHopDong2).BeginInit();
+            pnl_QuanLyNhanSu.SuspendLayout();
+            pnl_TopQLNhanSu.SuspendLayout();
+            roundedPanel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
             // 
             // pnlFormBar
@@ -1477,6 +1487,71 @@ namespace HyperionHR_meta
             lblHopDong_Employee.TabIndex = 0;
             lblHopDong_Employee.Text = "Hợp đồng";
             // 
+            // pnl_QuanLyNhanSu
+            // 
+            pnl_QuanLyNhanSu.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pnl_QuanLyNhanSu.BackColor = Color.White;
+            pnl_QuanLyNhanSu.BorderRadius = 20;
+            pnl_QuanLyNhanSu.Controls.Add(pnl_TopQLNhanSu);
+            pnl_QuanLyNhanSu.Controls.Add(roundedPanel7);
+            pnl_QuanLyNhanSu.Location = new Point(289, 137);
+            pnl_QuanLyNhanSu.Name = "pnl_QuanLyNhanSu";
+            pnl_QuanLyNhanSu.Size = new Size(1054, 640);
+            pnl_QuanLyNhanSu.TabIndex = 9;
+            // 
+            // pnl_TopQLNhanSu
+            // 
+            pnl_TopQLNhanSu.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pnl_TopQLNhanSu.BackColor = Color.FromArgb(217, 229, 255);
+            pnl_TopQLNhanSu.BorderRadius = 20;
+            pnl_TopQLNhanSu.Controls.Add(lbl_TittleQLNhanSu);
+            pnl_TopQLNhanSu.Location = new Point(0, 0);
+            pnl_TopQLNhanSu.Name = "pnl_TopQLNhanSu";
+            pnl_TopQLNhanSu.Size = new Size(2762, 41);
+            pnl_TopQLNhanSu.TabIndex = 7;
+            // 
+            // lbl_TittleQLNhanSu
+            // 
+            lbl_TittleQLNhanSu.Font = new Font("Inter", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_TittleQLNhanSu.Location = new Point(25, 4);
+            lbl_TittleQLNhanSu.Name = "lbl_TittleQLNhanSu";
+            lbl_TittleQLNhanSu.Size = new Size(280, 34);
+            lbl_TittleQLNhanSu.TabIndex = 2;
+            lbl_TittleQLNhanSu.Text = "Quản lý nhân sự";
+            lbl_TittleQLNhanSu.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // roundedPanel7
+            // 
+            roundedPanel7.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            roundedPanel7.BackColor = Color.FromArgb(156, 193, 250);
+            roundedPanel7.BorderRadius = 20;
+            roundedPanel7.Controls.Add(pictureBox6);
+            roundedPanel7.Controls.Add(label9);
+            roundedPanel7.Location = new Point(3411, 15);
+            roundedPanel7.Name = "roundedPanel7";
+            roundedPanel7.Size = new Size(179, 62);
+            roundedPanel7.TabIndex = 6;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
+            pictureBox6.Location = new Point(13, 10);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(43, 43);
+            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox6.TabIndex = 1;
+            pictureBox6.TabStop = false;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Inter SemiBold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.Location = new Point(59, 17);
+            label9.Name = "label9";
+            label9.Size = new Size(112, 30);
+            label9.TabIndex = 0;
+            label9.Text = "Lịch Trình";
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1486,9 +1561,10 @@ namespace HyperionHR_meta
             Controls.Add(pnlWelcomeBar);
             Controls.Add(pnlFormBar);
             Controls.Add(pnlSideBar_HR);
-            Controls.Add(pnl_Dashboard);
             Controls.Add(pnlSideBar_Employee);
+            Controls.Add(pnl_QuanLyNhanSu);
             Controls.Add(pnl_HoSoCaNhan);
+            Controls.Add(pnl_Dashboard);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 2, 3, 2);
             Name = "MainForm";
@@ -1578,6 +1654,11 @@ namespace HyperionHR_meta
             ((System.ComponentModel.ISupportInitialize)icoChamCong_2).EndInit();
             pnlHopDong_Employee.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)icoHopDong2).EndInit();
+            pnl_QuanLyNhanSu.ResumeLayout(false);
+            pnl_TopQLNhanSu.ResumeLayout(false);
+            roundedPanel7.ResumeLayout(false);
+            roundedPanel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ResumeLayout(false);
         }
 
@@ -1701,5 +1782,11 @@ namespace HyperionHR_meta
         private PictureBox icoCaiDat2;
         private Label lblCaiDat2;
         private Label lblLogOut2;
+        private Scripts.MakeupScripts.RoundedPanel pnl_QuanLyNhanSu;
+        private Scripts.MakeupScripts.RoundedPanel pnl_TopQLNhanSu;
+        private Label lbl_TittleQLNhanSu;
+        private Scripts.MakeupScripts.RoundedPanel roundedPanel7;
+        private PictureBox pictureBox6;
+        private Label label9;
     }
 }

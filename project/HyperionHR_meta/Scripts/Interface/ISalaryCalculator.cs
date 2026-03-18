@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace HyperionHR_meta.Scripts.Interface
+﻿namespace HyperionHR_meta.Scripts.Class.Payrolls
 {
-    internal class ISalaryCalculator
+    public interface ISalaryCalculator
     {
+        double CalculateGrossSalary(); // Tính tổng thu nhập (Lương + Phụ cấp + Thưởng)
+        double CalculateDeductions();  // Tính tổng khấu trừ (Bảo hiểm + Thuế + Phạt)
+        double CalculateNetSalary();   // Tính thực lãnh (Gross - Deductions)
     }
 }

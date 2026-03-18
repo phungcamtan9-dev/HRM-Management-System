@@ -1,32 +1,47 @@
 ﻿using HyperionHR_meta.Scripts.Class.Organizations;
-using HyperionHR_meta.Scripts.Class.Payroll;
-using HyperionHR_meta.Scripts.Class.Person;
+using HyperionHR_meta.Scripts.Class.HR_Operations;
 using System;
-using System.Collections.Generic;
-using System.Diagnostics.Contracts;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HyperionHR_meta.Scripts.Class.Person
 {
     [Serializable]
     public class FullTimeEmployee : Employee
     {
-        public Insurance BaoHiem { get; set; }
-        public Allowance PhuCap { get; set; }
+        public double LuongCoBan { get; set; }
+        public double PhuCapQuanLy { get; set; }
 
         public FullTimeEmployee()
         {
         }
 
         public FullTimeEmployee(string id, string hoTen, DateTime ngaySinh, string email, string soDienThoai,
-                                string maNhanVien, Department phongBan, Position chucVu,
-                                Insurance baoHiem, Allowance phuCap)
-            : base(id, hoTen, ngaySinh, email, soDienThoai, maNhanVien, phongBan, chucVu)
+                                string maNhanVien, Department phongBan, Position chucVu, Contract hopDong,
+                                double luongCoBan, double phuCapQuanLy)
+            : base(id, hoTen, ngaySinh, email, soDienThoai, maNhanVien, phongBan, chucVu, hopDong)
         {
-            BaoHiem = baoHiem;
-            PhuCap = phuCap;
+            LuongCoBan = luongCoBan;
+            PhuCapQuanLy = phuCapQuanLy;
+        }
+
+        public override string HienThiThongTin()
+        {
+            return base.HienThiThongTin() + " (Nhân viên Full-time)";
+        }
+
+        // ==========================================
+        // GHI ĐÈ HÀM TÍNH LƯƠNG CỦA FULL-TIME
+        // ==========================================
+        public override double TinhLuong()
+        {
+            double tongLuong = LuongCoBan;
+
+            // Kiểm tra nếu là quản lý (Mã chức vụ có chữ "QL") thì cộng phụ cấp
+            if (ChucVu != null && ChucVu.MaChucVu.Contains("QL"))
+            {
+                tongLuong = tongLuong + PhuCapQuanLy;
+            }
+
+            return tongLuong;
         }
     }
 }

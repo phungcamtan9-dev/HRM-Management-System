@@ -7,21 +7,20 @@ using HyperionHR_meta.Scripts.Class.Person;
 
 namespace HyperionHR_meta.Scripts.Class.HR_Operations
 {
+    [Serializable]
     public class ActivityLog
     {
         public string LogId { get; set; }
-        public Version NguoiThucHien { get; set; }
+        public string TenTaiKhoan { get; set; } // Sửa Version thành string
         public string HanhDong { get; set; }
         public DateTime ThoiGian { get; set; }
 
-        public ActivityLog()
-        {
-        }
+        public ActivityLog() { }
 
-        public ActivityLog(string logId, Version nguoiThucHien, string hanhDong, DateTime thoiGian)
+        public ActivityLog(string logId, string tenTaiKhoan, string hanhDong, DateTime thoiGian)
         {
             LogId = logId;
-            NguoiThucHien = nguoiThucHien;
+            TenTaiKhoan = tenTaiKhoan;
             HanhDong = hanhDong;
             ThoiGian = thoiGian;
         }

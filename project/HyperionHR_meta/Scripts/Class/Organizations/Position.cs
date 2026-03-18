@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace HyperionHR_meta.Scripts.Class.Organizations
 {
+    [Serializable]
     public class Position
     {
-        public string MaChucVu { get; set; }
-        public string TenChucVu { get; set; }
+        public string MaChucVu { get; set; } 
+        public string TenChucVu { get; set; } 
         public string MoTa { get; set; }
 
         public Position()
