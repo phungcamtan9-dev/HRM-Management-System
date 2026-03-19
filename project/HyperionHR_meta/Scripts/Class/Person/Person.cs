@@ -12,6 +12,7 @@ namespace HyperionHR_meta.Scripts.Class.Person
     {
         public string Id { get; set; }
         public string HoTen { get; set; }
+        public string GioiTinh { get; set; }
         public DateTime NgaySinh { get; set; }
         public string Email { get; set; }
         public string SoDienThoai { get; set; }
@@ -20,11 +21,12 @@ namespace HyperionHR_meta.Scripts.Class.Person
         {
         }
 
-        public Person(string id, string hoTen, DateTime ngaySinh, string email, string soDienThoai)
+        public Person(string id, string hoTen, DateTime ngaySinh, string gioiTinh ,string email, string soDienThoai)
         {
             Id = id;
             HoTen = hoTen;
             NgaySinh = ngaySinh;
+            GioiTinh = gioiTinh;
             Email = email;
             SoDienThoai = soDienThoai;
         }

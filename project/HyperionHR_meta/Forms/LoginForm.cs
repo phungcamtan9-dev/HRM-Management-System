@@ -25,7 +25,9 @@ namespace HyperionHR_meta
         // ===========
         private void LoginForm_Load(object sender, EventArgs e)
         {
-
+            // Mọi người lần đầu clone project về thì bỏ comment cái hàm ở dưới chạy 1 lần
+            // xong r comment lại nha do clone về git nó kh có copy file datajson kèm theo trong bin
+            //HRSystem.Instance.TaoDuLieuMau(); ( nhớ là chạy 1 lần r tắt app comment lại liền trước khi chạy nữa kh là tràn dữ liệu )
 
             this.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25)); //Bo gốc
         }

@@ -14,10 +14,10 @@ namespace HyperionHR_meta.Scripts.Class.Person
         {
         }
 
-        public PartTimeEmployee(string id, string hoTen, DateTime ngaySinh, string email, string soDienThoai,
+        public PartTimeEmployee(string id, string hoTen, DateTime ngaySinh, string gioiTinh, string email, string soDienThoai,
                                 string maNhanVien, Department phongBan, Position chucVu, Contract hopDong,
                                 double soGioLam, double mucLuongTheoGio)
-            : base(id, hoTen, ngaySinh, email, soDienThoai, maNhanVien, phongBan, chucVu, hopDong)
+            : base(id, hoTen, ngaySinh, gioiTinh, email, soDienThoai, maNhanVien, phongBan, chucVu, hopDong)
         {
             SoGioLam = soGioLam;
             MucLuongTheoGio = mucLuongTheoGio;

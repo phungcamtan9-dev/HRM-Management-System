@@ -20,9 +20,9 @@ namespace HyperionHR_meta
 
         }
 
-        /// <summary>
-        /// Làm đẹp form
-        /// </summary>
+        // ==========================================
+        // LÀM ĐẸP FORM
+        // ==========================================
         private void MainForm_Load(object sender, EventArgs e)
         {
             
@@ -74,7 +74,9 @@ namespace HyperionHR_meta
                 return "🌙 Chào buổi tối";
         }
 
-        //Panel control
+        // ==========================================
+        // PANEL CONTROL
+        // ==========================================
         public void LoadGiaoDien()
         {
             this.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25)); //Bo gốc
@@ -97,6 +99,7 @@ namespace HyperionHR_meta
                     icoBaoTriHeThong.Visible = true;
                     pnlSideBar_HR.Visible = true;
                     pnlBottomSideMenu.Visible = true;
+                    pnlDashboard.Visible = true;
 
                     //ẩn
                     pnlSideBar_Employee.Visible = false;
@@ -108,6 +111,7 @@ namespace HyperionHR_meta
                     //hiện                    
                     pnlSideBar_HR.Visible = true;
                     pnlBottomSideMenu.Visible = true;
+                    pnlDashboard.Visible = true;
 
                     //ẩn
                     icoBaoTriHeThong.Visible = false;
@@ -120,6 +124,7 @@ namespace HyperionHR_meta
                     //hiện                    
                     pnlSideBar_HR.Visible = true;
                     pnlBottomSideMenu.Visible = true;
+                    pnlDashboard.Visible = false;
 
                     //ẩn
                     icoBaoTriHeThong.Visible = false;
@@ -132,7 +137,8 @@ namespace HyperionHR_meta
                     //hiện
                     pnlSideBar_Employee.Visible = true;
                     pnlBottomSideBar_Employee.Visible = true;
-                    
+                    pnlDashboard.Visible = false;
+
                     //ẩn
                     icoBaoTriHeThong.Visible = false;
                     pnlSideBar_HR.Visible = false;
@@ -142,9 +148,9 @@ namespace HyperionHR_meta
             }
         }
 
-        /// <summary>
-        /// Thao tác cơ bản
-        /// </summary>
+        // ==========================================
+        // TƯƠNG TÁC CƠ BẢN
+        // ==========================================
         private void btnclose_Click(object sender, EventArgs e) // tắt
         {
             Application.Exit();

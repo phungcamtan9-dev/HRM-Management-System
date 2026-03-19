@@ -1,6 +1,7 @@
 ﻿using HyperionHR_meta.Scripts.Class.Person;
 using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace HyperionHR_meta.Scripts.Class.Organizations
 {
@@ -11,8 +12,8 @@ namespace HyperionHR_meta.Scripts.Class.Organizations
         public string TenPB { get; set; }
 
         public FullTimeEmployee NguoiQuanLy { get; private set; }
-
-        public List<Employee> NhanVien { get; private set; }
+        
+        [JsonIgnore] public List<Employee> NhanVien { get; private set; }
 
         public Department()
         {

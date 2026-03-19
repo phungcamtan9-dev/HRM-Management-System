@@ -1,10 +1,13 @@
 ﻿using HyperionHR_meta.Scripts.Class.HR_Operations;
 using HyperionHR_meta.Scripts.Class.Organizations;
 using System;
+using System.Text.Json.Serialization;
 
 namespace HyperionHR_meta.Scripts.Class.Person
 {
     [Serializable]
+    [JsonDerivedType(typeof(FullTimeEmployee), typeDiscriminator: "FullTime")]
+    [JsonDerivedType(typeof(PartTimeEmployee), typeDiscriminator: "PartTime")]
     public class Employee : Person
     {
         public string MaNhanVien { get; set; }
@@ -16,9 +19,9 @@ namespace HyperionHR_meta.Scripts.Class.Person
         {
         }
 
-        public Employee(string id, string hoTen, DateTime ngaySinh, string email, string soDienThoai,
+        public Employee(string id, string hoTen, DateTime ngaySinh, string gioiTinh ,string email, string soDienThoai,
                         string maNhanVien, Department phongBan, Position chucVu, Contract hopDong)
-            : base(id, hoTen, ngaySinh, email, soDienThoai)
+            : base(id, hoTen, ngaySinh, gioiTinh, email, soDienThoai)
         {
             MaNhanVien = maNhanVien;
             PhongBan = phongBan;

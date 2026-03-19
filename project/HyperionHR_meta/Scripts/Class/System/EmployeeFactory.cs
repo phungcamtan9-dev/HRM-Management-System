@@ -12,7 +12,7 @@ namespace HyperionHR_meta.Scripts.Class.System
         // ==========================================
         // HÀM TẠO NHÂN VIÊN (FACTORY METHOD)
         // ==========================================
-        public static Employee CreateEmployee(string loaiNhanVien, string id, string hoTen, DateTime ngaySinh, string email, string soDienThoai, string maNhanVien)
+        public static Employee CreateEmployee(string loaiNhanVien, string id, string hoTen, DateTime ngaySinh, string gioiTinh, string email, string soDienThoai, string maNhanVien)
         {
             if (loaiNhanVien == "FullTime")
             {
@@ -20,11 +20,12 @@ namespace HyperionHR_meta.Scripts.Class.System
                 ftEmp.Id = id;
                 ftEmp.HoTen = hoTen;
                 ftEmp.NgaySinh = ngaySinh;
+                ftEmp.GioiTinh = gioiTinh;
                 ftEmp.Email = email;
                 ftEmp.SoDienThoai = soDienThoai;
                 ftEmp.MaNhanVien = maNhanVien;
 
-                // Trả về đối tượng FullTime (nhưng dưới dạng lớp cha Employee nhờ Đa hình)
+                // Trả về đối tượng FullTime 
                 return ftEmp;
             }
             else if (loaiNhanVien == "PartTime")
@@ -33,6 +34,7 @@ namespace HyperionHR_meta.Scripts.Class.System
                 ptEmp.Id = id;
                 ptEmp.HoTen = hoTen;
                 ptEmp.NgaySinh = ngaySinh;
+                ptEmp.GioiTinh= gioiTinh;
                 ptEmp.Email = email;
                 ptEmp.SoDienThoai = soDienThoai;
                 ptEmp.MaNhanVien = maNhanVien;

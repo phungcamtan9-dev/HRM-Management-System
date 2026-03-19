@@ -19,7 +19,7 @@ namespace HyperionHR_meta.Scripts.Class.System
         // Liên kết với Employee
         public Employee Employee { get; set; }
 
-        //Constructor
+        //Constructor k tham số
         public Account()
         {
         }

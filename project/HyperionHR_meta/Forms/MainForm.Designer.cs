@@ -39,6 +39,7 @@ namespace HyperionHR_meta
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             pnlFormBar = new Panel();
             picLogo = new PictureBox();
             lblAppName = new Label();
@@ -158,6 +159,8 @@ namespace HyperionHR_meta
             icoHopDong2 = new PictureBox();
             lblHopDong_Employee = new Label();
             pnl_QuanLyNhanSu = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            pnl_DGVEmployee = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            dgvEmployee = new DataGridView();
             pnl_TopQLNhanSu = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
             lbl_TittleQLNhanSu = new Label();
             roundedPanel7 = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
@@ -239,6 +242,8 @@ namespace HyperionHR_meta
             pnlHopDong_Employee.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)icoHopDong2).BeginInit();
             pnl_QuanLyNhanSu.SuspendLayout();
+            pnl_DGVEmployee.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvEmployee).BeginInit();
             pnl_TopQLNhanSu.SuspendLayout();
             roundedPanel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
@@ -1152,7 +1157,7 @@ namespace HyperionHR_meta
             lblUserGmail2.Name = "lblUserGmail2";
             lblUserGmail2.Size = new Size(144, 24);
             lblUserGmail2.TabIndex = 7;
-            lblUserGmail2.Text = "admin";
+            lblUserGmail2.Text = "emp";
             // 
             // lblSystemName2
             // 
@@ -1492,12 +1497,42 @@ namespace HyperionHR_meta
             pnl_QuanLyNhanSu.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pnl_QuanLyNhanSu.BackColor = Color.White;
             pnl_QuanLyNhanSu.BorderRadius = 20;
+            pnl_QuanLyNhanSu.Controls.Add(pnl_DGVEmployee);
             pnl_QuanLyNhanSu.Controls.Add(pnl_TopQLNhanSu);
             pnl_QuanLyNhanSu.Controls.Add(roundedPanel7);
             pnl_QuanLyNhanSu.Location = new Point(289, 137);
             pnl_QuanLyNhanSu.Name = "pnl_QuanLyNhanSu";
             pnl_QuanLyNhanSu.Size = new Size(1054, 640);
             pnl_QuanLyNhanSu.TabIndex = 9;
+            // 
+            // pnl_DGVEmployee
+            // 
+            pnl_DGVEmployee.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pnl_DGVEmployee.BackColor = Color.FromArgb(217, 229, 255);
+            pnl_DGVEmployee.BorderRadius = 20;
+            pnl_DGVEmployee.Controls.Add(dgvEmployee);
+            pnl_DGVEmployee.Location = new Point(25, 47);
+            pnl_DGVEmployee.Name = "pnl_DGVEmployee";
+            pnl_DGVEmployee.Size = new Size(808, 523);
+            pnl_DGVEmployee.TabIndex = 8;
+            // 
+            // dgvEmployee
+            // 
+            dgvEmployee.BackgroundColor = Color.FromArgb(217, 229, 255);
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(217, 229, 255);
+            dataGridViewCellStyle1.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(192, 192, 255);
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dgvEmployee.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dgvEmployee.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvEmployee.Dock = DockStyle.Fill;
+            dgvEmployee.Location = new Point(0, 0);
+            dgvEmployee.Name = "dgvEmployee";
+            dgvEmployee.Size = new Size(808, 523);
+            dgvEmployee.TabIndex = 0;
             // 
             // pnl_TopQLNhanSu
             // 
@@ -1560,11 +1595,11 @@ namespace HyperionHR_meta
             ClientSize = new Size(1366, 800);
             Controls.Add(pnlWelcomeBar);
             Controls.Add(pnlFormBar);
-            Controls.Add(pnlSideBar_HR);
             Controls.Add(pnlSideBar_Employee);
             Controls.Add(pnl_QuanLyNhanSu);
             Controls.Add(pnl_HoSoCaNhan);
             Controls.Add(pnl_Dashboard);
+            Controls.Add(pnlSideBar_HR);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 2, 3, 2);
             Name = "MainForm";
@@ -1655,6 +1690,8 @@ namespace HyperionHR_meta
             pnlHopDong_Employee.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)icoHopDong2).EndInit();
             pnl_QuanLyNhanSu.ResumeLayout(false);
+            pnl_DGVEmployee.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvEmployee).EndInit();
             pnl_TopQLNhanSu.ResumeLayout(false);
             roundedPanel7.ResumeLayout(false);
             roundedPanel7.PerformLayout();
@@ -1788,5 +1825,7 @@ namespace HyperionHR_meta
         private Scripts.MakeupScripts.RoundedPanel roundedPanel7;
         private PictureBox pictureBox6;
         private Label label9;
+        private Scripts.MakeupScripts.RoundedPanel pnl_DGVEmployee;
+        private DataGridView dgvEmployee;
     }
 }
