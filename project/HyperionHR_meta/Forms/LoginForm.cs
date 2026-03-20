@@ -27,7 +27,7 @@ namespace HyperionHR_meta
         {
             // Mọi người lần đầu clone project về thì bỏ comment cái hàm ở dưới chạy 1 lần
             // xong r comment lại nha do clone về git nó kh có copy file datajson kèm theo trong bin
-            //HRSystem.Instance.TaoDuLieuMau(); ( nhớ là chạy 1 lần r tắt app comment lại liền trước khi chạy nữa kh là tràn dữ liệu )
+            //HRSystem.Instance.TaoDuLieuMau(); //( nhớ là chạy 1 lần r tắt app comment lại liền trước khi chạy nữa kh là tràn dữ liệu )
 
             this.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25)); //Bo gốc
         }
@@ -109,7 +109,7 @@ namespace HyperionHR_meta
             btnLogin.BackColor = ColorTranslator.FromHtml("#83BAFF");
         }
 
-        
+
         private void btnLogin_Click(object sender, EventArgs e)
         {
             if (HRSystem.Instance.Login(txtEmail.Text, txtPassword.Text))
@@ -120,13 +120,14 @@ namespace HyperionHR_meta
             }
             else
             {
-                MessageBox.Show("Hãy kiểm tra lại tài khoản hoặc mật khẩu !","Đăng nhập thất bại",MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }    
+                MessageBox.Show("Hãy kiểm tra lại tài khoản hoặc mật khẩu !", "Đăng nhập thất bại", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void lblForgotPassword_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Gáng nhớ đi ba !!!");
         }
+
     }
 }

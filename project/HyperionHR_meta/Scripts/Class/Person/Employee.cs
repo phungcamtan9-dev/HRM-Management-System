@@ -1,13 +1,11 @@
 ﻿using HyperionHR_meta.Scripts.Class.HR_Operations;
 using HyperionHR_meta.Scripts.Class.Organizations;
 using System;
-using System.Text.Json.Serialization;
+
 
 namespace HyperionHR_meta.Scripts.Class.Person
 {
     [Serializable]
-    [JsonDerivedType(typeof(FullTimeEmployee), typeDiscriminator: "FullTime")]
-    [JsonDerivedType(typeof(PartTimeEmployee), typeDiscriminator: "PartTime")]
     public class Employee : Person
     {
         public string MaNhanVien { get; set; }
@@ -31,7 +29,7 @@ namespace HyperionHR_meta.Scripts.Class.Person
 
         public virtual string HienThiThongTin()
         {
-            return "Mã NV: " + MaNhanVien + " - Tên: " + HoTen;
+            return "";
         }
 
         // ==========================================

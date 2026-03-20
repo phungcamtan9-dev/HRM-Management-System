@@ -12,7 +12,7 @@ namespace HyperionHR_meta.Scripts
         {
             ApplicationConfiguration.Initialize();
 
-            string fileName = "hrsystem.json"; // tên file lưu dữ liệu
+            string fileName = "hrsystem.bin"; // tên file lưu dữ liệu
 
             HRSystem system = HRSystem.Instance; //Singleton
 

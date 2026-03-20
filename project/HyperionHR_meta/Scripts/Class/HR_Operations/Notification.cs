@@ -12,7 +12,7 @@ namespace HyperionHR_meta.Scripts.Class.HR_Operations
     {
         public string MaThongBao { get; set; }
         public string NoiDung { get; set; }
-        public Employee NguoiNhan { get; set; } // Sửa Version thành Employee
+        public Employee NguoiNhan { get; set; } 
         public bool DaDoc { get; set; }
 
         public Notification() { }

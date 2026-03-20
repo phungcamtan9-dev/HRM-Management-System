@@ -63,6 +63,16 @@ namespace HyperionHR_meta.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AppLogo {
+            get {
+                object obj = ResourceManager.GetObject("AppLogo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap picAva {
             get {
                 object obj = ResourceManager.GetObject("picAva", resourceCulture);
@@ -216,6 +226,16 @@ namespace HyperionHR_meta.Properties {
         internal static System.Drawing.Bitmap Screenshot_2026_03_16_132348 {
             get {
                 object obj = ResourceManager.GetObject("Screenshot 2026-03-16 132348", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2026_03_20_174457 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2026-03-20 174457", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

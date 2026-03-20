@@ -1,10 +1,9 @@
 ﻿using HyperionHR_meta.Scripts.Class.HR_Operations;
 using HyperionHR_meta.Scripts.Class.Organizations;
-using HyperionHR_meta.Scripts.Class.Person;
 using HyperionHR_meta.Scripts.Class.Payrolls;
-using System.Text.Json;
-using System.Text.Json.Serialization;
+using HyperionHR_meta.Scripts.Class.Person;
 using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 
 namespace HyperionHR_meta.Scripts.Class.System
@@ -82,39 +81,32 @@ namespace HyperionHR_meta.Scripts.Class.System
         // Save dữ liệu (Serialize JSON)
         public void Save(string fileName)
         {
-            JsonSerializerOptions options = new JsonSerializerOptions();
-            options.WriteIndented = true;
-
-            options.ReferenceHandler = ReferenceHandler.Preserve;
+            // Khởi tạo máy định dạng Nhị phân
+            BinaryFormatter formatter = new BinaryFormatter();
 
             using (FileStream fs = new FileStream(fileName, FileMode.Create))
             {
-                JsonSerializer.Serialize<HRSystem>(fs, this, options);
+                formatter.Serialize(fs, this);
             }
         }
 
         // Load dữ liệu (Deserialize JSON)
         public void Load(string fileName)
         {
-            if (!File.Exists(fileName))
-            {
-                return;
-            }
+            // Kiểm tra file có tồn tại và có dữ liệu không
+            if (!File.Exists(fileName)) return;
 
             FileInfo thongTinFile = new FileInfo(fileName);
-            if (thongTinFile.Length == 0)
-            {
-                return; // Nếu file 0 byte thì thoát luôn, không đọc nữa
-            }
+            if (thongTinFile.Length == 0) return;
 
-            JsonSerializerOptions options = new JsonSerializerOptions();
-            options.ReferenceHandler = ReferenceHandler.Preserve;
+            BinaryFormatter formatter = new BinaryFormatter();
 
             HRSystem data;
 
             using (FileStream fs = new FileStream(fileName, FileMode.Open))
             {
-                data = JsonSerializer.Deserialize<HRSystem>(fs,options);
+                // Đọc file nhị phân và ép kiểu (cast) về lại HRSystem
+                data = (HRSystem)formatter.Deserialize(fs);
             }
 
             if (data != null)
@@ -132,22 +124,6 @@ namespace HyperionHR_meta.Scripts.Class.System
                 Attendances = data.Attendances;
                 ActivityLogs = data.ActivityLogs;
                 Payrolls = data.Payrolls;
-
-
-                // Làm sạch danh sách nhân viên trong phòng ban (tránh bị nhân đôi nếu Load nhiều lần)
-                foreach (Department dept in Departments)
-                {
-                    dept.NhanVien.Clear();
-                }
-
-                // Duyệt qua toàn bộ nhân viên, ai có phòng ban thì gán lại vào phòng ban đó
-                foreach (Employee emp in Employees)
-                {
-                    if (emp.PhongBan != null)
-                    {
-                        emp.PhongBan.AddEmployee(emp);
-                    }
-                }
             }
         }
         
@@ -249,21 +225,18 @@ namespace HyperionHR_meta.Scripts.Class.System
 
         public void TaoDuLieuMau()
         {
-            // Tránh tạo trùng lặp nếu đã có dữ liệu
             if (Accounts.Count > 0) return;
 
             Random rnd = new Random();
 
-            // 1. TẠO CÁC CHỨC VỤ TRONG CÔNG TY
-            Position posAdmin = new Position("QLIT", "Trưởng phòng IT", "Quản trị hệ thống");
-            Position posHR = new Position("QLKT", "Trưởng phòng Kế Toán", "Quản lý nhân sự và lương");
-            Position posManager = new Position("QLMKT", "Trưởng phòng Marketing", "Quản lý chiến dịch");
-            Position posEmp = new Position("NVPT", "Nhân viên Part-time", "Nhân viên bán thời gian");
+            // 1. TẠO CÁC CHỨC VỤ CHUẨN MỰC (Đã sửa logic)
+            Position posTruongPhong = new Position("TP", "Trưởng Phòng", "Quản lý và điều hành phòng ban");
+            Position posNhanVienFT = new Position("NVFT", "Nhân viên Full-time", "Nhân viên làm việc hành chính");
+            Position posNhanVienPT = new Position("NVPT", "Nhân viên Part-time", "Nhân viên làm việc theo ca/giờ");
 
-            Positions.Add(posAdmin);
-            Positions.Add(posHR);
-            Positions.Add(posManager);
-            Positions.Add(posEmp);
+            Positions.Add(posTruongPhong);
+            Positions.Add(posNhanVienFT);
+            Positions.Add(posNhanVienPT);
 
             // 2. TẠO CHI NHÁNH & PHÒNG BAN
             // Chi nhánh 1
@@ -293,21 +266,21 @@ namespace HyperionHR_meta.Scripts.Class.System
 
             // --- CHI NHÁNH 1 ---
             // Sếp Tân và phòng IT 1 (Quyền Admin)
-            TaoMotPhongBan(it1, posAdmin, posEmp, Role.Admin,
+            TaoMotPhongBan(it1, posTruongPhong, posNhanVienPT, Role.Admin,
                 "Phùng Cẩm Tân", "phungcamtan", new DateTime(2006, 11, 14), "Nam",
                 new string[] { "Vũ Thị Hoa", "Đỗ Văn Khoa", "Ngô Thị Ngọc", "Bùi Văn Tuấn" },
                 new string[] { "vuthihoa", "dovankhoa", "ngothingoc", "buivantuan" },
                 ref idCounter, rnd);
 
             // Phòng Marketing 1 (Quyền Manager)
-            TaoMotPhongBan(mkt1, posManager, posEmp, Role.Manager,
+            TaoMotPhongBan(mkt1, posTruongPhong, posNhanVienPT, Role.Manager,
                 "Trần Văn Phong", "tranvanphong", new DateTime(1990, 5, 20), "Nam",
                 new string[] { "Nguyễn Thị Lan", "Lê Văn Tâm", "Phạm Thị Mai", "Hoàng Văn Huy" },
                 new string[] { "nguyenthilan", "levantam", "phamthimai", "hoangvanhuy" },
                 ref idCounter, rnd);
 
             // Phòng Kế Toán 1 (Quyền HR)
-            TaoMotPhongBan(kt1, posHR, posEmp, Role.HR,
+            TaoMotPhongBan(kt1, posTruongPhong, posNhanVienPT, Role.HR,
                 "Lê Thị Nhàn", "lethinhan", new DateTime(1992, 8, 15), "Nữ",
                 new string[] { "Phan Văn Đạt", "Trịnh Thị Hà", "Lý Văn Phát", "Đào Thị Cẩm" },
                 new string[] { "phanvandat", "trinhthiha", "lyvanphat", "daothicam" },
@@ -316,14 +289,14 @@ namespace HyperionHR_meta.Scripts.Class.System
 
             // --- CHI NHÁNH 2 ---
             // Phòng IT 2 (Quyền Admin)
-            TaoMotPhongBan(it2, posAdmin, posEmp, Role.Admin,
+            TaoMotPhongBan(it2, posTruongPhong, posNhanVienPT, Role.Admin,
                 "Nguyễn Hải Đăng", "nguyenhaidang", new DateTime(1995, 12, 1), "Nam",
                 new string[] { "Trần Thị Thu", "Lê Văn Hải", "Phạm Thị Bình", "Vũ Văn Kiên" },
                 new string[] { "tranthithu", "levanhai", "phamthibinh", "vuvankien" },
                 ref idCounter, rnd);
 
             // Phòng Kế Toán 2 (Quyền HR)
-            TaoMotPhongBan(kt2, posHR, posEmp, Role.HR,
+            TaoMotPhongBan(kt2, posTruongPhong, posNhanVienPT, Role.HR,
                 "Hoàng Thị Yến", "hoangthiyen", new DateTime(1994, 3, 30), "Nữ",
                 new string[] { "Đoàn Văn Tiến", "Nguyễn Thị Quyên", "Lê Văn Long", "Phạm Thị Dung" },
                 new string[] { "doanvantien", "nguyenthiquyen", "levanlong", "phamthidung" },

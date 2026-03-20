@@ -25,7 +25,7 @@ namespace HyperionHR_meta.Scripts.Class.Person
 
         public override string HienThiThongTin()
         {
-            return base.HienThiThongTin() + " (Nhân viên Full-time)";
+            return base.HienThiThongTin() + "Nhân viên Full-time";
         }
 
         // ==========================================

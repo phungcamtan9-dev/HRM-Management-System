@@ -1,7 +1,7 @@
 ﻿using HyperionHR_meta.Scripts.Class.Person;
 using System;
 using System.Collections.Generic;
-using System.Text.Json.Serialization;
+
 
 namespace HyperionHR_meta.Scripts.Class.Organizations
 {
@@ -13,7 +13,7 @@ namespace HyperionHR_meta.Scripts.Class.Organizations
 
         public FullTimeEmployee NguoiQuanLy { get; private set; }
         
-        [JsonIgnore] public List<Employee> NhanVien { get; private set; }
+        public List<Employee> NhanVien { get; private set; }
 
         public Department()
         {
@@ -56,8 +56,8 @@ namespace HyperionHR_meta.Scripts.Class.Organizations
         {
             if (manager != null)
             {
-                // Ràng buộc nghiệp vụ: Kiểm tra mã chức vụ có chứa chữ "QL" không
-                if (manager.ChucVu != null && manager.ChucVu.MaChucVu.Contains("QL"))
+                // Ràng buộc nghiệp vụ: Kiểm tra mã chức vụ có chứa chữ "TP" không
+                if (manager.ChucVu != null && manager.ChucVu.MaChucVu.Contains("TP"))
                 {
                     NguoiQuanLy = manager;
 
