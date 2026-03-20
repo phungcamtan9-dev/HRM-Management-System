@@ -95,7 +95,7 @@ namespace HyperionHR_meta
             CheckRole(); // Hiển thị UI theo cấp độ tài khoản
 
             pnlLogout.Visible = false;
-            pnlLogOut2.Visible = false;
+
 
         }
         // Hàm check quyền tài khoản
@@ -175,8 +175,9 @@ namespace HyperionHR_meta
             pnl_ToChuc.Visible = false; ;
             pnlChucNang.BackColor = ColorTranslator.FromHtml("#FFFFFF");
 
-
-
+            pnl_HoSoCaNhan.Visible = false;
+            pnlHoSoCaNhan.BackColor = ColorTranslator.FromHtml("#FFFFFF");
+            pnlHoSoCaNhan_Employee.BackColor = ColorTranslator.FromHtml("#FFFFFF");
         }
 
         //Đổi màu box tìm kiếm
@@ -198,6 +199,11 @@ namespace HyperionHR_meta
         // ==========================================
         // TƯƠNG TÁC CƠ BẢN
         // ==========================================
+        private void picAva3_Click(object sender, EventArgs e)
+        {
+            if (!pnlLogout.Visible) pnlLogout.Visible = true;
+            else pnlLogout.Visible = false;
+        }
         private void btnTatBangThongTin_Click(object sender, EventArgs e)
         {
             pnlDienThongTin.Visible = false;
@@ -267,6 +273,7 @@ namespace HyperionHR_meta
             dgvNhanVien.Columns.Add("colID", "ID");
             dgvNhanVien.Columns.Add("colMaNV", "Mã NV");
             dgvNhanVien.Columns.Add("colHoTen", "Họ Tên");
+            dgvNhanVien.Columns.Add("colNgaySinh", "Ngày Sinh");
             dgvNhanVien.Columns.Add("colPhongBan", "Phòng Ban");
             dgvNhanVien.Columns.Add("colChucVu", "Chức Vụ");
             dgvNhanVien.Columns.Add("colLoaiNV", "Loại Nhân Viên");
@@ -304,8 +311,10 @@ namespace HyperionHR_meta
                 // Phương thức của ĐA HÌNH (Polymorphism):
                 string loaiNhanVien = emp.HienThiThongTin();
 
+                string ngaySinhDep = emp.NgaySinh.ToString("dd/MM/yyyy");
+
                 // Thêm 1 dòng mới vào lưới
-                dgvNhanVien.Rows.Add(emp.Id, emp.MaNhanVien, emp.HoTen, tenPB, tenCV, loaiNhanVien);
+                dgvNhanVien.Rows.Add(emp.Id, emp.MaNhanVien, emp.HoTen, ngaySinhDep, tenPB, tenCV, loaiNhanVien);
             }
         }
 
@@ -889,24 +898,30 @@ namespace HyperionHR_meta
             CloseAllTab(); // tắt tab khác trước r mới mở
             pnlHoSoCaNhan.BackColor = ColorTranslator.FromHtml("#D9E5FF");
             pnl_HoSoCaNhan.Visible = true;
-            
-            lbEmail.Text = $"{HRSystem.Instance.CurrentUser.Employee.Email}";
-            lbSDT.Text = $"{HRSystem.Instance.CurrentUser.Employee.SoDienThoai}";
-            lbHoTen.Text = $"{HRSystem.Instance.CurrentUser.Employee.SoDienThoai}";
-            lbMaNV.Text = $"{HRSystem.Instance.CurrentUser.Employee.SoDienThoai}";
-            lbGioiTinh.Text = $"{HRSystem.Instance.CurrentUser.Employee.SoDienThoai}";
-            lbChucVu.Text = $"{HRSystem.Instance.CurrentUser.Employee.SoDienThoai}";
-            lbNgaySinh.Text = $"{HRSystem.Instance.CurrentUser.Employee.SoDienThoai}";
-            lbLoaiNhanVien.Text = $"{HRSystem.Instance.CurrentUser.Employee.ChucVu}";
 
-
+            BomThongTin();
         }
-
         private void lblHoSoCaNhan_Employee_Click(object sender, EventArgs e)
         {
             CloseAllTab(); // tắt tab khác trước r mới mở
             pnlHoSoCaNhan_Employee.BackColor = ColorTranslator.FromHtml("#D9E5FF");
             pnl_HoSoCaNhan.Visible = true;
+
+            BomThongTin();
         }
+        public void BomThongTin()
+        {
+
+            lbEmail.Text = $"{HRSystem.Instance.CurrentUser.Employee.Email}";
+            lbSDT.Text = $"{HRSystem.Instance.CurrentUser.Employee.SoDienThoai}";
+            lbHoTen.Text = $"{HRSystem.Instance.CurrentUser.Employee.HoTen}";
+            lbMaNV.Text = $"{HRSystem.Instance.CurrentUser.Employee.MaNhanVien}";
+            lbGioiTinh.Text = $"{HRSystem.Instance.CurrentUser.Employee.GioiTinh}";
+            lbChucVu.Text = $"{HRSystem.Instance.CurrentUser.Employee.ChucVu.TenChucVu}";
+            lbNgaySinh.Text = $"{HRSystem.Instance.CurrentUser.Employee.NgaySinh}";
+            lbLoaiNhanVien.Text = $"{HRSystem.Instance.CurrentUser.Employee.ChucVu.MoTa}";
+        }
+
+        
     }
 }

@@ -107,7 +107,15 @@ namespace HyperionHR_meta
             pictureBox3 = new PictureBox();
             label5 = new Label();
             pnl_HoSoCaNhan = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            lbChucVu = new Label();
+            lbLoaiNhanVien = new Label();
+            lbNgaySinh = new Label();
+            lbGioiTinh = new Label();
+            lbHoTen = new Label();
+            lbMaNV = new Label();
             roundedPanel10 = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            lbSDT = new Label();
+            lbEmail = new Label();
             circlePictureBox2 = new HyperionHR_meta.Scripts.UI.CirclePictureBox();
             label25 = new Label();
             label27 = new Label();
@@ -132,10 +140,6 @@ namespace HyperionHR_meta
             icoCaiDat2 = new PictureBox();
             lblCaiDat2 = new Label();
             pnlBottomSideBar_Employee = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
-            pnlLogOut2 = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
-            lblLogOut2 = new Label();
-            picLogOut2 = new PictureBox();
-            label13 = new Label();
             picAva3 = new HyperionHR_meta.Scripts.UI.CirclePictureBox();
             lblUserName2 = new Label();
             lblUserGmail2 = new Label();
@@ -241,14 +245,6 @@ namespace HyperionHR_meta
             txtTenPB = new TextBox();
             label14 = new Label();
             label12 = new Label();
-            lbMaNV = new Label();
-            lbHoTen = new Label();
-            lbNgaySinh = new Label();
-            lbGioiTinh = new Label();
-            lbLoaiNhanVien = new Label();
-            lbChucVu = new Label();
-            lbEmail = new Label();
-            lbSDT = new Label();
             pnlFormBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picLogo).BeginInit();
             pnlWelcomeBar.SuspendLayout();
@@ -302,8 +298,6 @@ namespace HyperionHR_meta
             pnlCaiDat2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)icoCaiDat2).BeginInit();
             pnlBottomSideBar_Employee.SuspendLayout();
-            pnlLogOut2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)picLogOut2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picAva3).BeginInit();
             roundedPanel3.SuspendLayout();
             roundedPanel5.SuspendLayout();
@@ -543,7 +537,6 @@ namespace HyperionHR_meta
             pnlBottomSideMenu.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             pnlBottomSideMenu.BackColor = Color.FromArgb(217, 229, 255);
             pnlBottomSideMenu.BorderRadius = 20;
-            pnlBottomSideMenu.Controls.Add(pnlLogout);
             pnlBottomSideMenu.Controls.Add(picAva1);
             pnlBottomSideMenu.Controls.Add(lblUserName1);
             pnlBottomSideMenu.Controls.Add(lblUserGmail1);
@@ -559,10 +552,11 @@ namespace HyperionHR_meta
             pnlLogout.BorderRadius = 20;
             pnlLogout.Controls.Add(picIconLogout);
             pnlLogout.Controls.Add(lblLogout);
-            pnlLogout.Location = new Point(139, 12);
+            pnlLogout.Location = new Point(271, 727);
             pnlLogout.Name = "pnlLogout";
             pnlLogout.Size = new Size(90, 30);
             pnlLogout.TabIndex = 11;
+            pnlLogout.Visible = false;
             // 
             // picIconLogout
             // 
@@ -1055,6 +1049,66 @@ namespace HyperionHR_meta
             pnl_HoSoCaNhan.TabIndex = 8;
             pnl_HoSoCaNhan.Visible = false;
             // 
+            // lbChucVu
+            // 
+            lbChucVu.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbChucVu.Location = new Point(457, 279);
+            lbChucVu.Name = "lbChucVu";
+            lbChucVu.Size = new Size(266, 30);
+            lbChucVu.TabIndex = 41;
+            lbChucVu.Text = "m";
+            lbChucVu.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // lbLoaiNhanVien
+            // 
+            lbLoaiNhanVien.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbLoaiNhanVien.Location = new Point(457, 249);
+            lbLoaiNhanVien.Name = "lbLoaiNhanVien";
+            lbLoaiNhanVien.Size = new Size(266, 30);
+            lbLoaiNhanVien.TabIndex = 40;
+            lbLoaiNhanVien.Text = "m";
+            lbLoaiNhanVien.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // lbNgaySinh
+            // 
+            lbNgaySinh.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbNgaySinh.Location = new Point(457, 217);
+            lbNgaySinh.Name = "lbNgaySinh";
+            lbNgaySinh.Size = new Size(266, 30);
+            lbNgaySinh.TabIndex = 39;
+            lbNgaySinh.Text = "m";
+            lbNgaySinh.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // lbGioiTinh
+            // 
+            lbGioiTinh.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbGioiTinh.Location = new Point(457, 189);
+            lbGioiTinh.Name = "lbGioiTinh";
+            lbGioiTinh.Size = new Size(266, 30);
+            lbGioiTinh.TabIndex = 38;
+            lbGioiTinh.Text = "m";
+            lbGioiTinh.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // lbHoTen
+            // 
+            lbHoTen.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbHoTen.Location = new Point(457, 162);
+            lbHoTen.Name = "lbHoTen";
+            lbHoTen.Size = new Size(266, 30);
+            lbHoTen.TabIndex = 37;
+            lbHoTen.Text = "m";
+            lbHoTen.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // lbMaNV
+            // 
+            lbMaNV.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbMaNV.Location = new Point(457, 129);
+            lbMaNV.Name = "lbMaNV";
+            lbMaNV.Size = new Size(266, 30);
+            lbMaNV.TabIndex = 36;
+            lbMaNV.Text = "m";
+            lbMaNV.TextAlign = ContentAlignment.MiddleLeft;
+            // 
             // roundedPanel10
             // 
             roundedPanel10.BackColor = Color.FromArgb(173, 220, 255);
@@ -1067,8 +1121,28 @@ namespace HyperionHR_meta
             roundedPanel10.Controls.Add(label23);
             roundedPanel10.Location = new Point(25, 74);
             roundedPanel10.Name = "roundedPanel10";
-            roundedPanel10.Size = new Size(246, 533);
+            roundedPanel10.Size = new Size(255, 533);
             roundedPanel10.TabIndex = 35;
+            // 
+            // lbSDT
+            // 
+            lbSDT.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbSDT.Location = new Point(19, 364);
+            lbSDT.Name = "lbSDT";
+            lbSDT.Size = new Size(233, 30);
+            lbSDT.TabIndex = 43;
+            lbSDT.Text = "m";
+            lbSDT.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // lbEmail
+            // 
+            lbEmail.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbEmail.Location = new Point(19, 304);
+            lbEmail.Name = "lbEmail";
+            lbEmail.Size = new Size(233, 30);
+            lbEmail.TabIndex = 42;
+            lbEmail.Text = "m";
+            lbEmail.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // circlePictureBox2
             // 
@@ -1313,7 +1387,6 @@ namespace HyperionHR_meta
             pnlBottomSideBar_Employee.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             pnlBottomSideBar_Employee.BackColor = Color.FromArgb(217, 229, 255);
             pnlBottomSideBar_Employee.BorderRadius = 20;
-            pnlBottomSideBar_Employee.Controls.Add(pnlLogOut2);
             pnlBottomSideBar_Employee.Controls.Add(picAva3);
             pnlBottomSideBar_Employee.Controls.Add(lblUserName2);
             pnlBottomSideBar_Employee.Controls.Add(lblUserGmail2);
@@ -1321,53 +1394,6 @@ namespace HyperionHR_meta
             pnlBottomSideBar_Employee.Name = "pnlBottomSideBar_Employee";
             pnlBottomSideBar_Employee.Size = new Size(240, 64);
             pnlBottomSideBar_Employee.TabIndex = 15;
-            // 
-            // pnlLogOut2
-            // 
-            pnlLogOut2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            pnlLogOut2.BackColor = Color.FromArgb(173, 220, 255);
-            pnlLogOut2.BorderRadius = 20;
-            pnlLogOut2.Controls.Add(lblLogOut2);
-            pnlLogOut2.Controls.Add(picLogOut2);
-            pnlLogOut2.Controls.Add(label13);
-            pnlLogOut2.Location = new Point(139, 17);
-            pnlLogOut2.Name = "pnlLogOut2";
-            pnlLogOut2.Size = new Size(90, 30);
-            pnlLogOut2.TabIndex = 11;
-            // 
-            // lblLogOut2
-            // 
-            lblLogOut2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            lblLogOut2.AutoSize = true;
-            lblLogOut2.Font = new Font("Inter", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblLogOut2.Location = new Point(38, 7);
-            lblLogOut2.Name = "lblLogOut2";
-            lblLogOut2.Size = new Size(43, 18);
-            lblLogOut2.TabIndex = 12;
-            lblLogOut2.Text = "Thoát";
-            lblLogOut2.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // picLogOut2
-            // 
-            picLogOut2.Image = Properties.Resources.picIconLogout;
-            picLogOut2.Location = new Point(9, 7);
-            picLogOut2.Name = "picLogOut2";
-            picLogOut2.Size = new Size(25, 18);
-            picLogOut2.SizeMode = PictureBoxSizeMode.StretchImage;
-            picLogOut2.TabIndex = 11;
-            picLogOut2.TabStop = false;
-            // 
-            // label13
-            // 
-            label13.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            label13.AutoSize = true;
-            label13.Font = new Font("Inter", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label13.Location = new Point(40, -64);
-            label13.Name = "label13";
-            label13.Size = new Size(43, 18);
-            label13.TabIndex = 10;
-            label13.Text = "Thoát";
-            label13.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // picAva3
             // 
@@ -1379,6 +1405,7 @@ namespace HyperionHR_meta
             picAva3.SizeMode = PictureBoxSizeMode.Zoom;
             picAva3.TabIndex = 4;
             picAva3.TabStop = false;
+            picAva3.Click += picAva3_Click;
             // 
             // lblUserName2
             // 
@@ -2586,100 +2613,21 @@ namespace HyperionHR_meta
             label12.Text = "Tên phòng ban:";
             label12.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // lbMaNV
-            // 
-            lbMaNV.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbMaNV.Location = new Point(457, 129);
-            lbMaNV.Name = "lbMaNV";
-            lbMaNV.Size = new Size(266, 30);
-            lbMaNV.TabIndex = 36;
-            lbMaNV.Text = "m";
-            lbMaNV.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // lbHoTen
-            // 
-            lbHoTen.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbHoTen.Location = new Point(457, 162);
-            lbHoTen.Name = "lbHoTen";
-            lbHoTen.Size = new Size(266, 30);
-            lbHoTen.TabIndex = 37;
-            lbHoTen.Text = "m";
-            lbHoTen.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // lbNgaySinh
-            // 
-            lbNgaySinh.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbNgaySinh.Location = new Point(457, 217);
-            lbNgaySinh.Name = "lbNgaySinh";
-            lbNgaySinh.Size = new Size(266, 30);
-            lbNgaySinh.TabIndex = 39;
-            lbNgaySinh.Text = "m";
-            lbNgaySinh.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // lbGioiTinh
-            // 
-            lbGioiTinh.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbGioiTinh.Location = new Point(457, 189);
-            lbGioiTinh.Name = "lbGioiTinh";
-            lbGioiTinh.Size = new Size(266, 30);
-            lbGioiTinh.TabIndex = 38;
-            lbGioiTinh.Text = "m";
-            lbGioiTinh.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // lbLoaiNhanVien
-            // 
-            lbLoaiNhanVien.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbLoaiNhanVien.Location = new Point(457, 249);
-            lbLoaiNhanVien.Name = "lbLoaiNhanVien";
-            lbLoaiNhanVien.Size = new Size(266, 30);
-            lbLoaiNhanVien.TabIndex = 40;
-            lbLoaiNhanVien.Text = "m";
-            lbLoaiNhanVien.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // lbChucVu
-            // 
-            lbChucVu.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbChucVu.Location = new Point(457, 276);
-            lbChucVu.Name = "lbChucVu";
-            lbChucVu.Size = new Size(266, 30);
-            lbChucVu.TabIndex = 41;
-            lbChucVu.Text = "m";
-            lbChucVu.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // lbEmail
-            // 
-            lbEmail.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbEmail.Location = new Point(19, 304);
-            lbEmail.Name = "lbEmail";
-            lbEmail.Size = new Size(210, 30);
-            lbEmail.TabIndex = 42;
-            lbEmail.Text = "m";
-            lbEmail.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // lbSDT
-            // 
-            lbSDT.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbSDT.Location = new Point(19, 364);
-            lbSDT.Name = "lbSDT";
-            lbSDT.Size = new Size(210, 30);
-            lbSDT.TabIndex = 43;
-            lbSDT.Text = "m";
-            lbSDT.TextAlign = ContentAlignment.MiddleLeft;
-            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(216, 228, 245);
             ClientSize = new Size(1366, 800);
+            Controls.Add(pnlLogout);
             Controls.Add(pnlWelcomeBar);
             Controls.Add(pnlFormBar);
-            Controls.Add(pnl_HoSoCaNhan);
-            Controls.Add(pnlSideBar_Employee);
-            Controls.Add(pnlSideBar_HR);
             Controls.Add(pnl_QuanLyNhanSu);
             Controls.Add(pnl_Dashboard);
             Controls.Add(pnl_ToChuc);
+            Controls.Add(pnl_HoSoCaNhan);
+            Controls.Add(pnlSideBar_HR);
+            Controls.Add(pnlSideBar_Employee);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 2, 3, 2);
             Name = "MainForm";
@@ -2745,9 +2693,6 @@ namespace HyperionHR_meta
             pnlCaiDat2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)icoCaiDat2).EndInit();
             pnlBottomSideBar_Employee.ResumeLayout(false);
-            pnlLogOut2.ResumeLayout(false);
-            pnlLogOut2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)picLogOut2).EndInit();
             ((System.ComponentModel.ISupportInitialize)picAva3).EndInit();
             roundedPanel3.ResumeLayout(false);
             roundedPanel5.ResumeLayout(false);
@@ -2906,9 +2851,6 @@ namespace HyperionHR_meta
         private Label lblHoSoCaNhan_Employee;
         private Label lblSystemName2;
         private Scripts.MakeupScripts.RoundedPanel pnlBottomSideBar_Employee;
-        private Scripts.MakeupScripts.RoundedPanel pnlLogOut2;
-        private PictureBox picLogOut2;
-        private Label label13;
         private Scripts.UI.CirclePictureBox picAva3;
         private Label lblUserName2;
         private Label lblUserGmail2;
@@ -2918,7 +2860,6 @@ namespace HyperionHR_meta
         private Panel pnlCaiDat2;
         private PictureBox icoCaiDat2;
         private Label lblCaiDat2;
-        private Label lblLogOut2;
         private Scripts.MakeupScripts.RoundedPanel pnl_QuanLyNhanSu;
         private Scripts.MakeupScripts.RoundedPanel pnl_TopQLNhanSu;
         private Label lbl_TittleQLNhanSu;
