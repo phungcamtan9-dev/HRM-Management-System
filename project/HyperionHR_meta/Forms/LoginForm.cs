@@ -1,4 +1,5 @@
-﻿using HyperionHR_meta.Scripts.Class.System;
+﻿using HyperionHR_meta.Scripts.Class.HR_Operations;
+using HyperionHR_meta.Scripts.Class.System;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -27,7 +28,7 @@ namespace HyperionHR_meta
         {
             // Mọi người lần đầu clone project về thì bỏ comment cái hàm ở dưới chạy 1 lần
             // xong r comment lại nha do clone về git nó kh có copy file datajson kèm theo trong bin
-            //HRSystem.Instance.TaoDuLieuMau(); //( nhớ là chạy 1 lần r tắt app comment lại liền trước khi chạy nữa kh là tràn dữ liệu )
+            // HRSystem.Instance.TaoDuLieuMau(); //( nhớ là chạy 1 lần r tắt app comment lại liền trước khi chạy nữa kh là tràn dữ liệu )
 
             this.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25)); //Bo gốc
         }
@@ -114,6 +115,16 @@ namespace HyperionHR_meta
         {
             if (HRSystem.Instance.Login(txtEmail.Text, txtPassword.Text))
             {
+                // 1. Sinh mã Log ngẫu nhiên theo thời gian
+                string logId = "LOG_" + DateTime.Now.ToString("yyMMddHHmmss");
+
+                // 2. Tạo record lịch sử (taiKhoanDangNhap là object Account bro vừa tìm thấy)
+                ActivityLog logMoi = new ActivityLog(logId, HRSystem.Instance.CurrentUser.Username, "Đăng nhập hệ thống", DateTime.Now);
+
+                // 3. Đẩy vào danh sách hệ thống
+                HRSystem.Instance.ActivityLogs.Add(logMoi);
+
+
                 MainForm main = new MainForm();
                 main.Show();
                 this.Hide();

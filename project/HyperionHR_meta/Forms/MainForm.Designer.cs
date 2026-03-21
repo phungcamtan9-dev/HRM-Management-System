@@ -39,9 +39,13 @@ namespace HyperionHR_meta
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle10 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle11 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle12 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle13 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle14 = new DataGridViewCellStyle();
             pnlFormBar = new Panel();
             picLogo = new PictureBox();
             lblAppName = new Label();
@@ -49,19 +53,14 @@ namespace HyperionHR_meta
             btnclose = new Button();
             lblSystemName = new Label();
             pnlWelcomeBar = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            lblSoThongBao = new Label();
             icoBaoTriHeThong = new PictureBox();
-            icoNotifications = new PictureBox();
-            pnlScheduleButton = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
-            picSchedule = new PictureBox();
-            lblLichTrinh = new Label();
+            btnChuong = new PictureBox();
             picAva2 = new HyperionHR_meta.Scripts.UI.CirclePictureBox();
             lblDateTime = new Label();
             lblWelcome = new Label();
             pnlSideBar_HR = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
             pnlBottomSideMenu = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
-            pnlLogout = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
-            picIconLogout = new PictureBox();
-            lblLogout = new Label();
             picAva1 = new HyperionHR_meta.Scripts.UI.CirclePictureBox();
             lblUserName1 = new Label();
             lblUserGmail1 = new Label();
@@ -78,9 +77,6 @@ namespace HyperionHR_meta
             pnlLuong = new Panel();
             icoLuong = new PictureBox();
             lblLuong = new Label();
-            pnlDuAn = new Panel();
-            icoDuAn = new PictureBox();
-            lblDuAn = new Label();
             pnlChamCong = new Panel();
             icoChamCong = new PictureBox();
             lblChamCong = new Label();
@@ -100,13 +96,23 @@ namespace HyperionHR_meta
             pnlDashboard = new Panel();
             icoDashBoard = new PictureBox();
             lblDashboard = new Label();
-            pnl_Dashboard = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
-            pnl_TopDashboard = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
-            lbl_Dashboarđ = new Label();
-            roundedPanel2 = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
-            pictureBox3 = new PictureBox();
-            label5 = new Label();
+            pnlLogout = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            picIconLogout = new PictureBox();
+            lblLogout = new Label();
             pnl_HoSoCaNhan = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            lbPhongban = new Label();
+            label50 = new Label();
+            lbNgayKetThuc = new Label();
+            label36 = new Label();
+            lbNgayBatDauHD = new Label();
+            label37 = new Label();
+            lbLoaiHD = new Label();
+            label35 = new Label();
+            lbMaHD = new Label();
+            label34 = new Label();
+            label31 = new Label();
+            label32 = new Label();
+            label30 = new Label();
             lbChucVu = new Label();
             lbLoaiNhanVien = new Label();
             lbNgaySinh = new Label();
@@ -167,17 +173,13 @@ namespace HyperionHR_meta
             pnlLuong_Employee = new Panel();
             icoLuong2 = new PictureBox();
             lblLuong_Employee = new Label();
-            pnlDuAn_Employee = new Panel();
-            icoDuAn_Employee = new PictureBox();
-            lblDuAn_Employee = new Label();
             pnlChamCong_Employee = new Panel();
             icoChamCong_2 = new PictureBox();
             lblChamCong_Employee = new Label();
-            pnlHopDong_Employee = new Panel();
-            icoHopDong2 = new PictureBox();
-            lblHopDong_Employee = new Label();
             pnl_QuanLyNhanSu = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
             pnlDienThongTin = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            chkTaoHopDong = new CheckBox();
+            label38 = new Label();
             cbbChucVu = new ComboBox();
             label16 = new Label();
             btnTatBangThongTin = new Button();
@@ -215,6 +217,7 @@ namespace HyperionHR_meta
             pnl_DGVEmployee = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
             dgvNhanVien = new DataGridView();
             pnl_ToChuc = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            btnBoxThemChiNhanh = new Button();
             btnSuaPB = new Button();
             btnXoaPB = new Button();
             btnThemPB = new Button();
@@ -231,6 +234,12 @@ namespace HyperionHR_meta
             roundedPanel8 = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
             pictureBox7 = new PictureBox();
             label10 = new Label();
+            pnlBangDieuChinhPB = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            label15 = new Label();
+            txtMaPB = new TextBox();
+            txtTenPB = new TextBox();
+            label14 = new Label();
+            label12 = new Label();
             pnlThemNVvaoPB = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
             button1 = new Button();
             chkTruongPhong = new CheckBox();
@@ -239,24 +248,140 @@ namespace HyperionHR_meta
             lblTenPhong = new Label();
             label17 = new Label();
             label18 = new Label();
-            pnlBangDieuChinhPB = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
-            label15 = new Label();
-            txtMaPB = new TextBox();
-            txtTenPB = new TextBox();
-            label14 = new Label();
-            label12 = new Label();
+            pnlThemChiNhanh = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            label49 = new Label();
+            txtDiaChiCN = new TextBox();
+            txtTenCN = new TextBox();
+            txtMaCN = new TextBox();
+            button5 = new Button();
+            btnThemCN = new Button();
+            label42 = new Label();
+            label46 = new Label();
+            label48 = new Label();
+            pnl_QuanLyHopDong = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            btnDuyetHD = new Button();
+            btnChamDut = new Button();
+            btnGiaHan = new Button();
+            button2 = new Button();
+            roundedPanel11 = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            txtTimHopDong = new TextBox();
+            btnTimHopDong = new PictureBox();
+            label33 = new Label();
+            dgcHopDong = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            dgvHopDong = new DataGridView();
+            roundedPanel12 = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            label13 = new Label();
+            roundedPanel13 = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            pictureBox8 = new PictureBox();
+            label29 = new Label();
+            roundedPanel2 = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            pictureBox3 = new PictureBox();
+            label5 = new Label();
+            pnl_TopDashboard = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            lbl_Dashboarđ = new Label();
+            pnl_Dashboard = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            pictureBox13 = new PictureBox();
+            roundedPanel34 = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            lblNhanVienCheckIn = new Label();
+            label70 = new Label();
+            roundedPanel33 = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            lblDonChoDuyet = new Label();
+            label69 = new Label();
+            roundedPanel32 = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            lblHopDongHetHan = new Label();
+            label68 = new Label();
+            roundedPanel31 = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            lblHopDongConHan = new Label();
+            label67 = new Label();
+            roundedPanel30 = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            lblTongPhongBan = new Label();
+            label66 = new Label();
+            roundedPanel29 = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            lblTongNhanVien = new Label();
+            label65 = new Label();
+            pnl_DonXin = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            label43 = new Label();
+            roundedPanel14 = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            btnGuiDon = new Button();
+            cbbLoaiDon = new ComboBox();
+            txtLyDo = new TextBox();
+            txtSoNgayNghi = new TextBox();
+            label47 = new Label();
+            label45 = new Label();
+            label44 = new Label();
+            btnTuChoi = new Button();
+            btnDuyet = new Button();
+            roundedPanel17 = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            dgvNghiPhep = new DataGridView();
+            roundedPanel15 = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            label39 = new Label();
+            roundedPanel16 = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            pictureBox9 = new PictureBox();
+            label40 = new Label();
+            pnlThongBao = new Panel();
+            label41 = new Label();
+            button3 = new Button();
+            button4 = new Button();
+            roundedPanel18 = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            label51 = new Label();
+            pnl_HeThong = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            label58 = new Label();
+            roundedPanel22 = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            dgvLichSu = new DataGridView();
+            pnlBoxTimTaiKhoan = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            txtTimTaiKhoan = new TextBox();
+            btnTimTaiKhoan = new PictureBox();
+            roundedPanel21 = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            btnThemTaiKhoan = new Button();
+            btnXoaTaiKhoan = new Button();
+            cbbNhanVienRanh2 = new ComboBox();
+            label57 = new Label();
+            cbbQuyen = new ComboBox();
+            label56 = new Label();
+            txtPassword = new TextBox();
+            label55 = new Label();
+            txtUsername = new TextBox();
+            label54 = new Label();
+            label53 = new Label();
+            roundedPanel19 = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            dgvTaiKhoan = new DataGridView();
+            roundedPanel20 = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            pictureBox10 = new PictureBox();
+            label52 = new Label();
+            pnl_ChamCong = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            button7 = new Button();
+            button6 = new Button();
+            label61 = new Label();
+            roundedPanel26 = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            dgvChamCong = new DataGridView();
+            roundedPanel24 = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            label59 = new Label();
+            roundedPanel25 = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            pictureBox11 = new PictureBox();
+            label60 = new Label();
+            pnl_Luong = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            label71 = new Label();
+            nudThang = new NumericUpDown();
+            label64 = new Label();
+            button8 = new Button();
+            btnChotLuong = new Button();
+            roundedPanel23 = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            dgvTinhLuong = new DataGridView();
+            roundedPanel27 = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            label62 = new Label();
+            roundedPanel28 = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            pictureBox12 = new PictureBox();
+            label63 = new Label();
+            nudNam = new NumericUpDown();
+            label72 = new Label();
             pnlFormBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picLogo).BeginInit();
             pnlWelcomeBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)icoBaoTriHeThong).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)icoNotifications).BeginInit();
-            pnlScheduleButton.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)picSchedule).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnChuong).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picAva2).BeginInit();
             pnlSideBar_HR.SuspendLayout();
             pnlBottomSideMenu.SuspendLayout();
-            pnlLogout.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)picIconLogout).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picAva1).BeginInit();
             pnlHoTro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)icoHoTro).BeginInit();
@@ -267,8 +392,6 @@ namespace HyperionHR_meta
             ((System.ComponentModel.ISupportInitialize)icoDon).BeginInit();
             pnlLuong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)icoLuong).BeginInit();
-            pnlDuAn.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)icoDuAn).BeginInit();
             pnlChamCong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)icoChamCong).BeginInit();
             pnlHopDong.SuspendLayout();
@@ -282,10 +405,8 @@ namespace HyperionHR_meta
             ((System.ComponentModel.ISupportInitialize)icoHoSoCaNhan).BeginInit();
             pnlDashboard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)icoDashBoard).BeginInit();
-            pnl_Dashboard.SuspendLayout();
-            pnl_TopDashboard.SuspendLayout();
-            roundedPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            pnlLogout.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)picIconLogout).BeginInit();
             pnl_HoSoCaNhan.SuspendLayout();
             roundedPanel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)circlePictureBox2).BeginInit();
@@ -314,12 +435,8 @@ namespace HyperionHR_meta
             ((System.ComponentModel.ISupportInitialize)icoDonXin).BeginInit();
             pnlLuong_Employee.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)icoLuong2).BeginInit();
-            pnlDuAn_Employee.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)icoDuAn_Employee).BeginInit();
             pnlChamCong_Employee.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)icoChamCong_2).BeginInit();
-            pnlHopDong_Employee.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)icoHopDong2).BeginInit();
             pnl_QuanLyNhanSu.SuspendLayout();
             pnlDienThongTin.SuspendLayout();
             pnlBoxTimKiem.SuspendLayout();
@@ -337,8 +454,61 @@ namespace HyperionHR_meta
             roundedPanel6.SuspendLayout();
             roundedPanel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            pnlThemNVvaoPB.SuspendLayout();
             pnlBangDieuChinhPB.SuspendLayout();
+            pnlThemNVvaoPB.SuspendLayout();
+            pnlThemChiNhanh.SuspendLayout();
+            pnl_QuanLyHopDong.SuspendLayout();
+            roundedPanel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)btnTimHopDong).BeginInit();
+            dgcHopDong.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvHopDong).BeginInit();
+            roundedPanel12.SuspendLayout();
+            roundedPanel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            roundedPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            pnl_TopDashboard.SuspendLayout();
+            pnl_Dashboard.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
+            roundedPanel34.SuspendLayout();
+            roundedPanel33.SuspendLayout();
+            roundedPanel32.SuspendLayout();
+            roundedPanel31.SuspendLayout();
+            roundedPanel30.SuspendLayout();
+            roundedPanel29.SuspendLayout();
+            pnl_DonXin.SuspendLayout();
+            roundedPanel14.SuspendLayout();
+            roundedPanel17.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvNghiPhep).BeginInit();
+            roundedPanel15.SuspendLayout();
+            roundedPanel16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            pnlThongBao.SuspendLayout();
+            roundedPanel18.SuspendLayout();
+            pnl_HeThong.SuspendLayout();
+            roundedPanel22.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvLichSu).BeginInit();
+            pnlBoxTimTaiKhoan.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)btnTimTaiKhoan).BeginInit();
+            roundedPanel21.SuspendLayout();
+            roundedPanel19.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvTaiKhoan).BeginInit();
+            roundedPanel20.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            pnl_ChamCong.SuspendLayout();
+            roundedPanel26.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvChamCong).BeginInit();
+            roundedPanel24.SuspendLayout();
+            roundedPanel25.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
+            pnl_Luong.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)nudThang).BeginInit();
+            roundedPanel23.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvTinhLuong).BeginInit();
+            roundedPanel27.SuspendLayout();
+            roundedPanel28.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)nudNam).BeginInit();
             SuspendLayout();
             // 
             // pnlFormBar
@@ -421,9 +591,9 @@ namespace HyperionHR_meta
             pnlWelcomeBar.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             pnlWelcomeBar.BackColor = Color.White;
             pnlWelcomeBar.BorderRadius = 20;
+            pnlWelcomeBar.Controls.Add(lblSoThongBao);
             pnlWelcomeBar.Controls.Add(icoBaoTriHeThong);
-            pnlWelcomeBar.Controls.Add(icoNotifications);
-            pnlWelcomeBar.Controls.Add(pnlScheduleButton);
+            pnlWelcomeBar.Controls.Add(btnChuong);
             pnlWelcomeBar.Controls.Add(picAva2);
             pnlWelcomeBar.Controls.Add(lblDateTime);
             pnlWelcomeBar.Controls.Add(lblWelcome);
@@ -432,59 +602,42 @@ namespace HyperionHR_meta
             pnlWelcomeBar.Size = new Size(1054, 90);
             pnlWelcomeBar.TabIndex = 2;
             // 
+            // lblSoThongBao
+            // 
+            lblSoThongBao.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            lblSoThongBao.AutoSize = true;
+            lblSoThongBao.BackColor = Color.Red;
+            lblSoThongBao.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblSoThongBao.ForeColor = Color.White;
+            lblSoThongBao.Location = new Point(1026, 18);
+            lblSoThongBao.Name = "lblSoThongBao";
+            lblSoThongBao.Size = new Size(16, 17);
+            lblSoThongBao.TabIndex = 8;
+            lblSoThongBao.Text = "0";
+            // 
             // icoBaoTriHeThong
             // 
             icoBaoTriHeThong.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             icoBaoTriHeThong.Image = (Image)resources.GetObject("icoBaoTriHeThong.Image");
-            icoBaoTriHeThong.Location = new Point(726, 25);
+            icoBaoTriHeThong.Location = new Point(929, 25);
             icoBaoTriHeThong.Name = "icoBaoTriHeThong";
             icoBaoTriHeThong.Size = new Size(43, 43);
             icoBaoTriHeThong.SizeMode = PictureBoxSizeMode.StretchImage;
             icoBaoTriHeThong.TabIndex = 7;
             icoBaoTriHeThong.TabStop = false;
+            icoBaoTriHeThong.Click += icoBaoTriHeThong_Click;
             // 
-            // icoNotifications
+            // btnChuong
             // 
-            icoNotifications.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            icoNotifications.Image = (Image)resources.GetObject("icoNotifications.Image");
-            icoNotifications.Location = new Point(790, 25);
-            icoNotifications.Name = "icoNotifications";
-            icoNotifications.Size = new Size(43, 43);
-            icoNotifications.SizeMode = PictureBoxSizeMode.StretchImage;
-            icoNotifications.TabIndex = 2;
-            icoNotifications.TabStop = false;
-            // 
-            // pnlScheduleButton
-            // 
-            pnlScheduleButton.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            pnlScheduleButton.BackColor = Color.FromArgb(156, 193, 250);
-            pnlScheduleButton.BorderRadius = 20;
-            pnlScheduleButton.Controls.Add(picSchedule);
-            pnlScheduleButton.Controls.Add(lblLichTrinh);
-            pnlScheduleButton.Location = new Point(849, 15);
-            pnlScheduleButton.Name = "pnlScheduleButton";
-            pnlScheduleButton.Size = new Size(179, 62);
-            pnlScheduleButton.TabIndex = 6;
-            // 
-            // picSchedule
-            // 
-            picSchedule.Image = (Image)resources.GetObject("picSchedule.Image");
-            picSchedule.Location = new Point(13, 10);
-            picSchedule.Name = "picSchedule";
-            picSchedule.Size = new Size(43, 43);
-            picSchedule.SizeMode = PictureBoxSizeMode.StretchImage;
-            picSchedule.TabIndex = 1;
-            picSchedule.TabStop = false;
-            // 
-            // lblLichTrinh
-            // 
-            lblLichTrinh.AutoSize = true;
-            lblLichTrinh.Font = new Font("Inter SemiBold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblLichTrinh.Location = new Point(59, 17);
-            lblLichTrinh.Name = "lblLichTrinh";
-            lblLichTrinh.Size = new Size(112, 30);
-            lblLichTrinh.TabIndex = 0;
-            lblLichTrinh.Text = "Lịch Trình";
+            btnChuong.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnChuong.Image = (Image)resources.GetObject("btnChuong.Image");
+            btnChuong.Location = new Point(993, 25);
+            btnChuong.Name = "btnChuong";
+            btnChuong.Size = new Size(43, 43);
+            btnChuong.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnChuong.TabIndex = 2;
+            btnChuong.TabStop = false;
+            btnChuong.Click += btnChuong_Click;
             // 
             // picAva2
             // 
@@ -544,42 +697,6 @@ namespace HyperionHR_meta
             pnlBottomSideMenu.Name = "pnlBottomSideMenu";
             pnlBottomSideMenu.Size = new Size(240, 64);
             pnlBottomSideMenu.TabIndex = 14;
-            // 
-            // pnlLogout
-            // 
-            pnlLogout.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            pnlLogout.BackColor = Color.FromArgb(173, 220, 255);
-            pnlLogout.BorderRadius = 20;
-            pnlLogout.Controls.Add(picIconLogout);
-            pnlLogout.Controls.Add(lblLogout);
-            pnlLogout.Location = new Point(271, 727);
-            pnlLogout.Name = "pnlLogout";
-            pnlLogout.Size = new Size(90, 30);
-            pnlLogout.TabIndex = 11;
-            pnlLogout.Visible = false;
-            // 
-            // picIconLogout
-            // 
-            picIconLogout.Image = Properties.Resources.picIconLogout;
-            picIconLogout.Location = new Point(9, 7);
-            picIconLogout.Name = "picIconLogout";
-            picIconLogout.Size = new Size(25, 18);
-            picIconLogout.SizeMode = PictureBoxSizeMode.StretchImage;
-            picIconLogout.TabIndex = 11;
-            picIconLogout.TabStop = false;
-            // 
-            // lblLogout
-            // 
-            lblLogout.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            lblLogout.AutoSize = true;
-            lblLogout.Font = new Font("Inter", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblLogout.Location = new Point(40, 6);
-            lblLogout.Name = "lblLogout";
-            lblLogout.Size = new Size(43, 18);
-            lblLogout.TabIndex = 10;
-            lblLogout.Text = "Thoát";
-            lblLogout.TextAlign = ContentAlignment.MiddleLeft;
-            lblLogout.Click += lblLogout_Click;
             // 
             // picAva1
             // 
@@ -677,7 +794,6 @@ namespace HyperionHR_meta
             // 
             grbChucNang.Controls.Add(pnlDonXin);
             grbChucNang.Controls.Add(pnlLuong);
-            grbChucNang.Controls.Add(pnlDuAn);
             grbChucNang.Controls.Add(pnlChamCong);
             grbChucNang.Controls.Add(pnlHopDong);
             grbChucNang.Controls.Add(pnlChucNang);
@@ -717,12 +833,13 @@ namespace HyperionHR_meta
             lblDonXin.Size = new Size(139, 25);
             lblDonXin.TabIndex = 0;
             lblDonXin.Text = "Đơn xin";
+            lblDonXin.Click += lblDonXin_Click;
             // 
             // pnlLuong
             // 
             pnlLuong.Controls.Add(icoLuong);
             pnlLuong.Controls.Add(lblLuong);
-            pnlLuong.Location = new Point(12, 279);
+            pnlLuong.Location = new Point(12, 238);
             pnlLuong.Name = "pnlLuong";
             pnlLuong.Size = new Size(190, 35);
             pnlLuong.TabIndex = 9;
@@ -745,34 +862,7 @@ namespace HyperionHR_meta
             lblLuong.Size = new Size(139, 25);
             lblLuong.TabIndex = 0;
             lblLuong.Text = "Lương";
-            // 
-            // pnlDuAn
-            // 
-            pnlDuAn.Controls.Add(icoDuAn);
-            pnlDuAn.Controls.Add(lblDuAn);
-            pnlDuAn.Location = new Point(12, 238);
-            pnlDuAn.Name = "pnlDuAn";
-            pnlDuAn.Size = new Size(190, 35);
-            pnlDuAn.TabIndex = 8;
-            // 
-            // icoDuAn
-            // 
-            icoDuAn.Image = Properties.Resources.Screenshot_2026_03_16_132316;
-            icoDuAn.Location = new Point(10, 5);
-            icoDuAn.Name = "icoDuAn";
-            icoDuAn.Size = new Size(25, 25);
-            icoDuAn.SizeMode = PictureBoxSizeMode.StretchImage;
-            icoDuAn.TabIndex = 1;
-            icoDuAn.TabStop = false;
-            // 
-            // lblDuAn
-            // 
-            lblDuAn.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblDuAn.Location = new Point(48, 5);
-            lblDuAn.Name = "lblDuAn";
-            lblDuAn.Size = new Size(139, 25);
-            lblDuAn.TabIndex = 0;
-            lblDuAn.Text = "Dự án";
+            lblLuong.Click += lblLuong_Click;
             // 
             // pnlChamCong
             // 
@@ -801,6 +891,7 @@ namespace HyperionHR_meta
             lblChamCong.Size = new Size(139, 25);
             lblChamCong.TabIndex = 0;
             lblChamCong.Text = "Chấm công";
+            lblChamCong.Click += lblChamCong_Click;
             // 
             // pnlHopDong
             // 
@@ -829,6 +920,7 @@ namespace HyperionHR_meta
             lblHopDong.Size = new Size(139, 25);
             lblHopDong.TabIndex = 0;
             lblHopDong.Text = "Hợp đồng";
+            lblHopDong.Click += lblHopDong_Click;
             // 
             // pnlChucNang
             // 
@@ -958,75 +1050,60 @@ namespace HyperionHR_meta
             lblDashboard.Text = "Dashboard";
             lblDashboard.Click += lblDashboard_Click;
             // 
-            // pnl_Dashboard
+            // pnlLogout
             // 
-            pnl_Dashboard.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            pnl_Dashboard.BackColor = Color.White;
-            pnl_Dashboard.BorderRadius = 20;
-            pnl_Dashboard.Controls.Add(pnl_TopDashboard);
-            pnl_Dashboard.Controls.Add(roundedPanel2);
-            pnl_Dashboard.Location = new Point(289, 137);
-            pnl_Dashboard.Name = "pnl_Dashboard";
-            pnl_Dashboard.Size = new Size(1054, 640);
-            pnl_Dashboard.TabIndex = 7;
+            pnlLogout.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            pnlLogout.BackColor = Color.FromArgb(173, 220, 255);
+            pnlLogout.BorderRadius = 20;
+            pnlLogout.Controls.Add(picIconLogout);
+            pnlLogout.Controls.Add(lblLogout);
+            pnlLogout.Location = new Point(271, 727);
+            pnlLogout.Name = "pnlLogout";
+            pnlLogout.Size = new Size(90, 30);
+            pnlLogout.TabIndex = 11;
+            pnlLogout.Visible = false;
             // 
-            // pnl_TopDashboard
+            // picIconLogout
             // 
-            pnl_TopDashboard.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            pnl_TopDashboard.BackColor = Color.FromArgb(217, 229, 255);
-            pnl_TopDashboard.BorderRadius = 20;
-            pnl_TopDashboard.Controls.Add(lbl_Dashboarđ);
-            pnl_TopDashboard.Location = new Point(0, 0);
-            pnl_TopDashboard.Name = "pnl_TopDashboard";
-            pnl_TopDashboard.Size = new Size(1054, 41);
-            pnl_TopDashboard.TabIndex = 7;
+            picIconLogout.Image = Properties.Resources.picIconLogout;
+            picIconLogout.Location = new Point(9, 7);
+            picIconLogout.Name = "picIconLogout";
+            picIconLogout.Size = new Size(25, 18);
+            picIconLogout.SizeMode = PictureBoxSizeMode.StretchImage;
+            picIconLogout.TabIndex = 11;
+            picIconLogout.TabStop = false;
             // 
-            // lbl_Dashboarđ
+            // lblLogout
             // 
-            lbl_Dashboarđ.Font = new Font("Inter", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbl_Dashboarđ.Location = new Point(25, 9);
-            lbl_Dashboarđ.Name = "lbl_Dashboarđ";
-            lbl_Dashboarđ.Size = new Size(139, 25);
-            lbl_Dashboarđ.TabIndex = 2;
-            lbl_Dashboarđ.Text = "Dashboard";
-            // 
-            // roundedPanel2
-            // 
-            roundedPanel2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            roundedPanel2.BackColor = Color.FromArgb(156, 193, 250);
-            roundedPanel2.BorderRadius = 20;
-            roundedPanel2.Controls.Add(pictureBox3);
-            roundedPanel2.Controls.Add(label5);
-            roundedPanel2.Location = new Point(1703, 15);
-            roundedPanel2.Name = "roundedPanel2";
-            roundedPanel2.Size = new Size(179, 62);
-            roundedPanel2.TabIndex = 6;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(13, 10);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(43, 43);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 1;
-            pictureBox3.TabStop = false;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Inter SemiBold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(59, 17);
-            label5.Name = "label5";
-            label5.Size = new Size(112, 30);
-            label5.TabIndex = 0;
-            label5.Text = "Lịch Trình";
+            lblLogout.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            lblLogout.AutoSize = true;
+            lblLogout.Font = new Font("Inter", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblLogout.Location = new Point(40, 6);
+            lblLogout.Name = "lblLogout";
+            lblLogout.Size = new Size(43, 18);
+            lblLogout.TabIndex = 10;
+            lblLogout.Text = "Thoát";
+            lblLogout.TextAlign = ContentAlignment.MiddleLeft;
+            lblLogout.Click += lblLogout_Click;
             // 
             // pnl_HoSoCaNhan
             // 
             pnl_HoSoCaNhan.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pnl_HoSoCaNhan.BackColor = Color.White;
             pnl_HoSoCaNhan.BorderRadius = 20;
+            pnl_HoSoCaNhan.Controls.Add(lbPhongban);
+            pnl_HoSoCaNhan.Controls.Add(label50);
+            pnl_HoSoCaNhan.Controls.Add(lbNgayKetThuc);
+            pnl_HoSoCaNhan.Controls.Add(label36);
+            pnl_HoSoCaNhan.Controls.Add(lbNgayBatDauHD);
+            pnl_HoSoCaNhan.Controls.Add(label37);
+            pnl_HoSoCaNhan.Controls.Add(lbLoaiHD);
+            pnl_HoSoCaNhan.Controls.Add(label35);
+            pnl_HoSoCaNhan.Controls.Add(lbMaHD);
+            pnl_HoSoCaNhan.Controls.Add(label34);
+            pnl_HoSoCaNhan.Controls.Add(label31);
+            pnl_HoSoCaNhan.Controls.Add(label32);
+            pnl_HoSoCaNhan.Controls.Add(label30);
             pnl_HoSoCaNhan.Controls.Add(lbChucVu);
             pnl_HoSoCaNhan.Controls.Add(lbLoaiNhanVien);
             pnl_HoSoCaNhan.Controls.Add(lbNgaySinh);
@@ -1049,12 +1126,142 @@ namespace HyperionHR_meta
             pnl_HoSoCaNhan.TabIndex = 8;
             pnl_HoSoCaNhan.Visible = false;
             // 
+            // lbPhongban
+            // 
+            lbPhongban.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbPhongban.Location = new Point(457, 339);
+            lbPhongban.Name = "lbPhongban";
+            lbPhongban.Size = new Size(213, 30);
+            lbPhongban.TabIndex = 54;
+            lbPhongban.Text = "m";
+            lbPhongban.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // label50
+            // 
+            label50.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label50.Location = new Point(315, 339);
+            label50.Name = "label50";
+            label50.Size = new Size(138, 30);
+            label50.TabIndex = 53;
+            label50.Text = "Phòng ban:";
+            label50.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // lbNgayKetThuc
+            // 
+            lbNgayKetThuc.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbNgayKetThuc.Location = new Point(455, 523);
+            lbNgayKetThuc.Name = "lbNgayKetThuc";
+            lbNgayKetThuc.Size = new Size(213, 30);
+            lbNgayKetThuc.TabIndex = 52;
+            lbNgayKetThuc.Text = "m";
+            lbNgayKetThuc.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // label36
+            // 
+            label36.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label36.Location = new Point(311, 523);
+            label36.Name = "label36";
+            label36.Size = new Size(138, 30);
+            label36.TabIndex = 51;
+            label36.Text = "Ngày kết thúc:";
+            label36.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // lbNgayBatDauHD
+            // 
+            lbNgayBatDauHD.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbNgayBatDauHD.Location = new Point(455, 493);
+            lbNgayBatDauHD.Name = "lbNgayBatDauHD";
+            lbNgayBatDauHD.Size = new Size(213, 30);
+            lbNgayBatDauHD.TabIndex = 50;
+            lbNgayBatDauHD.Text = "m";
+            lbNgayBatDauHD.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // label37
+            // 
+            label37.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label37.Location = new Point(311, 493);
+            label37.Name = "label37";
+            label37.Size = new Size(138, 30);
+            label37.TabIndex = 49;
+            label37.Text = "Ngày Bắt Đầu:";
+            label37.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // lbLoaiHD
+            // 
+            lbLoaiHD.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbLoaiHD.Location = new Point(455, 463);
+            lbLoaiHD.Name = "lbLoaiHD";
+            lbLoaiHD.Size = new Size(213, 30);
+            lbLoaiHD.TabIndex = 48;
+            lbLoaiHD.Text = "m";
+            lbLoaiHD.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // label35
+            // 
+            label35.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label35.Location = new Point(311, 463);
+            label35.Name = "label35";
+            label35.Size = new Size(138, 30);
+            label35.TabIndex = 47;
+            label35.Text = "Loại Hợp Đồng:";
+            label35.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // lbMaHD
+            // 
+            lbMaHD.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbMaHD.Location = new Point(455, 429);
+            lbMaHD.Name = "lbMaHD";
+            lbMaHD.Size = new Size(213, 30);
+            lbMaHD.TabIndex = 46;
+            lbMaHD.Text = "m";
+            lbMaHD.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // label34
+            // 
+            label34.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label34.Location = new Point(311, 429);
+            label34.Name = "label34";
+            label34.Size = new Size(138, 30);
+            label34.TabIndex = 45;
+            label34.Text = "Mã Hợp Đồng:";
+            label34.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // label31
+            // 
+            label31.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label31.Location = new Point(457, 309);
+            label31.Name = "label31";
+            label31.Size = new Size(213, 30);
+            label31.TabIndex = 44;
+            label31.Text = "tốt";
+            label31.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // label32
+            // 
+            label32.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label32.Location = new Point(315, 309);
+            label32.Name = "label32";
+            label32.Size = new Size(138, 30);
+            label32.TabIndex = 43;
+            label32.Text = "Sức khỏe:";
+            label32.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // label30
+            // 
+            label30.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label30.Location = new Point(311, 378);
+            label30.Name = "label30";
+            label30.Size = new Size(333, 30);
+            label30.TabIndex = 42;
+            label30.Text = "Thông tin hợp đồng";
+            label30.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // lbChucVu
             // 
             lbChucVu.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbChucVu.Location = new Point(457, 279);
+            lbChucVu.Location = new Point(457, 246);
             lbChucVu.Name = "lbChucVu";
-            lbChucVu.Size = new Size(266, 30);
+            lbChucVu.Size = new Size(213, 30);
             lbChucVu.TabIndex = 41;
             lbChucVu.Text = "m";
             lbChucVu.TextAlign = ContentAlignment.MiddleLeft;
@@ -1062,9 +1269,9 @@ namespace HyperionHR_meta
             // lbLoaiNhanVien
             // 
             lbLoaiNhanVien.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbLoaiNhanVien.Location = new Point(457, 249);
+            lbLoaiNhanVien.Location = new Point(457, 276);
             lbLoaiNhanVien.Name = "lbLoaiNhanVien";
-            lbLoaiNhanVien.Size = new Size(266, 30);
+            lbLoaiNhanVien.Size = new Size(213, 30);
             lbLoaiNhanVien.TabIndex = 40;
             lbLoaiNhanVien.Text = "m";
             lbLoaiNhanVien.TextAlign = ContentAlignment.MiddleLeft;
@@ -1074,7 +1281,7 @@ namespace HyperionHR_meta
             lbNgaySinh.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbNgaySinh.Location = new Point(457, 217);
             lbNgaySinh.Name = "lbNgaySinh";
-            lbNgaySinh.Size = new Size(266, 30);
+            lbNgaySinh.Size = new Size(213, 30);
             lbNgaySinh.TabIndex = 39;
             lbNgaySinh.Text = "m";
             lbNgaySinh.TextAlign = ContentAlignment.MiddleLeft;
@@ -1084,7 +1291,7 @@ namespace HyperionHR_meta
             lbGioiTinh.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbGioiTinh.Location = new Point(457, 189);
             lbGioiTinh.Name = "lbGioiTinh";
-            lbGioiTinh.Size = new Size(266, 30);
+            lbGioiTinh.Size = new Size(213, 30);
             lbGioiTinh.TabIndex = 38;
             lbGioiTinh.Text = "m";
             lbGioiTinh.TextAlign = ContentAlignment.MiddleLeft;
@@ -1092,9 +1299,9 @@ namespace HyperionHR_meta
             // lbHoTen
             // 
             lbHoTen.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbHoTen.Location = new Point(457, 162);
+            lbHoTen.Location = new Point(457, 159);
             lbHoTen.Name = "lbHoTen";
-            lbHoTen.Size = new Size(266, 30);
+            lbHoTen.Size = new Size(213, 30);
             lbHoTen.TabIndex = 37;
             lbHoTen.Text = "m";
             lbHoTen.TextAlign = ContentAlignment.MiddleLeft;
@@ -1104,13 +1311,14 @@ namespace HyperionHR_meta
             lbMaNV.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbMaNV.Location = new Point(457, 129);
             lbMaNV.Name = "lbMaNV";
-            lbMaNV.Size = new Size(266, 30);
+            lbMaNV.Size = new Size(213, 30);
             lbMaNV.TabIndex = 36;
             lbMaNV.Text = "m";
             lbMaNV.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // roundedPanel10
             // 
+            roundedPanel10.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             roundedPanel10.BackColor = Color.FromArgb(173, 220, 255);
             roundedPanel10.BorderRadius = 20;
             roundedPanel10.Controls.Add(lbSDT);
@@ -1189,7 +1397,7 @@ namespace HyperionHR_meta
             label28.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label28.Location = new Point(313, 74);
             label28.Name = "label28";
-            label28.Size = new Size(456, 30);
+            label28.Size = new Size(344, 30);
             label28.TabIndex = 34;
             label28.Text = "Thông tin chung";
             label28.TextAlign = ContentAlignment.MiddleCenter;
@@ -1197,7 +1405,7 @@ namespace HyperionHR_meta
             // label19
             // 
             label19.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label19.Location = new Point(313, 279);
+            label19.Location = new Point(315, 249);
             label19.Name = "label19";
             label19.Size = new Size(138, 30);
             label19.TabIndex = 32;
@@ -1217,7 +1425,7 @@ namespace HyperionHR_meta
             // label21
             // 
             label21.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label21.Location = new Point(313, 249);
+            label21.Location = new Point(315, 279);
             label21.Name = "label21";
             label21.Size = new Size(138, 30);
             label21.TabIndex = 30;
@@ -1583,13 +1791,11 @@ namespace HyperionHR_meta
             grbChucNang_Employee.Controls.Add(pnlHoSoCaNhan_Employee);
             grbChucNang_Employee.Controls.Add(pnlDonXin_Employee);
             grbChucNang_Employee.Controls.Add(pnlLuong_Employee);
-            grbChucNang_Employee.Controls.Add(pnlDuAn_Employee);
             grbChucNang_Employee.Controls.Add(pnlChamCong_Employee);
-            grbChucNang_Employee.Controls.Add(pnlHopDong_Employee);
             grbChucNang_Employee.Font = new Font("Inter", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             grbChucNang_Employee.Location = new Point(18, 96);
             grbChucNang_Employee.Name = "grbChucNang_Employee";
-            grbChucNang_Employee.Size = new Size(208, 298);
+            grbChucNang_Employee.Size = new Size(208, 213);
             grbChucNang_Employee.TabIndex = 13;
             grbChucNang_Employee.TabStop = false;
             grbChucNang_Employee.Text = "Chức năng";
@@ -1627,7 +1833,7 @@ namespace HyperionHR_meta
             // 
             pnlDonXin_Employee.Controls.Add(icoDonXin);
             pnlDonXin_Employee.Controls.Add(lblDonXin_Employee);
-            pnlDonXin_Employee.Location = new Point(12, 123);
+            pnlDonXin_Employee.Location = new Point(12, 82);
             pnlDonXin_Employee.Name = "pnlDonXin_Employee";
             pnlDonXin_Employee.Size = new Size(190, 35);
             pnlDonXin_Employee.TabIndex = 7;
@@ -1650,12 +1856,13 @@ namespace HyperionHR_meta
             lblDonXin_Employee.Size = new Size(139, 25);
             lblDonXin_Employee.TabIndex = 0;
             lblDonXin_Employee.Text = "Đơn xin";
+            lblDonXin_Employee.Click += lblDonXin_Employee_Click;
             // 
             // pnlLuong_Employee
             // 
             pnlLuong_Employee.Controls.Add(icoLuong2);
             pnlLuong_Employee.Controls.Add(lblLuong_Employee);
-            pnlLuong_Employee.Location = new Point(12, 246);
+            pnlLuong_Employee.Location = new Point(12, 165);
             pnlLuong_Employee.Name = "pnlLuong_Employee";
             pnlLuong_Employee.Size = new Size(190, 35);
             pnlLuong_Employee.TabIndex = 9;
@@ -1678,40 +1885,13 @@ namespace HyperionHR_meta
             lblLuong_Employee.Size = new Size(139, 25);
             lblLuong_Employee.TabIndex = 0;
             lblLuong_Employee.Text = "Lương";
-            // 
-            // pnlDuAn_Employee
-            // 
-            pnlDuAn_Employee.Controls.Add(icoDuAn_Employee);
-            pnlDuAn_Employee.Controls.Add(lblDuAn_Employee);
-            pnlDuAn_Employee.Location = new Point(12, 205);
-            pnlDuAn_Employee.Name = "pnlDuAn_Employee";
-            pnlDuAn_Employee.Size = new Size(190, 35);
-            pnlDuAn_Employee.TabIndex = 8;
-            // 
-            // icoDuAn_Employee
-            // 
-            icoDuAn_Employee.Image = Properties.Resources.Screenshot_2026_03_16_132316;
-            icoDuAn_Employee.Location = new Point(10, 5);
-            icoDuAn_Employee.Name = "icoDuAn_Employee";
-            icoDuAn_Employee.Size = new Size(25, 25);
-            icoDuAn_Employee.SizeMode = PictureBoxSizeMode.StretchImage;
-            icoDuAn_Employee.TabIndex = 1;
-            icoDuAn_Employee.TabStop = false;
-            // 
-            // lblDuAn_Employee
-            // 
-            lblDuAn_Employee.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblDuAn_Employee.Location = new Point(48, 5);
-            lblDuAn_Employee.Name = "lblDuAn_Employee";
-            lblDuAn_Employee.Size = new Size(139, 25);
-            lblDuAn_Employee.TabIndex = 0;
-            lblDuAn_Employee.Text = "Dự án";
+            lblLuong_Employee.Click += lblLuong_Employee_Click;
             // 
             // pnlChamCong_Employee
             // 
             pnlChamCong_Employee.Controls.Add(icoChamCong_2);
             pnlChamCong_Employee.Controls.Add(lblChamCong_Employee);
-            pnlChamCong_Employee.Location = new Point(12, 164);
+            pnlChamCong_Employee.Location = new Point(12, 123);
             pnlChamCong_Employee.Name = "pnlChamCong_Employee";
             pnlChamCong_Employee.Size = new Size(190, 35);
             pnlChamCong_Employee.TabIndex = 7;
@@ -1734,34 +1914,7 @@ namespace HyperionHR_meta
             lblChamCong_Employee.Size = new Size(139, 25);
             lblChamCong_Employee.TabIndex = 0;
             lblChamCong_Employee.Text = "Chấm công";
-            // 
-            // pnlHopDong_Employee
-            // 
-            pnlHopDong_Employee.Controls.Add(icoHopDong2);
-            pnlHopDong_Employee.Controls.Add(lblHopDong_Employee);
-            pnlHopDong_Employee.Location = new Point(12, 82);
-            pnlHopDong_Employee.Name = "pnlHopDong_Employee";
-            pnlHopDong_Employee.Size = new Size(190, 35);
-            pnlHopDong_Employee.TabIndex = 6;
-            // 
-            // icoHopDong2
-            // 
-            icoHopDong2.Image = Properties.Resources.Screenshot_2026_03_16_125040;
-            icoHopDong2.Location = new Point(10, 5);
-            icoHopDong2.Name = "icoHopDong2";
-            icoHopDong2.Size = new Size(25, 25);
-            icoHopDong2.SizeMode = PictureBoxSizeMode.StretchImage;
-            icoHopDong2.TabIndex = 1;
-            icoHopDong2.TabStop = false;
-            // 
-            // lblHopDong_Employee
-            // 
-            lblHopDong_Employee.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblHopDong_Employee.Location = new Point(48, 5);
-            lblHopDong_Employee.Name = "lblHopDong_Employee";
-            lblHopDong_Employee.Size = new Size(139, 25);
-            lblHopDong_Employee.TabIndex = 0;
-            lblHopDong_Employee.Text = "Hợp đồng";
+            lblChamCong_Employee.Click += lblChamCong_Employee_Click;
             // 
             // pnl_QuanLyNhanSu
             // 
@@ -1787,6 +1940,8 @@ namespace HyperionHR_meta
             pnlDienThongTin.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             pnlDienThongTin.BackColor = Color.White;
             pnlDienThongTin.BorderRadius = 20;
+            pnlDienThongTin.Controls.Add(chkTaoHopDong);
+            pnlDienThongTin.Controls.Add(label38);
             pnlDienThongTin.Controls.Add(cbbChucVu);
             pnlDienThongTin.Controls.Add(label16);
             pnlDienThongTin.Controls.Add(btnTatBangThongTin);
@@ -1810,9 +1965,32 @@ namespace HyperionHR_meta
             pnlDienThongTin.Controls.Add(btnSua);
             pnlDienThongTin.Location = new Point(442, 147);
             pnlDienThongTin.Name = "pnlDienThongTin";
-            pnlDienThongTin.Size = new Size(463, 423);
+            pnlDienThongTin.Size = new Size(463, 465);
             pnlDienThongTin.TabIndex = 1;
             pnlDienThongTin.Visible = false;
+            // 
+            // chkTaoHopDong
+            // 
+            chkTaoHopDong.AutoSize = true;
+            chkTaoHopDong.Checked = true;
+            chkTaoHopDong.CheckState = CheckState.Checked;
+            chkTaoHopDong.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            chkTaoHopDong.Location = new Point(208, 364);
+            chkTaoHopDong.Name = "chkTaoHopDong";
+            chkTaoHopDong.Size = new Size(224, 27);
+            chkTaoHopDong.TabIndex = 27;
+            chkTaoHopDong.Text = "Tạo kèm Hợp đồng 1 năm";
+            chkTaoHopDong.UseVisualStyleBackColor = true;
+            // 
+            // label38
+            // 
+            label38.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label38.Location = new Point(17, 364);
+            label38.Name = "label38";
+            label38.Size = new Size(176, 30);
+            label38.TabIndex = 26;
+            label38.Text = "Tạo hợp đồng:";
+            label38.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // cbbChucVu
             // 
@@ -1842,7 +2020,7 @@ namespace HyperionHR_meta
             btnTatBangThongTin.FlatAppearance.BorderSize = 0;
             btnTatBangThongTin.FlatStyle = FlatStyle.Flat;
             btnTatBangThongTin.Font = new Font("Inter", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnTatBangThongTin.Location = new Point(411, 3);
+            btnTatBangThongTin.Location = new Point(420, 4);
             btnTatBangThongTin.Name = "btnTatBangThongTin";
             btnTatBangThongTin.Size = new Size(40, 25);
             btnTatBangThongTin.TabIndex = 4;
@@ -1857,7 +2035,7 @@ namespace HyperionHR_meta
             btnLamMoiInput.BackColor = Color.FromArgb(155, 193, 255);
             btnLamMoiInput.FlatStyle = FlatStyle.Flat;
             btnLamMoiInput.Font = new Font("Inter Medium", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnLamMoiInput.Location = new Point(331, 367);
+            btnLamMoiInput.Location = new Point(331, 410);
             btnLamMoiInput.Name = "btnLamMoiInput";
             btnLamMoiInput.Size = new Size(109, 40);
             btnLamMoiInput.TabIndex = 23;
@@ -1871,7 +2049,7 @@ namespace HyperionHR_meta
             btnThem.BackColor = Color.FromArgb(155, 193, 255);
             btnThem.FlatStyle = FlatStyle.Flat;
             btnThem.Font = new Font("Inter Medium", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnThem.Location = new Point(208, 367);
+            btnThem.Location = new Point(208, 410);
             btnThem.Name = "btnThem";
             btnThem.Size = new Size(109, 40);
             btnThem.TabIndex = 13;
@@ -2038,7 +2216,7 @@ namespace HyperionHR_meta
             btnSua.BackColor = Color.FromArgb(155, 193, 255);
             btnSua.FlatStyle = FlatStyle.Flat;
             btnSua.Font = new Font("Inter Medium", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnSua.Location = new Point(208, 367);
+            btnSua.Location = new Point(208, 410);
             btnSua.Name = "btnSua";
             btnSua.Size = new Size(109, 40);
             btnSua.TabIndex = 12;
@@ -2216,14 +2394,14 @@ namespace HyperionHR_meta
             // dgvNhanVien
             // 
             dgvNhanVien.BackgroundColor = Color.FromArgb(217, 229, 255);
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = Color.FromArgb(217, 229, 255);
-            dataGridViewCellStyle1.Font = new Font("Inter Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(192, 192, 255);
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dgvNhanVien.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = Color.FromArgb(217, 229, 255);
+            dataGridViewCellStyle8.Font = new Font("Inter Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle8.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = Color.FromArgb(192, 192, 255);
+            dataGridViewCellStyle8.SelectionForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle8.WrapMode = DataGridViewTriState.True;
+            dgvNhanVien.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             dgvNhanVien.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvNhanVien.Dock = DockStyle.Fill;
             dgvNhanVien.Location = new Point(0, 0);
@@ -2237,6 +2415,7 @@ namespace HyperionHR_meta
             pnl_ToChuc.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pnl_ToChuc.BackColor = Color.White;
             pnl_ToChuc.BorderRadius = 20;
+            pnl_ToChuc.Controls.Add(btnBoxThemChiNhanh);
             pnl_ToChuc.Controls.Add(btnSuaPB);
             pnl_ToChuc.Controls.Add(btnXoaPB);
             pnl_ToChuc.Controls.Add(btnThemPB);
@@ -2248,13 +2427,28 @@ namespace HyperionHR_meta
             pnl_ToChuc.Controls.Add(lblChonChiNhanh);
             pnl_ToChuc.Controls.Add(roundedPanel6);
             pnl_ToChuc.Controls.Add(roundedPanel8);
-            pnl_ToChuc.Controls.Add(pnlThemNVvaoPB);
             pnl_ToChuc.Controls.Add(pnlBangDieuChinhPB);
+            pnl_ToChuc.Controls.Add(pnlThemNVvaoPB);
+            pnl_ToChuc.Controls.Add(pnlThemChiNhanh);
             pnl_ToChuc.Location = new Point(289, 137);
             pnl_ToChuc.Name = "pnl_ToChuc";
             pnl_ToChuc.Size = new Size(1054, 640);
             pnl_ToChuc.TabIndex = 9;
             pnl_ToChuc.Visible = false;
+            // 
+            // btnBoxThemChiNhanh
+            // 
+            btnBoxThemChiNhanh.BackColor = Color.Transparent;
+            btnBoxThemChiNhanh.FlatAppearance.BorderSize = 0;
+            btnBoxThemChiNhanh.FlatStyle = FlatStyle.Flat;
+            btnBoxThemChiNhanh.Font = new Font("Inter", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnBoxThemChiNhanh.Location = new Point(354, 69);
+            btnBoxThemChiNhanh.Name = "btnBoxThemChiNhanh";
+            btnBoxThemChiNhanh.Size = new Size(40, 31);
+            btnBoxThemChiNhanh.TabIndex = 4;
+            btnBoxThemChiNhanh.Text = "+";
+            btnBoxThemChiNhanh.UseVisualStyleBackColor = false;
+            btnBoxThemChiNhanh.Click += btnBoxThemChiNhanh_Click;
             // 
             // btnSuaPB
             // 
@@ -2332,14 +2526,14 @@ namespace HyperionHR_meta
             // dgvDanhSachTheoPhong
             // 
             dgvDanhSachTheoPhong.BackgroundColor = Color.FromArgb(217, 229, 255);
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.FromArgb(217, 229, 255);
-            dataGridViewCellStyle2.Font = new Font("Inter Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(192, 192, 255);
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            dgvDanhSachTheoPhong.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = Color.FromArgb(217, 229, 255);
+            dataGridViewCellStyle9.Font = new Font("Inter Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle9.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = Color.FromArgb(192, 192, 255);
+            dataGridViewCellStyle9.SelectionForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle9.WrapMode = DataGridViewTriState.True;
+            dgvDanhSachTheoPhong.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             dgvDanhSachTheoPhong.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvDanhSachTheoPhong.Dock = DockStyle.Fill;
             dgvDanhSachTheoPhong.Location = new Point(0, 0);
@@ -2361,14 +2555,14 @@ namespace HyperionHR_meta
             // dgvPhongBan
             // 
             dgvPhongBan.BackgroundColor = Color.FromArgb(217, 229, 255);
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = Color.FromArgb(217, 229, 255);
-            dataGridViewCellStyle3.Font = new Font("Inter Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(192, 192, 255);
-            dataGridViewCellStyle3.SelectionForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
-            dgvPhongBan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle10.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = Color.FromArgb(217, 229, 255);
+            dataGridViewCellStyle10.Font = new Font("Inter Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle10.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = Color.FromArgb(192, 192, 255);
+            dataGridViewCellStyle10.SelectionForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle10.WrapMode = DataGridViewTriState.True;
+            dgvPhongBan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             dgvPhongBan.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvPhongBan.Dock = DockStyle.Fill;
             dgvPhongBan.Location = new Point(0, 0);
@@ -2451,6 +2645,71 @@ namespace HyperionHR_meta
             label10.Size = new Size(112, 30);
             label10.TabIndex = 0;
             label10.Text = "Lịch Trình";
+            // 
+            // pnlBangDieuChinhPB
+            // 
+            pnlBangDieuChinhPB.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pnlBangDieuChinhPB.BackColor = Color.FromArgb(217, 229, 255);
+            pnlBangDieuChinhPB.BorderRadius = 20;
+            pnlBangDieuChinhPB.Controls.Add(label15);
+            pnlBangDieuChinhPB.Controls.Add(txtMaPB);
+            pnlBangDieuChinhPB.Controls.Add(txtTenPB);
+            pnlBangDieuChinhPB.Controls.Add(label14);
+            pnlBangDieuChinhPB.Controls.Add(label12);
+            pnlBangDieuChinhPB.Location = new Point(538, 326);
+            pnlBangDieuChinhPB.Name = "pnlBangDieuChinhPB";
+            pnlBangDieuChinhPB.Size = new Size(490, 244);
+            pnlBangDieuChinhPB.TabIndex = 13;
+            // 
+            // label15
+            // 
+            label15.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label15.Location = new Point(3, 20);
+            label15.Name = "label15";
+            label15.Size = new Size(484, 25);
+            label15.TabIndex = 18;
+            label15.Text = "Thông tin phòng ban";
+            label15.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // txtMaPB
+            // 
+            txtMaPB.BackColor = Color.White;
+            txtMaPB.BorderStyle = BorderStyle.FixedSingle;
+            txtMaPB.Font = new Font("Inter", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtMaPB.Location = new Point(162, 113);
+            txtMaPB.Name = "txtMaPB";
+            txtMaPB.Size = new Size(295, 30);
+            txtMaPB.TabIndex = 21;
+            // 
+            // txtTenPB
+            // 
+            txtTenPB.BackColor = Color.White;
+            txtTenPB.BorderStyle = BorderStyle.FixedSingle;
+            txtTenPB.Font = new Font("Inter", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtTenPB.Location = new Point(162, 72);
+            txtTenPB.Name = "txtTenPB";
+            txtTenPB.Size = new Size(295, 30);
+            txtTenPB.TabIndex = 20;
+            // 
+            // label14
+            // 
+            label14.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label14.Location = new Point(19, 113);
+            label14.Name = "label14";
+            label14.Size = new Size(137, 30);
+            label14.TabIndex = 19;
+            label14.Text = "Mã phòng ban:";
+            label14.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // label12
+            // 
+            label12.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label12.Location = new Point(19, 72);
+            label12.Name = "label12";
+            label12.Size = new Size(137, 30);
+            label12.TabIndex = 18;
+            label12.Text = "Tên phòng ban:";
+            label12.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // pnlThemNVvaoPB
             // 
@@ -2548,70 +2807,1484 @@ namespace HyperionHR_meta
             label18.Text = "Chọn nhân viên:";
             label18.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // pnlBangDieuChinhPB
+            // pnlThemChiNhanh
             // 
-            pnlBangDieuChinhPB.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            pnlBangDieuChinhPB.BackColor = Color.FromArgb(217, 229, 255);
-            pnlBangDieuChinhPB.BorderRadius = 20;
-            pnlBangDieuChinhPB.Controls.Add(label15);
-            pnlBangDieuChinhPB.Controls.Add(txtMaPB);
-            pnlBangDieuChinhPB.Controls.Add(txtTenPB);
-            pnlBangDieuChinhPB.Controls.Add(label14);
-            pnlBangDieuChinhPB.Controls.Add(label12);
-            pnlBangDieuChinhPB.Location = new Point(538, 326);
-            pnlBangDieuChinhPB.Name = "pnlBangDieuChinhPB";
-            pnlBangDieuChinhPB.Size = new Size(490, 244);
-            pnlBangDieuChinhPB.TabIndex = 13;
+            pnlThemChiNhanh.BackColor = Color.FromArgb(217, 229, 255);
+            pnlThemChiNhanh.BorderRadius = 20;
+            pnlThemChiNhanh.Controls.Add(label49);
+            pnlThemChiNhanh.Controls.Add(txtDiaChiCN);
+            pnlThemChiNhanh.Controls.Add(txtTenCN);
+            pnlThemChiNhanh.Controls.Add(txtMaCN);
+            pnlThemChiNhanh.Controls.Add(button5);
+            pnlThemChiNhanh.Controls.Add(btnThemCN);
+            pnlThemChiNhanh.Controls.Add(label42);
+            pnlThemChiNhanh.Controls.Add(label46);
+            pnlThemChiNhanh.Controls.Add(label48);
+            pnlThemChiNhanh.Location = new Point(354, 102);
+            pnlThemChiNhanh.Name = "pnlThemChiNhanh";
+            pnlThemChiNhanh.Size = new Size(490, 244);
+            pnlThemChiNhanh.TabIndex = 26;
+            pnlThemChiNhanh.Visible = false;
             // 
-            // label15
+            // label49
             // 
-            label15.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label15.Location = new Point(3, 20);
-            label15.Name = "label15";
-            label15.Size = new Size(484, 25);
-            label15.TabIndex = 18;
-            label15.Text = "Thông tin phòng ban";
-            label15.TextAlign = ContentAlignment.MiddleCenter;
+            label49.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label49.Location = new Point(19, 144);
+            label49.Name = "label49";
+            label49.Size = new Size(137, 30);
+            label49.TabIndex = 28;
+            label49.Text = "Địa chỉ:";
+            label49.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // txtMaPB
+            // txtDiaChiCN
             // 
-            txtMaPB.BackColor = Color.White;
-            txtMaPB.BorderStyle = BorderStyle.FixedSingle;
-            txtMaPB.Font = new Font("Inter", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtMaPB.Location = new Point(162, 113);
-            txtMaPB.Name = "txtMaPB";
-            txtMaPB.Size = new Size(295, 30);
-            txtMaPB.TabIndex = 21;
+            txtDiaChiCN.BackColor = Color.White;
+            txtDiaChiCN.BorderStyle = BorderStyle.FixedSingle;
+            txtDiaChiCN.Font = new Font("Inter", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtDiaChiCN.Location = new Point(172, 143);
+            txtDiaChiCN.Name = "txtDiaChiCN";
+            txtDiaChiCN.Size = new Size(295, 30);
+            txtDiaChiCN.TabIndex = 27;
             // 
-            // txtTenPB
+            // txtTenCN
             // 
-            txtTenPB.BackColor = Color.White;
-            txtTenPB.BorderStyle = BorderStyle.FixedSingle;
-            txtTenPB.Font = new Font("Inter", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtTenPB.Location = new Point(162, 72);
-            txtTenPB.Name = "txtTenPB";
-            txtTenPB.Size = new Size(295, 30);
-            txtTenPB.TabIndex = 20;
+            txtTenCN.BackColor = Color.White;
+            txtTenCN.BorderStyle = BorderStyle.FixedSingle;
+            txtTenCN.Font = new Font("Inter", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtTenCN.Location = new Point(172, 107);
+            txtTenCN.Name = "txtTenCN";
+            txtTenCN.Size = new Size(295, 30);
+            txtTenCN.TabIndex = 26;
             // 
-            // label14
+            // txtMaCN
             // 
-            label14.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label14.Location = new Point(19, 113);
-            label14.Name = "label14";
-            label14.Size = new Size(137, 30);
-            label14.TabIndex = 19;
-            label14.Text = "Mã phòng ban:";
-            label14.TextAlign = ContentAlignment.MiddleLeft;
+            txtMaCN.BackColor = Color.White;
+            txtMaCN.BorderStyle = BorderStyle.FixedSingle;
+            txtMaCN.Font = new Font("Inter", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtMaCN.Location = new Point(172, 71);
+            txtMaCN.Name = "txtMaCN";
+            txtMaCN.Size = new Size(295, 30);
+            txtMaCN.TabIndex = 22;
             // 
-            // label12
+            // button5
             // 
-            label12.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label12.Location = new Point(19, 72);
-            label12.Name = "label12";
-            label12.Size = new Size(137, 30);
-            label12.TabIndex = 18;
-            label12.Text = "Tên phòng ban:";
-            label12.TextAlign = ContentAlignment.MiddleLeft;
+            button5.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button5.BackColor = Color.FromArgb(155, 193, 255);
+            button5.FlatStyle = FlatStyle.Flat;
+            button5.Font = new Font("Inter Medium", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button5.Location = new Point(548, 185);
+            button5.Name = "button5";
+            button5.Size = new Size(109, 40);
+            button5.TabIndex = 25;
+            button5.Text = "Hủy";
+            button5.UseVisualStyleBackColor = false;
+            // 
+            // btnThemCN
+            // 
+            btnThemCN.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnThemCN.BackColor = Color.FromArgb(155, 193, 255);
+            btnThemCN.FlatStyle = FlatStyle.Flat;
+            btnThemCN.Font = new Font("Inter Medium", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnThemCN.Location = new Point(194, 188);
+            btnThemCN.Name = "btnThemCN";
+            btnThemCN.Size = new Size(109, 40);
+            btnThemCN.TabIndex = 23;
+            btnThemCN.Text = "Xác nhận";
+            btnThemCN.UseVisualStyleBackColor = false;
+            btnThemCN.Click += btnThemCN_Click;
+            // 
+            // label42
+            // 
+            label42.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label42.Location = new Point(3, 20);
+            label42.Name = "label42";
+            label42.Size = new Size(484, 25);
+            label42.TabIndex = 18;
+            label42.Text = "Thêm chi nhánh";
+            label42.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label46
+            // 
+            label46.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label46.Location = new Point(19, 108);
+            label46.Name = "label46";
+            label46.Size = new Size(137, 30);
+            label46.TabIndex = 19;
+            label46.Text = "Tên chi nhánh:";
+            label46.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // label48
+            // 
+            label48.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label48.Location = new Point(19, 71);
+            label48.Name = "label48";
+            label48.Size = new Size(147, 30);
+            label48.TabIndex = 18;
+            label48.Text = "Mã chi nhánh:";
+            label48.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // pnl_QuanLyHopDong
+            // 
+            pnl_QuanLyHopDong.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pnl_QuanLyHopDong.BackColor = Color.White;
+            pnl_QuanLyHopDong.BorderRadius = 20;
+            pnl_QuanLyHopDong.Controls.Add(btnDuyetHD);
+            pnl_QuanLyHopDong.Controls.Add(btnChamDut);
+            pnl_QuanLyHopDong.Controls.Add(btnGiaHan);
+            pnl_QuanLyHopDong.Controls.Add(button2);
+            pnl_QuanLyHopDong.Controls.Add(roundedPanel11);
+            pnl_QuanLyHopDong.Controls.Add(label33);
+            pnl_QuanLyHopDong.Controls.Add(dgcHopDong);
+            pnl_QuanLyHopDong.Controls.Add(roundedPanel12);
+            pnl_QuanLyHopDong.Controls.Add(roundedPanel13);
+            pnl_QuanLyHopDong.Location = new Point(289, 137);
+            pnl_QuanLyHopDong.Name = "pnl_QuanLyHopDong";
+            pnl_QuanLyHopDong.Size = new Size(1054, 640);
+            pnl_QuanLyHopDong.TabIndex = 8;
+            pnl_QuanLyHopDong.Visible = false;
+            // 
+            // btnDuyetHD
+            // 
+            btnDuyetHD.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnDuyetHD.BackColor = Color.FromArgb(155, 193, 255);
+            btnDuyetHD.FlatStyle = FlatStyle.Flat;
+            btnDuyetHD.Font = new Font("Inter Medium", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnDuyetHD.Location = new Point(919, 266);
+            btnDuyetHD.Name = "btnDuyetHD";
+            btnDuyetHD.Size = new Size(109, 40);
+            btnDuyetHD.TabIndex = 16;
+            btnDuyetHD.Text = "Duyệt";
+            btnDuyetHD.UseVisualStyleBackColor = false;
+            btnDuyetHD.Visible = false;
+            btnDuyetHD.Click += btnDuyetHD_Click;
+            // 
+            // btnChamDut
+            // 
+            btnChamDut.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnChamDut.BackColor = Color.FromArgb(155, 193, 255);
+            btnChamDut.FlatStyle = FlatStyle.Flat;
+            btnChamDut.Font = new Font("Inter Medium", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnChamDut.Location = new Point(919, 216);
+            btnChamDut.Name = "btnChamDut";
+            btnChamDut.Size = new Size(109, 40);
+            btnChamDut.TabIndex = 15;
+            btnChamDut.Text = "Hủy";
+            btnChamDut.UseVisualStyleBackColor = false;
+            btnChamDut.Click += btnChamDut_Click;
+            // 
+            // btnGiaHan
+            // 
+            btnGiaHan.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnGiaHan.BackColor = Color.FromArgb(155, 193, 255);
+            btnGiaHan.FlatStyle = FlatStyle.Flat;
+            btnGiaHan.Font = new Font("Inter Medium", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnGiaHan.Location = new Point(919, 167);
+            btnGiaHan.Name = "btnGiaHan";
+            btnGiaHan.Size = new Size(109, 40);
+            btnGiaHan.TabIndex = 14;
+            btnGiaHan.Text = "Gia hạn";
+            btnGiaHan.UseVisualStyleBackColor = false;
+            btnGiaHan.Click += btnGiaHan_Click;
+            // 
+            // button2
+            // 
+            button2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button2.BackColor = Color.FromArgb(155, 193, 255);
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Inter Medium", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.Location = new Point(919, 112);
+            button2.Name = "button2";
+            button2.Size = new Size(109, 40);
+            button2.TabIndex = 13;
+            button2.Text = "Làm mới";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
+            // roundedPanel11
+            // 
+            roundedPanel11.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            roundedPanel11.BackColor = Color.FromArgb(217, 229, 255);
+            roundedPanel11.BorderRadius = 20;
+            roundedPanel11.Controls.Add(txtTimHopDong);
+            roundedPanel11.Controls.Add(btnTimHopDong);
+            roundedPanel11.Location = new Point(25, 112);
+            roundedPanel11.Name = "roundedPanel11";
+            roundedPanel11.Size = new Size(888, 41);
+            roundedPanel11.TabIndex = 8;
+            // 
+            // txtTimHopDong
+            // 
+            txtTimHopDong.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            txtTimHopDong.BackColor = Color.FromArgb(216, 228, 245);
+            txtTimHopDong.BorderStyle = BorderStyle.None;
+            txtTimHopDong.Font = new Font("Inter", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtTimHopDong.Location = new Point(10, 10);
+            txtTimHopDong.Name = "txtTimHopDong";
+            txtTimHopDong.Size = new Size(829, 23);
+            txtTimHopDong.TabIndex = 13;
+            // 
+            // btnTimHopDong
+            // 
+            btnTimHopDong.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnTimHopDong.Image = Properties.Resources.Screenshot_2026_03_20_174457;
+            btnTimHopDong.Location = new Point(845, 3);
+            btnTimHopDong.Name = "btnTimHopDong";
+            btnTimHopDong.Size = new Size(35, 35);
+            btnTimHopDong.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnTimHopDong.TabIndex = 14;
+            btnTimHopDong.TabStop = false;
+            btnTimHopDong.Click += btnTimHopDong_Click;
+            // 
+            // label33
+            // 
+            label33.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label33.Location = new Point(26, 79);
+            label33.Name = "label33";
+            label33.Size = new Size(232, 25);
+            label33.TabIndex = 12;
+            label33.Text = "Tìm kiếm hợp đồng";
+            label33.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // dgcHopDong
+            // 
+            dgcHopDong.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dgcHopDong.BackColor = Color.FromArgb(217, 229, 255);
+            dgcHopDong.BorderRadius = 20;
+            dgcHopDong.Controls.Add(dgvHopDong);
+            dgcHopDong.Location = new Point(25, 162);
+            dgcHopDong.Name = "dgcHopDong";
+            dgcHopDong.Size = new Size(888, 408);
+            dgcHopDong.TabIndex = 11;
+            // 
+            // dgvHopDong
+            // 
+            dgvHopDong.BackgroundColor = Color.FromArgb(217, 229, 255);
+            dataGridViewCellStyle11.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = Color.FromArgb(217, 229, 255);
+            dataGridViewCellStyle11.Font = new Font("Inter Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle11.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle11.SelectionBackColor = Color.FromArgb(192, 192, 255);
+            dataGridViewCellStyle11.SelectionForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle11.WrapMode = DataGridViewTriState.True;
+            dgvHopDong.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dgvHopDong.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvHopDong.Dock = DockStyle.Fill;
+            dgvHopDong.Location = new Point(0, 0);
+            dgvHopDong.Name = "dgvHopDong";
+            dgvHopDong.Size = new Size(888, 408);
+            dgvHopDong.TabIndex = 0;
+            // 
+            // roundedPanel12
+            // 
+            roundedPanel12.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            roundedPanel12.BackColor = Color.FromArgb(217, 229, 255);
+            roundedPanel12.BorderRadius = 20;
+            roundedPanel12.Controls.Add(label13);
+            roundedPanel12.Location = new Point(0, 0);
+            roundedPanel12.Name = "roundedPanel12";
+            roundedPanel12.Size = new Size(1054, 41);
+            roundedPanel12.TabIndex = 7;
+            // 
+            // label13
+            // 
+            label13.Font = new Font("Inter", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label13.Location = new Point(26, 4);
+            label13.Name = "label13";
+            label13.Size = new Size(279, 34);
+            label13.TabIndex = 2;
+            label13.Text = "Quản lý hợp đồng";
+            label13.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // roundedPanel13
+            // 
+            roundedPanel13.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            roundedPanel13.BackColor = Color.FromArgb(156, 193, 250);
+            roundedPanel13.BorderRadius = 20;
+            roundedPanel13.Controls.Add(pictureBox8);
+            roundedPanel13.Controls.Add(label29);
+            roundedPanel13.Location = new Point(2557, 15);
+            roundedPanel13.Name = "roundedPanel13";
+            roundedPanel13.Size = new Size(179, 62);
+            roundedPanel13.TabIndex = 6;
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
+            pictureBox8.Location = new Point(13, 10);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(43, 43);
+            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox8.TabIndex = 1;
+            pictureBox8.TabStop = false;
+            // 
+            // label29
+            // 
+            label29.AutoSize = true;
+            label29.Font = new Font("Inter SemiBold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label29.Location = new Point(59, 17);
+            label29.Name = "label29";
+            label29.Size = new Size(112, 30);
+            label29.TabIndex = 0;
+            label29.Text = "Lịch Trình";
+            // 
+            // roundedPanel2
+            // 
+            roundedPanel2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            roundedPanel2.BackColor = Color.FromArgb(156, 193, 250);
+            roundedPanel2.BorderRadius = 20;
+            roundedPanel2.Controls.Add(pictureBox3);
+            roundedPanel2.Controls.Add(label5);
+            roundedPanel2.Location = new Point(1703, 15);
+            roundedPanel2.Name = "roundedPanel2";
+            roundedPanel2.Size = new Size(179, 62);
+            roundedPanel2.TabIndex = 6;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(13, 10);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(43, 43);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 1;
+            pictureBox3.TabStop = false;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Inter SemiBold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(59, 17);
+            label5.Name = "label5";
+            label5.Size = new Size(112, 30);
+            label5.TabIndex = 0;
+            label5.Text = "Lịch Trình";
+            // 
+            // pnl_TopDashboard
+            // 
+            pnl_TopDashboard.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pnl_TopDashboard.BackColor = Color.FromArgb(217, 229, 255);
+            pnl_TopDashboard.BorderRadius = 20;
+            pnl_TopDashboard.Controls.Add(lbl_Dashboarđ);
+            pnl_TopDashboard.Location = new Point(0, 0);
+            pnl_TopDashboard.Name = "pnl_TopDashboard";
+            pnl_TopDashboard.Size = new Size(1054, 41);
+            pnl_TopDashboard.TabIndex = 7;
+            // 
+            // lbl_Dashboarđ
+            // 
+            lbl_Dashboarđ.Font = new Font("Inter", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_Dashboarđ.Location = new Point(25, 9);
+            lbl_Dashboarđ.Name = "lbl_Dashboarđ";
+            lbl_Dashboarđ.Size = new Size(139, 25);
+            lbl_Dashboarđ.TabIndex = 2;
+            lbl_Dashboarđ.Text = "Dashboard";
+            // 
+            // pnl_Dashboard
+            // 
+            pnl_Dashboard.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pnl_Dashboard.BackColor = Color.White;
+            pnl_Dashboard.BorderRadius = 20;
+            pnl_Dashboard.Controls.Add(pictureBox13);
+            pnl_Dashboard.Controls.Add(roundedPanel34);
+            pnl_Dashboard.Controls.Add(roundedPanel33);
+            pnl_Dashboard.Controls.Add(roundedPanel32);
+            pnl_Dashboard.Controls.Add(roundedPanel31);
+            pnl_Dashboard.Controls.Add(roundedPanel30);
+            pnl_Dashboard.Controls.Add(roundedPanel29);
+            pnl_Dashboard.Controls.Add(pnl_TopDashboard);
+            pnl_Dashboard.Controls.Add(roundedPanel2);
+            pnl_Dashboard.Location = new Point(289, 137);
+            pnl_Dashboard.Name = "pnl_Dashboard";
+            pnl_Dashboard.Size = new Size(1054, 640);
+            pnl_Dashboard.TabIndex = 7;
+            // 
+            // pictureBox13
+            // 
+            pictureBox13.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox13.Image = Properties.Resources.Screenshot_2026_03_22_000658;
+            pictureBox13.Location = new Point(557, 94);
+            pictureBox13.Name = "pictureBox13";
+            pictureBox13.Size = new Size(479, 450);
+            pictureBox13.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox13.TabIndex = 13;
+            pictureBox13.TabStop = false;
+            // 
+            // roundedPanel34
+            // 
+            roundedPanel34.BackColor = Color.FromArgb(173, 220, 255);
+            roundedPanel34.BorderRadius = 20;
+            roundedPanel34.Controls.Add(lblNhanVienCheckIn);
+            roundedPanel34.Controls.Add(label70);
+            roundedPanel34.Location = new Point(284, 94);
+            roundedPanel34.Name = "roundedPanel34";
+            roundedPanel34.Size = new Size(220, 125);
+            roundedPanel34.TabIndex = 12;
+            // 
+            // lblNhanVienCheckIn
+            // 
+            lblNhanVienCheckIn.Font = new Font("Inter", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblNhanVienCheckIn.Location = new Point(3, 47);
+            lblNhanVienCheckIn.Name = "lblNhanVienCheckIn";
+            lblNhanVienCheckIn.Size = new Size(214, 67);
+            lblNhanVienCheckIn.TabIndex = 10;
+            lblNhanVienCheckIn.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label70
+            // 
+            label70.Font = new Font("Inter SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label70.Location = new Point(3, 13);
+            label70.Name = "label70";
+            label70.Size = new Size(214, 27);
+            label70.TabIndex = 5;
+            label70.Text = "Nhân viên đang làm";
+            label70.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // roundedPanel33
+            // 
+            roundedPanel33.BackColor = Color.FromArgb(173, 220, 255);
+            roundedPanel33.BorderRadius = 20;
+            roundedPanel33.Controls.Add(lblDonChoDuyet);
+            roundedPanel33.Controls.Add(label69);
+            roundedPanel33.Location = new Point(284, 419);
+            roundedPanel33.Name = "roundedPanel33";
+            roundedPanel33.Size = new Size(220, 125);
+            roundedPanel33.TabIndex = 11;
+            // 
+            // lblDonChoDuyet
+            // 
+            lblDonChoDuyet.Font = new Font("Inter", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblDonChoDuyet.Location = new Point(3, 47);
+            lblDonChoDuyet.Name = "lblDonChoDuyet";
+            lblDonChoDuyet.Size = new Size(214, 67);
+            lblDonChoDuyet.TabIndex = 9;
+            lblDonChoDuyet.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label69
+            // 
+            label69.Font = new Font("Inter SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label69.Location = new Point(3, 13);
+            label69.Name = "label69";
+            label69.Size = new Size(214, 27);
+            label69.TabIndex = 5;
+            label69.Text = "Đơn chờ duyệt";
+            label69.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // roundedPanel32
+            // 
+            roundedPanel32.BackColor = Color.FromArgb(255, 192, 192);
+            roundedPanel32.BorderRadius = 20;
+            roundedPanel32.Controls.Add(lblHopDongHetHan);
+            roundedPanel32.Controls.Add(label68);
+            roundedPanel32.Location = new Point(284, 258);
+            roundedPanel32.Name = "roundedPanel32";
+            roundedPanel32.Size = new Size(220, 125);
+            roundedPanel32.TabIndex = 11;
+            // 
+            // lblHopDongHetHan
+            // 
+            lblHopDongHetHan.Font = new Font("Inter", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblHopDongHetHan.Location = new Point(3, 46);
+            lblHopDongHetHan.Name = "lblHopDongHetHan";
+            lblHopDongHetHan.Size = new Size(214, 67);
+            lblHopDongHetHan.TabIndex = 7;
+            lblHopDongHetHan.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label68
+            // 
+            label68.Font = new Font("Inter SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label68.Location = new Point(3, 13);
+            label68.Name = "label68";
+            label68.Size = new Size(214, 27);
+            label68.TabIndex = 6;
+            label68.Text = "Hợp đồng hết hạn";
+            label68.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // roundedPanel31
+            // 
+            roundedPanel31.BackColor = Color.FromArgb(192, 255, 192);
+            roundedPanel31.BorderRadius = 20;
+            roundedPanel31.Controls.Add(lblHopDongConHan);
+            roundedPanel31.Controls.Add(label67);
+            roundedPanel31.Location = new Point(25, 258);
+            roundedPanel31.Name = "roundedPanel31";
+            roundedPanel31.Size = new Size(220, 125);
+            roundedPanel31.TabIndex = 10;
+            // 
+            // lblHopDongConHan
+            // 
+            lblHopDongConHan.Font = new Font("Inter", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblHopDongConHan.Location = new Point(3, 51);
+            lblHopDongConHan.Name = "lblHopDongConHan";
+            lblHopDongConHan.Size = new Size(214, 67);
+            lblHopDongConHan.TabIndex = 8;
+            lblHopDongConHan.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label67
+            // 
+            label67.Font = new Font("Inter SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label67.Location = new Point(3, 13);
+            label67.Name = "label67";
+            label67.Size = new Size(214, 27);
+            label67.TabIndex = 5;
+            label67.Text = "Hợp đồng còn hạn";
+            label67.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // roundedPanel30
+            // 
+            roundedPanel30.BackColor = Color.FromArgb(173, 220, 255);
+            roundedPanel30.BorderRadius = 20;
+            roundedPanel30.Controls.Add(lblTongPhongBan);
+            roundedPanel30.Controls.Add(label66);
+            roundedPanel30.Location = new Point(25, 419);
+            roundedPanel30.Name = "roundedPanel30";
+            roundedPanel30.Size = new Size(220, 125);
+            roundedPanel30.TabIndex = 9;
+            // 
+            // lblTongPhongBan
+            // 
+            lblTongPhongBan.Font = new Font("Inter", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTongPhongBan.Location = new Point(3, 49);
+            lblTongPhongBan.Name = "lblTongPhongBan";
+            lblTongPhongBan.Size = new Size(214, 67);
+            lblTongPhongBan.TabIndex = 6;
+            lblTongPhongBan.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label66
+            // 
+            label66.Font = new Font("Inter SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label66.Location = new Point(3, 16);
+            label66.Name = "label66";
+            label66.Size = new Size(214, 27);
+            label66.TabIndex = 5;
+            label66.Text = "Tổng phòng ban";
+            label66.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // roundedPanel29
+            // 
+            roundedPanel29.BackColor = Color.FromArgb(173, 220, 255);
+            roundedPanel29.BorderRadius = 20;
+            roundedPanel29.Controls.Add(lblTongNhanVien);
+            roundedPanel29.Controls.Add(label65);
+            roundedPanel29.Location = new Point(25, 96);
+            roundedPanel29.Name = "roundedPanel29";
+            roundedPanel29.Size = new Size(220, 125);
+            roundedPanel29.TabIndex = 8;
+            // 
+            // lblTongNhanVien
+            // 
+            lblTongNhanVien.Font = new Font("Inter", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTongNhanVien.Location = new Point(3, 49);
+            lblTongNhanVien.Name = "lblTongNhanVien";
+            lblTongNhanVien.Size = new Size(214, 67);
+            lblTongNhanVien.TabIndex = 5;
+            lblTongNhanVien.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label65
+            // 
+            label65.Font = new Font("Inter SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label65.Location = new Point(3, 16);
+            label65.Name = "label65";
+            label65.Size = new Size(214, 27);
+            label65.TabIndex = 4;
+            label65.Text = "Tổng nhân viên";
+            label65.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // pnl_DonXin
+            // 
+            pnl_DonXin.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pnl_DonXin.BackColor = Color.White;
+            pnl_DonXin.BorderRadius = 20;
+            pnl_DonXin.Controls.Add(label43);
+            pnl_DonXin.Controls.Add(roundedPanel14);
+            pnl_DonXin.Controls.Add(btnTuChoi);
+            pnl_DonXin.Controls.Add(btnDuyet);
+            pnl_DonXin.Controls.Add(roundedPanel17);
+            pnl_DonXin.Controls.Add(roundedPanel15);
+            pnl_DonXin.Controls.Add(roundedPanel16);
+            pnl_DonXin.Location = new Point(289, 137);
+            pnl_DonXin.Name = "pnl_DonXin";
+            pnl_DonXin.Size = new Size(1054, 640);
+            pnl_DonXin.TabIndex = 8;
+            // 
+            // label43
+            // 
+            label43.Font = new Font("Inter", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label43.Location = new Point(34, 54);
+            label43.Name = "label43";
+            label43.Size = new Size(199, 31);
+            label43.TabIndex = 2;
+            label43.Text = "Tạo đơn nghĩ";
+            label43.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // roundedPanel14
+            // 
+            roundedPanel14.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            roundedPanel14.BackColor = Color.FromArgb(217, 229, 255);
+            roundedPanel14.BorderRadius = 20;
+            roundedPanel14.Controls.Add(btnGuiDon);
+            roundedPanel14.Controls.Add(cbbLoaiDon);
+            roundedPanel14.Controls.Add(txtLyDo);
+            roundedPanel14.Controls.Add(txtSoNgayNghi);
+            roundedPanel14.Controls.Add(label47);
+            roundedPanel14.Controls.Add(label45);
+            roundedPanel14.Controls.Add(label44);
+            roundedPanel14.Location = new Point(19, 88);
+            roundedPanel14.Name = "roundedPanel14";
+            roundedPanel14.Size = new Size(891, 112);
+            roundedPanel14.TabIndex = 18;
+            // 
+            // btnGuiDon
+            // 
+            btnGuiDon.BackColor = Color.FromArgb(155, 193, 255);
+            btnGuiDon.FlatStyle = FlatStyle.Flat;
+            btnGuiDon.Font = new Font("Inter Medium", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnGuiDon.Location = new Point(768, 35);
+            btnGuiDon.Name = "btnGuiDon";
+            btnGuiDon.Size = new Size(109, 40);
+            btnGuiDon.TabIndex = 19;
+            btnGuiDon.Text = "Gửi Đơn";
+            btnGuiDon.UseVisualStyleBackColor = false;
+            btnGuiDon.Click += btnGuiDon_Click;
+            // 
+            // cbbLoaiDon
+            // 
+            cbbLoaiDon.Font = new Font("Inter", 12.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cbbLoaiDon.FormattingEnabled = true;
+            cbbLoaiDon.Items.AddRange(new object[] { "Nghỉ phép", "Thôi việc" });
+            cbbLoaiDon.Location = new Point(151, 14);
+            cbbLoaiDon.Name = "cbbLoaiDon";
+            cbbLoaiDon.Size = new Size(159, 32);
+            cbbLoaiDon.TabIndex = 19;
+            // 
+            // txtLyDo
+            // 
+            txtLyDo.Font = new Font("Inter", 12.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtLyDo.Location = new Point(423, 17);
+            txtLyDo.Multiline = true;
+            txtLyDo.Name = "txtLyDo";
+            txtLyDo.Size = new Size(333, 76);
+            txtLyDo.TabIndex = 18;
+            // 
+            // txtSoNgayNghi
+            // 
+            txtSoNgayNghi.Font = new Font("Inter", 12.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtSoNgayNghi.Location = new Point(150, 65);
+            txtSoNgayNghi.Name = "txtSoNgayNghi";
+            txtSoNgayNghi.Size = new Size(158, 28);
+            txtSoNgayNghi.TabIndex = 17;
+            // 
+            // label47
+            // 
+            label47.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label47.Location = new Point(348, 17);
+            label47.Name = "label47";
+            label47.Size = new Size(72, 25);
+            label47.TabIndex = 16;
+            label47.Text = "Lý do:";
+            label47.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // label45
+            // 
+            label45.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label45.Location = new Point(16, 68);
+            label45.Name = "label45";
+            label45.Size = new Size(129, 25);
+            label45.TabIndex = 14;
+            label45.Text = "Số ngày nghỉ:";
+            label45.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // label44
+            // 
+            label44.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label44.Location = new Point(15, 17);
+            label44.Name = "label44";
+            label44.Size = new Size(130, 25);
+            label44.TabIndex = 13;
+            label44.Text = "Loại đơn:";
+            label44.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // btnTuChoi
+            // 
+            btnTuChoi.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnTuChoi.BackColor = Color.FromArgb(155, 193, 255);
+            btnTuChoi.FlatStyle = FlatStyle.Flat;
+            btnTuChoi.Font = new Font("Inter Medium", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnTuChoi.Location = new Point(919, 260);
+            btnTuChoi.Name = "btnTuChoi";
+            btnTuChoi.Size = new Size(109, 40);
+            btnTuChoi.TabIndex = 17;
+            btnTuChoi.Text = "Từ chối";
+            btnTuChoi.UseVisualStyleBackColor = false;
+            btnTuChoi.Visible = false;
+            btnTuChoi.Click += btnTuChoi_Click;
+            // 
+            // btnDuyet
+            // 
+            btnDuyet.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnDuyet.BackColor = Color.FromArgb(155, 193, 255);
+            btnDuyet.FlatStyle = FlatStyle.Flat;
+            btnDuyet.Font = new Font("Inter Medium", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnDuyet.Location = new Point(919, 209);
+            btnDuyet.Name = "btnDuyet";
+            btnDuyet.Size = new Size(109, 40);
+            btnDuyet.TabIndex = 16;
+            btnDuyet.Text = "Duyệt";
+            btnDuyet.UseVisualStyleBackColor = false;
+            btnDuyet.Visible = false;
+            btnDuyet.Click += btnDuyet_Click;
+            // 
+            // roundedPanel17
+            // 
+            roundedPanel17.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            roundedPanel17.BackColor = Color.FromArgb(217, 229, 255);
+            roundedPanel17.BorderRadius = 20;
+            roundedPanel17.Controls.Add(dgvNghiPhep);
+            roundedPanel17.Location = new Point(22, 211);
+            roundedPanel17.Name = "roundedPanel17";
+            roundedPanel17.Size = new Size(888, 367);
+            roundedPanel17.TabIndex = 12;
+            // 
+            // dgvNghiPhep
+            // 
+            dgvNghiPhep.BackgroundColor = Color.FromArgb(217, 229, 255);
+            dataGridViewCellStyle12.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = Color.FromArgb(217, 229, 255);
+            dataGridViewCellStyle12.Font = new Font("Inter Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle12.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = Color.FromArgb(192, 192, 255);
+            dataGridViewCellStyle12.SelectionForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle12.WrapMode = DataGridViewTriState.True;
+            dgvNghiPhep.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dgvNghiPhep.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvNghiPhep.Dock = DockStyle.Fill;
+            dgvNghiPhep.Location = new Point(0, 0);
+            dgvNghiPhep.Name = "dgvNghiPhep";
+            dgvNghiPhep.Size = new Size(888, 367);
+            dgvNghiPhep.TabIndex = 0;
+            // 
+            // roundedPanel15
+            // 
+            roundedPanel15.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            roundedPanel15.BackColor = Color.FromArgb(217, 229, 255);
+            roundedPanel15.BorderRadius = 20;
+            roundedPanel15.Controls.Add(label39);
+            roundedPanel15.Location = new Point(0, 0);
+            roundedPanel15.Name = "roundedPanel15";
+            roundedPanel15.Size = new Size(1054, 41);
+            roundedPanel15.TabIndex = 7;
+            // 
+            // label39
+            // 
+            label39.Font = new Font("Inter", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label39.Location = new Point(25, 4);
+            label39.Name = "label39";
+            label39.Size = new Size(199, 34);
+            label39.TabIndex = 2;
+            label39.Text = "Quản lý đơn xin";
+            label39.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // roundedPanel16
+            // 
+            roundedPanel16.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            roundedPanel16.BackColor = Color.FromArgb(156, 193, 250);
+            roundedPanel16.BorderRadius = 20;
+            roundedPanel16.Controls.Add(pictureBox9);
+            roundedPanel16.Controls.Add(label40);
+            roundedPanel16.Location = new Point(2557, 15);
+            roundedPanel16.Name = "roundedPanel16";
+            roundedPanel16.Size = new Size(179, 62);
+            roundedPanel16.TabIndex = 6;
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
+            pictureBox9.Location = new Point(13, 10);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(43, 43);
+            pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox9.TabIndex = 1;
+            pictureBox9.TabStop = false;
+            // 
+            // label40
+            // 
+            label40.AutoSize = true;
+            label40.Font = new Font("Inter SemiBold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label40.Location = new Point(59, 17);
+            label40.Name = "label40";
+            label40.Size = new Size(112, 30);
+            label40.TabIndex = 0;
+            label40.Text = "Lịch Trình";
+            // 
+            // pnlThongBao
+            // 
+            pnlThongBao.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pnlThongBao.AutoScroll = true;
+            pnlThongBao.BackColor = Color.FromArgb(173, 220, 255);
+            pnlThongBao.Controls.Add(label41);
+            pnlThongBao.Controls.Add(button3);
+            pnlThongBao.Controls.Add(button4);
+            pnlThongBao.Location = new Point(1015, 134);
+            pnlThongBao.Name = "pnlThongBao";
+            pnlThongBao.Size = new Size(328, 255);
+            pnlThongBao.TabIndex = 4;
+            pnlThongBao.Visible = false;
+            // 
+            // label41
+            // 
+            label41.Font = new Font("Inter", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label41.Location = new Point(3, 8);
+            label41.Name = "label41";
+            label41.Size = new Size(322, 31);
+            label41.TabIndex = 19;
+            label41.Text = "Thông báo";
+            label41.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // button3
+            // 
+            button3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button3.BackColor = Color.Transparent;
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Font = new Font("Inter", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button3.Location = new Point(1391, 5);
+            button3.Name = "button3";
+            button3.Size = new Size(40, 25);
+            button3.TabIndex = 2;
+            button3.Text = "-";
+            button3.TextAlign = ContentAlignment.TopCenter;
+            button3.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            button4.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button4.BackColor = Color.Transparent;
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Font = new Font("Inter", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button4.Location = new Point(1434, 5);
+            button4.Name = "button4";
+            button4.Size = new Size(40, 25);
+            button4.TabIndex = 1;
+            button4.Text = "x";
+            button4.TextAlign = ContentAlignment.TopCenter;
+            button4.UseVisualStyleBackColor = false;
+            // 
+            // roundedPanel18
+            // 
+            roundedPanel18.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            roundedPanel18.BackColor = Color.FromArgb(217, 229, 255);
+            roundedPanel18.BorderRadius = 20;
+            roundedPanel18.Controls.Add(label51);
+            roundedPanel18.Location = new Point(0, 0);
+            roundedPanel18.Name = "roundedPanel18";
+            roundedPanel18.Size = new Size(1054, 41);
+            roundedPanel18.TabIndex = 7;
+            // 
+            // label51
+            // 
+            label51.Font = new Font("Inter", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label51.Location = new Point(25, 5);
+            label51.Name = "label51";
+            label51.Size = new Size(139, 29);
+            label51.TabIndex = 2;
+            label51.Text = "Hệ thống";
+            label51.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // pnl_HeThong
+            // 
+            pnl_HeThong.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pnl_HeThong.BackColor = Color.White;
+            pnl_HeThong.BorderRadius = 20;
+            pnl_HeThong.Controls.Add(label58);
+            pnl_HeThong.Controls.Add(roundedPanel22);
+            pnl_HeThong.Controls.Add(pnlBoxTimTaiKhoan);
+            pnl_HeThong.Controls.Add(roundedPanel21);
+            pnl_HeThong.Controls.Add(roundedPanel19);
+            pnl_HeThong.Controls.Add(roundedPanel18);
+            pnl_HeThong.Controls.Add(roundedPanel20);
+            pnl_HeThong.Location = new Point(289, 137);
+            pnl_HeThong.Name = "pnl_HeThong";
+            pnl_HeThong.Size = new Size(1054, 640);
+            pnl_HeThong.TabIndex = 8;
+            pnl_HeThong.Visible = false;
+            // 
+            // label58
+            // 
+            label58.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            label58.Font = new Font("Inter SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label58.Location = new Point(623, 66);
+            label58.Name = "label58";
+            label58.Size = new Size(402, 27);
+            label58.TabIndex = 30;
+            label58.Text = "Lịch sử đăng nhập hệ thống";
+            label58.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // roundedPanel22
+            // 
+            roundedPanel22.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
+            roundedPanel22.BackColor = Color.FromArgb(217, 229, 255);
+            roundedPanel22.BorderRadius = 20;
+            roundedPanel22.Controls.Add(dgvLichSu);
+            roundedPanel22.Location = new Point(623, 99);
+            roundedPanel22.Name = "roundedPanel22";
+            roundedPanel22.Size = new Size(402, 527);
+            roundedPanel22.TabIndex = 14;
+            // 
+            // dgvLichSu
+            // 
+            dgvLichSu.BackgroundColor = Color.FromArgb(217, 229, 255);
+            dataGridViewCellStyle13.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = Color.FromArgb(217, 229, 255);
+            dataGridViewCellStyle13.Font = new Font("Inter Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle13.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle13.SelectionBackColor = Color.FromArgb(192, 192, 255);
+            dataGridViewCellStyle13.SelectionForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle13.WrapMode = DataGridViewTriState.True;
+            dgvLichSu.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            dgvLichSu.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvLichSu.Dock = DockStyle.Fill;
+            dgvLichSu.Location = new Point(0, 0);
+            dgvLichSu.Name = "dgvLichSu";
+            dgvLichSu.Size = new Size(402, 527);
+            dgvLichSu.TabIndex = 0;
+            // 
+            // pnlBoxTimTaiKhoan
+            // 
+            pnlBoxTimTaiKhoan.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pnlBoxTimTaiKhoan.BackColor = Color.FromArgb(217, 229, 255);
+            pnlBoxTimTaiKhoan.BorderRadius = 20;
+            pnlBoxTimTaiKhoan.Controls.Add(txtTimTaiKhoan);
+            pnlBoxTimTaiKhoan.Controls.Add(btnTimTaiKhoan);
+            pnlBoxTimTaiKhoan.Location = new Point(28, 220);
+            pnlBoxTimTaiKhoan.Name = "pnlBoxTimTaiKhoan";
+            pnlBoxTimTaiKhoan.Size = new Size(578, 40);
+            pnlBoxTimTaiKhoan.TabIndex = 8;
+            // 
+            // txtTimTaiKhoan
+            // 
+            txtTimTaiKhoan.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            txtTimTaiKhoan.BackColor = Color.FromArgb(216, 228, 245);
+            txtTimTaiKhoan.BorderStyle = BorderStyle.None;
+            txtTimTaiKhoan.Font = new Font("Inter", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtTimTaiKhoan.Location = new Point(7, 9);
+            txtTimTaiKhoan.Name = "txtTimTaiKhoan";
+            txtTimTaiKhoan.Size = new Size(521, 23);
+            txtTimTaiKhoan.TabIndex = 15;
+            // 
+            // btnTimTaiKhoan
+            // 
+            btnTimTaiKhoan.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnTimTaiKhoan.Image = Properties.Resources.Screenshot_2026_03_20_174457;
+            btnTimTaiKhoan.Location = new Point(534, 2);
+            btnTimTaiKhoan.Name = "btnTimTaiKhoan";
+            btnTimTaiKhoan.Size = new Size(35, 35);
+            btnTimTaiKhoan.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnTimTaiKhoan.TabIndex = 16;
+            btnTimTaiKhoan.TabStop = false;
+            btnTimTaiKhoan.Click += btnTimTaiKhoan_Click;
+            // 
+            // roundedPanel21
+            // 
+            roundedPanel21.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            roundedPanel21.BackColor = Color.FromArgb(173, 220, 255);
+            roundedPanel21.BorderRadius = 20;
+            roundedPanel21.Controls.Add(btnThemTaiKhoan);
+            roundedPanel21.Controls.Add(btnXoaTaiKhoan);
+            roundedPanel21.Controls.Add(cbbNhanVienRanh2);
+            roundedPanel21.Controls.Add(label57);
+            roundedPanel21.Controls.Add(cbbQuyen);
+            roundedPanel21.Controls.Add(label56);
+            roundedPanel21.Controls.Add(txtPassword);
+            roundedPanel21.Controls.Add(label55);
+            roundedPanel21.Controls.Add(txtUsername);
+            roundedPanel21.Controls.Add(label54);
+            roundedPanel21.Controls.Add(label53);
+            roundedPanel21.Location = new Point(25, 59);
+            roundedPanel21.Name = "roundedPanel21";
+            roundedPanel21.Size = new Size(578, 146);
+            roundedPanel21.TabIndex = 14;
+            // 
+            // btnThemTaiKhoan
+            // 
+            btnThemTaiKhoan.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnThemTaiKhoan.BackColor = Color.FromArgb(155, 193, 255);
+            btnThemTaiKhoan.FlatStyle = FlatStyle.Flat;
+            btnThemTaiKhoan.Font = new Font("Inter Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnThemTaiKhoan.Location = new Point(409, 105);
+            btnThemTaiKhoan.Name = "btnThemTaiKhoan";
+            btnThemTaiKhoan.Size = new Size(67, 31);
+            btnThemTaiKhoan.TabIndex = 29;
+            btnThemTaiKhoan.Text = "Tạo";
+            btnThemTaiKhoan.UseVisualStyleBackColor = false;
+            btnThemTaiKhoan.Click += btnThemTaiKhoan_Click;
+            // 
+            // btnXoaTaiKhoan
+            // 
+            btnXoaTaiKhoan.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnXoaTaiKhoan.BackColor = Color.FromArgb(155, 193, 255);
+            btnXoaTaiKhoan.FlatStyle = FlatStyle.Flat;
+            btnXoaTaiKhoan.Font = new Font("Inter Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnXoaTaiKhoan.Location = new Point(482, 105);
+            btnXoaTaiKhoan.Name = "btnXoaTaiKhoan";
+            btnXoaTaiKhoan.Size = new Size(67, 31);
+            btnXoaTaiKhoan.TabIndex = 18;
+            btnXoaTaiKhoan.Text = "Xóa";
+            btnXoaTaiKhoan.UseVisualStyleBackColor = false;
+            btnXoaTaiKhoan.Click += btnXoaTaiKhoan_Click;
+            // 
+            // cbbNhanVienRanh2
+            // 
+            cbbNhanVienRanh2.Font = new Font("Inter", 12.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cbbNhanVienRanh2.FormattingEnabled = true;
+            cbbNhanVienRanh2.Items.AddRange(new object[] { "HR", "Employee", "Manager", "Admin" });
+            cbbNhanVienRanh2.Location = new Point(402, 38);
+            cbbNhanVienRanh2.Name = "cbbNhanVienRanh2";
+            cbbNhanVienRanh2.Size = new Size(164, 32);
+            cbbNhanVienRanh2.TabIndex = 28;
+            // 
+            // label57
+            // 
+            label57.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label57.Location = new Point(297, 38);
+            label57.Name = "label57";
+            label57.Size = new Size(99, 30);
+            label57.TabIndex = 27;
+            label57.Text = "Đối tượng:";
+            label57.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // cbbQuyen
+            // 
+            cbbQuyen.Font = new Font("Inter", 12.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cbbQuyen.FormattingEnabled = true;
+            cbbQuyen.Items.AddRange(new object[] { "HR", "Employee", "Manager", "Admin" });
+            cbbQuyen.Location = new Point(127, 106);
+            cbbQuyen.Name = "cbbQuyen";
+            cbbQuyen.Size = new Size(164, 32);
+            cbbQuyen.TabIndex = 26;
+            // 
+            // label56
+            // 
+            label56.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label56.Location = new Point(19, 108);
+            label56.Name = "label56";
+            label56.Size = new Size(102, 30);
+            label56.TabIndex = 25;
+            label56.Text = "Quyền:";
+            label56.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // txtPassword
+            // 
+            txtPassword.BackColor = Color.White;
+            txtPassword.BorderStyle = BorderStyle.FixedSingle;
+            txtPassword.Font = new Font("Inter", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtPassword.Location = new Point(127, 71);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(164, 30);
+            txtPassword.TabIndex = 24;
+            // 
+            // label55
+            // 
+            label55.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label55.Location = new Point(19, 72);
+            label55.Name = "label55";
+            label55.Size = new Size(102, 30);
+            label55.TabIndex = 23;
+            label55.Text = "Password:";
+            label55.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // txtUsername
+            // 
+            txtUsername.BackColor = Color.White;
+            txtUsername.BorderStyle = BorderStyle.FixedSingle;
+            txtUsername.Font = new Font("Inter", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtUsername.Location = new Point(127, 38);
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(164, 30);
+            txtUsername.TabIndex = 22;
+            // 
+            // label54
+            // 
+            label54.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label54.Location = new Point(19, 38);
+            label54.Name = "label54";
+            label54.Size = new Size(102, 30);
+            label54.TabIndex = 22;
+            label54.Text = "Username:";
+            label54.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // label53
+            // 
+            label53.Font = new Font("Inter SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label53.Location = new Point(19, 9);
+            label53.Name = "label53";
+            label53.Size = new Size(547, 27);
+            label53.TabIndex = 3;
+            label53.Text = "Bảng điều chỉnh tài khoản";
+            label53.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // roundedPanel19
+            // 
+            roundedPanel19.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            roundedPanel19.BackColor = Color.FromArgb(217, 229, 255);
+            roundedPanel19.BorderRadius = 20;
+            roundedPanel19.Controls.Add(dgvTaiKhoan);
+            roundedPanel19.Location = new Point(25, 276);
+            roundedPanel19.Name = "roundedPanel19";
+            roundedPanel19.Size = new Size(581, 350);
+            roundedPanel19.TabIndex = 13;
+            // 
+            // dgvTaiKhoan
+            // 
+            dgvTaiKhoan.BackgroundColor = Color.FromArgb(217, 229, 255);
+            dataGridViewCellStyle14.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = Color.FromArgb(217, 229, 255);
+            dataGridViewCellStyle14.Font = new Font("Inter Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle14.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle14.SelectionBackColor = Color.FromArgb(192, 192, 255);
+            dataGridViewCellStyle14.SelectionForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle14.WrapMode = DataGridViewTriState.True;
+            dgvTaiKhoan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dgvTaiKhoan.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvTaiKhoan.Dock = DockStyle.Fill;
+            dgvTaiKhoan.Location = new Point(0, 0);
+            dgvTaiKhoan.Name = "dgvTaiKhoan";
+            dgvTaiKhoan.Size = new Size(581, 350);
+            dgvTaiKhoan.TabIndex = 0;
+            // 
+            // roundedPanel20
+            // 
+            roundedPanel20.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            roundedPanel20.BackColor = Color.FromArgb(156, 193, 250);
+            roundedPanel20.BorderRadius = 20;
+            roundedPanel20.Controls.Add(pictureBox10);
+            roundedPanel20.Controls.Add(label52);
+            roundedPanel20.Location = new Point(2557, 15);
+            roundedPanel20.Name = "roundedPanel20";
+            roundedPanel20.Size = new Size(179, 62);
+            roundedPanel20.TabIndex = 6;
+            // 
+            // pictureBox10
+            // 
+            pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
+            pictureBox10.Location = new Point(13, 10);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(43, 43);
+            pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox10.TabIndex = 1;
+            pictureBox10.TabStop = false;
+            // 
+            // label52
+            // 
+            label52.AutoSize = true;
+            label52.Font = new Font("Inter SemiBold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label52.Location = new Point(59, 17);
+            label52.Name = "label52";
+            label52.Size = new Size(112, 30);
+            label52.TabIndex = 0;
+            label52.Text = "Lịch Trình";
+            // 
+            // pnl_ChamCong
+            // 
+            pnl_ChamCong.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pnl_ChamCong.BackColor = Color.White;
+            pnl_ChamCong.BorderRadius = 20;
+            pnl_ChamCong.Controls.Add(button7);
+            pnl_ChamCong.Controls.Add(button6);
+            pnl_ChamCong.Controls.Add(label61);
+            pnl_ChamCong.Controls.Add(roundedPanel26);
+            pnl_ChamCong.Controls.Add(roundedPanel24);
+            pnl_ChamCong.Controls.Add(roundedPanel25);
+            pnl_ChamCong.Location = new Point(289, 137);
+            pnl_ChamCong.Name = "pnl_ChamCong";
+            pnl_ChamCong.Size = new Size(1054, 640);
+            pnl_ChamCong.TabIndex = 8;
+            // 
+            // button7
+            // 
+            button7.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button7.BackColor = Color.FromArgb(155, 193, 255);
+            button7.FlatStyle = FlatStyle.Flat;
+            button7.Font = new Font("Inter Medium", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button7.Location = new Point(919, 200);
+            button7.Name = "button7";
+            button7.Size = new Size(117, 40);
+            button7.TabIndex = 18;
+            button7.Text = "CheckOut";
+            button7.UseVisualStyleBackColor = false;
+            button7.Click += button7_Click;
+            // 
+            // button6
+            // 
+            button6.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button6.BackColor = Color.FromArgb(155, 193, 255);
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Font = new Font("Inter Medium", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button6.Location = new Point(919, 146);
+            button6.Name = "button6";
+            button6.Size = new Size(117, 40);
+            button6.TabIndex = 17;
+            button6.Text = "CheckIn";
+            button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
+            // 
+            // label61
+            // 
+            label61.Font = new Font("Inter SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label61.Location = new Point(25, 108);
+            label61.Name = "label61";
+            label61.Size = new Size(185, 27);
+            label61.TabIndex = 9;
+            label61.Text = "Lịch sử chấm công";
+            label61.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // roundedPanel26
+            // 
+            roundedPanel26.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            roundedPanel26.BackColor = Color.FromArgb(217, 229, 255);
+            roundedPanel26.BorderRadius = 20;
+            roundedPanel26.Controls.Add(dgvChamCong);
+            roundedPanel26.Location = new Point(25, 146);
+            roundedPanel26.Name = "roundedPanel26";
+            roundedPanel26.Size = new Size(880, 432);
+            roundedPanel26.TabIndex = 8;
+            // 
+            // dgvChamCong
+            // 
+            dgvChamCong.BackgroundColor = Color.FromArgb(217, 229, 255);
+            dgvChamCong.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvChamCong.Dock = DockStyle.Fill;
+            dgvChamCong.Location = new Point(0, 0);
+            dgvChamCong.Name = "dgvChamCong";
+            dgvChamCong.Size = new Size(880, 432);
+            dgvChamCong.TabIndex = 0;
+            // 
+            // roundedPanel24
+            // 
+            roundedPanel24.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            roundedPanel24.BackColor = Color.FromArgb(217, 229, 255);
+            roundedPanel24.BorderRadius = 20;
+            roundedPanel24.Controls.Add(label59);
+            roundedPanel24.Location = new Point(0, 0);
+            roundedPanel24.Name = "roundedPanel24";
+            roundedPanel24.Size = new Size(1054, 41);
+            roundedPanel24.TabIndex = 7;
+            // 
+            // label59
+            // 
+            label59.Font = new Font("Inter", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label59.Location = new Point(25, 6);
+            label59.Name = "label59";
+            label59.Size = new Size(139, 29);
+            label59.TabIndex = 2;
+            label59.Text = "Chấm công";
+            label59.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // roundedPanel25
+            // 
+            roundedPanel25.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            roundedPanel25.BackColor = Color.FromArgb(156, 193, 250);
+            roundedPanel25.BorderRadius = 20;
+            roundedPanel25.Controls.Add(pictureBox11);
+            roundedPanel25.Controls.Add(label60);
+            roundedPanel25.Location = new Point(2557, 15);
+            roundedPanel25.Name = "roundedPanel25";
+            roundedPanel25.Size = new Size(179, 62);
+            roundedPanel25.TabIndex = 6;
+            // 
+            // pictureBox11
+            // 
+            pictureBox11.Image = (Image)resources.GetObject("pictureBox11.Image");
+            pictureBox11.Location = new Point(13, 10);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(43, 43);
+            pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox11.TabIndex = 1;
+            pictureBox11.TabStop = false;
+            // 
+            // label60
+            // 
+            label60.AutoSize = true;
+            label60.Font = new Font("Inter SemiBold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label60.Location = new Point(59, 17);
+            label60.Name = "label60";
+            label60.Size = new Size(112, 30);
+            label60.TabIndex = 0;
+            label60.Text = "Lịch Trình";
+            // 
+            // pnl_Luong
+            // 
+            pnl_Luong.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pnl_Luong.BackColor = Color.White;
+            pnl_Luong.BorderRadius = 20;
+            pnl_Luong.Controls.Add(label72);
+            pnl_Luong.Controls.Add(nudNam);
+            pnl_Luong.Controls.Add(label71);
+            pnl_Luong.Controls.Add(nudThang);
+            pnl_Luong.Controls.Add(label64);
+            pnl_Luong.Controls.Add(button8);
+            pnl_Luong.Controls.Add(btnChotLuong);
+            pnl_Luong.Controls.Add(roundedPanel23);
+            pnl_Luong.Controls.Add(roundedPanel27);
+            pnl_Luong.Controls.Add(roundedPanel28);
+            pnl_Luong.Location = new Point(289, 137);
+            pnl_Luong.Name = "pnl_Luong";
+            pnl_Luong.Size = new Size(1054, 640);
+            pnl_Luong.TabIndex = 8;
+            // 
+            // label71
+            // 
+            label71.Font = new Font("Inter SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label71.Location = new Point(25, 101);
+            label71.Name = "label71";
+            label71.Size = new Size(185, 27);
+            label71.TabIndex = 21;
+            label71.Text = "Chọn tháng cần chốt:";
+            label71.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // nudThang
+            // 
+            nudThang.Font = new Font("Inter Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            nudThang.Location = new Point(216, 100);
+            nudThang.Maximum = new decimal(new int[] { 12, 0, 0, 0 });
+            nudThang.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
+            nudThang.Name = "nudThang";
+            nudThang.Size = new Size(120, 27);
+            nudThang.TabIndex = 20;
+            nudThang.Value = new decimal(new int[] { 1, 0, 0, 0 });
+            // 
+            // label64
+            // 
+            label64.Font = new Font("Inter SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label64.Location = new Point(25, 69);
+            label64.Name = "label64";
+            label64.Size = new Size(185, 27);
+            label64.TabIndex = 19;
+            label64.Text = "Bảng lương công ty:";
+            label64.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // button8
+            // 
+            button8.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button8.BackColor = Color.FromArgb(192, 255, 192);
+            button8.FlatStyle = FlatStyle.Flat;
+            button8.Font = new Font("Inter Medium", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button8.Location = new Point(847, 45);
+            button8.Name = "button8";
+            button8.Size = new Size(178, 40);
+            button8.TabIndex = 18;
+            button8.Text = "Duyệt lương =>";
+            button8.UseVisualStyleBackColor = false;
+            button8.Visible = false;
+            button8.Click += button8_Click;
+            // 
+            // btnChotLuong
+            // 
+            btnChotLuong.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnChotLuong.BackColor = Color.FromArgb(192, 255, 192);
+            btnChotLuong.FlatStyle = FlatStyle.Flat;
+            btnChotLuong.Font = new Font("Inter Medium", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnChotLuong.Location = new Point(847, 91);
+            btnChotLuong.Name = "btnChotLuong";
+            btnChotLuong.Size = new Size(178, 40);
+            btnChotLuong.TabIndex = 17;
+            btnChotLuong.Text = "Chốt bảng lương";
+            btnChotLuong.UseVisualStyleBackColor = false;
+            btnChotLuong.Visible = false;
+            btnChotLuong.Click += btnChotLuong_Click;
+            // 
+            // roundedPanel23
+            // 
+            roundedPanel23.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            roundedPanel23.BorderRadius = 20;
+            roundedPanel23.Controls.Add(dgvTinhLuong);
+            roundedPanel23.Location = new Point(26, 140);
+            roundedPanel23.Name = "roundedPanel23";
+            roundedPanel23.Size = new Size(999, 438);
+            roundedPanel23.TabIndex = 8;
+            // 
+            // dgvTinhLuong
+            // 
+            dgvTinhLuong.BackgroundColor = Color.FromArgb(217, 229, 255);
+            dgvTinhLuong.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvTinhLuong.Dock = DockStyle.Fill;
+            dgvTinhLuong.Location = new Point(0, 0);
+            dgvTinhLuong.Name = "dgvTinhLuong";
+            dgvTinhLuong.Size = new Size(999, 438);
+            dgvTinhLuong.TabIndex = 0;
+            // 
+            // roundedPanel27
+            // 
+            roundedPanel27.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            roundedPanel27.BackColor = Color.FromArgb(217, 229, 255);
+            roundedPanel27.BorderRadius = 20;
+            roundedPanel27.Controls.Add(label62);
+            roundedPanel27.Location = new Point(0, 0);
+            roundedPanel27.Name = "roundedPanel27";
+            roundedPanel27.Size = new Size(1054, 41);
+            roundedPanel27.TabIndex = 7;
+            // 
+            // label62
+            // 
+            label62.Font = new Font("Inter", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label62.Location = new Point(25, 5);
+            label62.Name = "label62";
+            label62.Size = new Size(139, 30);
+            label62.TabIndex = 2;
+            label62.Text = "Lương";
+            label62.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // roundedPanel28
+            // 
+            roundedPanel28.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            roundedPanel28.BackColor = Color.FromArgb(156, 193, 250);
+            roundedPanel28.BorderRadius = 20;
+            roundedPanel28.Controls.Add(pictureBox12);
+            roundedPanel28.Controls.Add(label63);
+            roundedPanel28.Location = new Point(2557, 15);
+            roundedPanel28.Name = "roundedPanel28";
+            roundedPanel28.Size = new Size(179, 62);
+            roundedPanel28.TabIndex = 6;
+            // 
+            // pictureBox12
+            // 
+            pictureBox12.Image = (Image)resources.GetObject("pictureBox12.Image");
+            pictureBox12.Location = new Point(13, 10);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new Size(43, 43);
+            pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox12.TabIndex = 1;
+            pictureBox12.TabStop = false;
+            // 
+            // label63
+            // 
+            label63.AutoSize = true;
+            label63.Font = new Font("Inter SemiBold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label63.Location = new Point(59, 17);
+            label63.Name = "label63";
+            label63.Size = new Size(112, 30);
+            label63.TabIndex = 0;
+            label63.Text = "Lịch Trình";
+            // 
+            // nudNam
+            // 
+            nudNam.Font = new Font("Inter Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            nudNam.Location = new Point(407, 101);
+            nudNam.Maximum = new decimal(new int[] { 2100, 0, 0, 0 });
+            nudNam.Minimum = new decimal(new int[] { 2000, 0, 0, 0 });
+            nudNam.Name = "nudNam";
+            nudNam.Size = new Size(120, 27);
+            nudNam.TabIndex = 22;
+            nudNam.Value = new decimal(new int[] { 2000, 0, 0, 0 });
+            // 
+            // label72
+            // 
+            label72.Font = new Font("Inter SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label72.Location = new Point(342, 100);
+            label72.Name = "label72";
+            label72.Size = new Size(59, 27);
+            label72.TabIndex = 23;
+            label72.Text = "Năm:";
+            label72.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // MainForm
             // 
@@ -2619,15 +4292,21 @@ namespace HyperionHR_meta
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(216, 228, 245);
             ClientSize = new Size(1366, 800);
-            Controls.Add(pnlLogout);
             Controls.Add(pnlWelcomeBar);
+            Controls.Add(pnlLogout);
             Controls.Add(pnlFormBar);
-            Controls.Add(pnl_QuanLyNhanSu);
-            Controls.Add(pnl_Dashboard);
-            Controls.Add(pnl_ToChuc);
-            Controls.Add(pnl_HoSoCaNhan);
             Controls.Add(pnlSideBar_HR);
             Controls.Add(pnlSideBar_Employee);
+            Controls.Add(pnl_Luong);
+            Controls.Add(pnl_DonXin);
+            Controls.Add(pnl_QuanLyHopDong);
+            Controls.Add(pnl_HeThong);
+            Controls.Add(pnl_ToChuc);
+            Controls.Add(pnl_HoSoCaNhan);
+            Controls.Add(pnl_QuanLyNhanSu);
+            Controls.Add(pnl_ChamCong);
+            Controls.Add(pnlThongBao);
+            Controls.Add(pnl_Dashboard);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 2, 3, 2);
             Name = "MainForm";
@@ -2639,17 +4318,12 @@ namespace HyperionHR_meta
             pnlFormBar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)picLogo).EndInit();
             pnlWelcomeBar.ResumeLayout(false);
+            pnlWelcomeBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)icoBaoTriHeThong).EndInit();
-            ((System.ComponentModel.ISupportInitialize)icoNotifications).EndInit();
-            pnlScheduleButton.ResumeLayout(false);
-            pnlScheduleButton.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)picSchedule).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnChuong).EndInit();
             ((System.ComponentModel.ISupportInitialize)picAva2).EndInit();
             pnlSideBar_HR.ResumeLayout(false);
             pnlBottomSideMenu.ResumeLayout(false);
-            pnlLogout.ResumeLayout(false);
-            pnlLogout.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)picIconLogout).EndInit();
             ((System.ComponentModel.ISupportInitialize)picAva1).EndInit();
             pnlHoTro.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)icoHoTro).EndInit();
@@ -2660,8 +4334,6 @@ namespace HyperionHR_meta
             ((System.ComponentModel.ISupportInitialize)icoDon).EndInit();
             pnlLuong.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)icoLuong).EndInit();
-            pnlDuAn.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)icoDuAn).EndInit();
             pnlChamCong.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)icoChamCong).EndInit();
             pnlHopDong.ResumeLayout(false);
@@ -2675,11 +4347,9 @@ namespace HyperionHR_meta
             ((System.ComponentModel.ISupportInitialize)icoHoSoCaNhan).EndInit();
             pnlDashboard.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)icoDashBoard).EndInit();
-            pnl_Dashboard.ResumeLayout(false);
-            pnl_TopDashboard.ResumeLayout(false);
-            roundedPanel2.ResumeLayout(false);
-            roundedPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            pnlLogout.ResumeLayout(false);
+            pnlLogout.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)picIconLogout).EndInit();
             pnl_HoSoCaNhan.ResumeLayout(false);
             roundedPanel10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)circlePictureBox2).EndInit();
@@ -2710,12 +4380,8 @@ namespace HyperionHR_meta
             ((System.ComponentModel.ISupportInitialize)icoDonXin).EndInit();
             pnlLuong_Employee.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)icoLuong2).EndInit();
-            pnlDuAn_Employee.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)icoDuAn_Employee).EndInit();
             pnlChamCong_Employee.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)icoChamCong_2).EndInit();
-            pnlHopDong_Employee.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)icoHopDong2).EndInit();
             pnl_QuanLyNhanSu.ResumeLayout(false);
             pnlDienThongTin.ResumeLayout(false);
             pnlDienThongTin.PerformLayout();
@@ -2737,10 +4403,74 @@ namespace HyperionHR_meta
             roundedPanel8.ResumeLayout(false);
             roundedPanel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            pnlThemNVvaoPB.ResumeLayout(false);
-            pnlThemNVvaoPB.PerformLayout();
             pnlBangDieuChinhPB.ResumeLayout(false);
             pnlBangDieuChinhPB.PerformLayout();
+            pnlThemNVvaoPB.ResumeLayout(false);
+            pnlThemNVvaoPB.PerformLayout();
+            pnlThemChiNhanh.ResumeLayout(false);
+            pnlThemChiNhanh.PerformLayout();
+            pnl_QuanLyHopDong.ResumeLayout(false);
+            roundedPanel11.ResumeLayout(false);
+            roundedPanel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)btnTimHopDong).EndInit();
+            dgcHopDong.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvHopDong).EndInit();
+            roundedPanel12.ResumeLayout(false);
+            roundedPanel13.ResumeLayout(false);
+            roundedPanel13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            roundedPanel2.ResumeLayout(false);
+            roundedPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            pnl_TopDashboard.ResumeLayout(false);
+            pnl_Dashboard.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
+            roundedPanel34.ResumeLayout(false);
+            roundedPanel33.ResumeLayout(false);
+            roundedPanel32.ResumeLayout(false);
+            roundedPanel31.ResumeLayout(false);
+            roundedPanel30.ResumeLayout(false);
+            roundedPanel29.ResumeLayout(false);
+            pnl_DonXin.ResumeLayout(false);
+            roundedPanel14.ResumeLayout(false);
+            roundedPanel14.PerformLayout();
+            roundedPanel17.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvNghiPhep).EndInit();
+            roundedPanel15.ResumeLayout(false);
+            roundedPanel16.ResumeLayout(false);
+            roundedPanel16.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            pnlThongBao.ResumeLayout(false);
+            roundedPanel18.ResumeLayout(false);
+            pnl_HeThong.ResumeLayout(false);
+            roundedPanel22.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvLichSu).EndInit();
+            pnlBoxTimTaiKhoan.ResumeLayout(false);
+            pnlBoxTimTaiKhoan.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)btnTimTaiKhoan).EndInit();
+            roundedPanel21.ResumeLayout(false);
+            roundedPanel21.PerformLayout();
+            roundedPanel19.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvTaiKhoan).EndInit();
+            roundedPanel20.ResumeLayout(false);
+            roundedPanel20.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            pnl_ChamCong.ResumeLayout(false);
+            roundedPanel26.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvChamCong).EndInit();
+            roundedPanel24.ResumeLayout(false);
+            roundedPanel25.ResumeLayout(false);
+            roundedPanel25.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
+            pnl_Luong.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)nudThang).EndInit();
+            roundedPanel23.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvTinhLuong).EndInit();
+            roundedPanel27.ResumeLayout(false);
+            roundedPanel28.ResumeLayout(false);
+            roundedPanel28.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nudNam).EndInit();
             ResumeLayout(false);
         }
 
@@ -2763,9 +4493,6 @@ namespace HyperionHR_meta
         private Scripts.MakeupScripts.RoundedPanel pnlLogout;
         private PictureBox picIconLogout;
         private GroupBox grbMainMenu;
-        private Scripts.MakeupScripts.RoundedPanel pnlScheduleButton;
-        private Label lblLichTrinh;
-        private PictureBox picSchedule;
         private PictureBox picLogo;
         private Label lblDashboard;
         private Panel pnlDashboard;
@@ -2786,16 +4513,10 @@ namespace HyperionHR_meta
         private Panel pnlCaiDat;
         private PictureBox icoCaiDat;
         private Label lblCaiDat;
-        private Scripts.MakeupScripts.RoundedPanel pnl_Dashboard;
-        private Scripts.MakeupScripts.RoundedPanel roundedPanel2;
-        private PictureBox pictureBox3;
-        private Label label5;
-        private PictureBox icoNotifications;
+        private PictureBox btnChuong;
         private Panel pnlHopDong;
         private PictureBox icoHopDong;
         private Label lblHopDong;
-        private Scripts.MakeupScripts.RoundedPanel pnl_TopDashboard;
-        private Label lbl_Dashboarđ;
         private Panel pnlChamCong;
         private PictureBox icoChamCong;
         private Label lblChamCong;
@@ -2843,9 +4564,6 @@ namespace HyperionHR_meta
         private Panel pnlChamCong_Employee;
         private PictureBox icoChamCong_2;
         private Label lblChamCong_Employee;
-        private Panel pnlHopDong_Employee;
-        private PictureBox icoHopDong2;
-        private Label lblHopDong_Employee;
         private Panel pnlHoSoCaNhan_Employee;
         private PictureBox icoHoSoCaNhan2;
         private Label lblHoSoCaNhan_Employee;
@@ -2949,5 +4667,148 @@ namespace HyperionHR_meta
         private Label lbMaNV;
         private Label lbSDT;
         private Label lbEmail;
+        private Scripts.MakeupScripts.RoundedPanel pnl_QuanLyHopDong;
+        private Scripts.MakeupScripts.RoundedPanel roundedPanel12;
+        private Label label13;
+        private Scripts.MakeupScripts.RoundedPanel roundedPanel13;
+        private PictureBox pictureBox8;
+        private Label label29;
+        private Scripts.MakeupScripts.RoundedPanel dgcHopDong;
+        private DataGridView dgvHopDong;
+        private Label lbLoaiHD;
+        private Label label35;
+        private Label lbMaHD;
+        private Label label34;
+        private Label label31;
+        private Label label32;
+        private Label label30;
+        private Label lbNgayBatDauHD;
+        private Label label37;
+        private Label lbNgayKetThuc;
+        private Label label36;
+        private Label label33;
+        private Scripts.MakeupScripts.RoundedPanel roundedPanel11;
+        private TextBox txtTimHopDong;
+        private PictureBox btnTimHopDong;
+        private Button button2;
+        private Button btnGiaHan;
+        private Button btnChamDut;
+        private Button btnDuyetHD;
+        private Label label38;
+        private CheckBox chkTaoHopDong;
+        private Scripts.MakeupScripts.RoundedPanel roundedPanel2;
+        private PictureBox pictureBox3;
+        private Label label5;
+        private Scripts.MakeupScripts.RoundedPanel pnl_TopDashboard;
+        private Label lbl_Dashboarđ;
+        private Scripts.MakeupScripts.RoundedPanel pnl_Dashboard;
+        private Scripts.MakeupScripts.RoundedPanel pnl_DonXin;
+        private Scripts.MakeupScripts.RoundedPanel roundedPanel15;
+        private Label label39;
+        private Scripts.MakeupScripts.RoundedPanel roundedPanel16;
+        private PictureBox pictureBox9;
+        private Label label40;
+        private Scripts.MakeupScripts.RoundedPanel roundedPanel17;
+        private DataGridView dgvNghiPhep;
+        private Button btnTuChoi;
+        private Button btnDuyet;
+        private Label label43;
+        private Scripts.MakeupScripts.RoundedPanel roundedPanel14;
+        private Label label45;
+        private Label label44;
+        private TextBox txtLyDo;
+        private TextBox txtSoNgayNghi;
+        private Label label47;
+        private Button btnGuiDon;
+        private ComboBox cbbLoaiDon;
+        private Label lblSoThongBao;
+        private Panel pnlThongBao;
+        private Label label41;
+        private Button button3;
+        private Button button4;
+        private Button btnBoxThemChiNhanh;
+        private Scripts.MakeupScripts.RoundedPanel pnlThemChiNhanh;
+        private Button button5;
+        private Button btnThemCN;
+        private Label label42;
+        private Label label46;
+        private Label label48;
+        private TextBox txtDiaChiCN;
+        private TextBox txtTenCN;
+        private TextBox txtMaCN;
+        private Label label49;
+        private Label lbPhongban;
+        private Label label50;
+        private Scripts.MakeupScripts.RoundedPanel roundedPanel18;
+        private Label label51;
+        private Scripts.MakeupScripts.RoundedPanel pnl_HeThong;
+        private Scripts.MakeupScripts.RoundedPanel roundedPanel20;
+        private PictureBox pictureBox10;
+        private Label label52;
+        private Scripts.MakeupScripts.RoundedPanel roundedPanel21;
+        private Label label53;
+        private Scripts.MakeupScripts.RoundedPanel roundedPanel19;
+        private DataGridView dgvTaiKhoan;
+        private Scripts.MakeupScripts.RoundedPanel pnlBoxTimTaiKhoan;
+        private TextBox txtTimTaiKhoan;
+        private PictureBox btnTimTaiKhoan;
+        private TextBox txtUsername;
+        private Label label54;
+        private Button btnXoaTaiKhoan;
+        private ComboBox cbbNhanVienRanh2;
+        private Label label57;
+        private ComboBox cbbQuyen;
+        private Label label56;
+        private TextBox txtPassword;
+        private Label label55;
+        private Button btnThemTaiKhoan;
+        private Label label58;
+        private Scripts.MakeupScripts.RoundedPanel roundedPanel22;
+        private DataGridView dgvLichSu;
+        private Scripts.MakeupScripts.RoundedPanel pnl_ChamCong;
+        private Scripts.MakeupScripts.RoundedPanel roundedPanel26;
+        private DataGridView dgvChamCong;
+        private Scripts.MakeupScripts.RoundedPanel roundedPanel24;
+        private Label label59;
+        private Scripts.MakeupScripts.RoundedPanel roundedPanel25;
+        private PictureBox pictureBox11;
+        private Label label60;
+        private Button button7;
+        private Button button6;
+        private Label label61;
+        private Scripts.MakeupScripts.RoundedPanel pnl_Luong;
+        private Scripts.MakeupScripts.RoundedPanel roundedPanel27;
+        private Label label62;
+        private Scripts.MakeupScripts.RoundedPanel roundedPanel28;
+        private PictureBox pictureBox12;
+        private Label label63;
+        private Scripts.MakeupScripts.RoundedPanel roundedPanel23;
+        private Button btnChotLuong;
+        private DataGridView dgvTinhLuong;
+        private Button button8;
+        private Label label64;
+        private Scripts.MakeupScripts.RoundedPanel roundedPanel32;
+        private Scripts.MakeupScripts.RoundedPanel roundedPanel31;
+        private Scripts.MakeupScripts.RoundedPanel roundedPanel30;
+        private Scripts.MakeupScripts.RoundedPanel roundedPanel29;
+        private Label label68;
+        private Label label67;
+        private Label label66;
+        private Label label65;
+        private Scripts.MakeupScripts.RoundedPanel roundedPanel34;
+        private Label lblNhanVienCheckIn;
+        private Label label70;
+        private Scripts.MakeupScripts.RoundedPanel roundedPanel33;
+        private Label lblDonChoDuyet;
+        private Label label69;
+        private Label lblHopDongHetHan;
+        private Label lblHopDongConHan;
+        private Label lblTongPhongBan;
+        private Label lblTongNhanVien;
+        private PictureBox pictureBox13;
+        private Label label71;
+        private NumericUpDown nudThang;
+        private Label label72;
+        private NumericUpDown nudNam;
     }
 }

@@ -8,7 +8,8 @@ namespace HyperionHR_meta.Scripts.Class.Person
     public class PartTimeEmployee : Employee
     {
         public double SoGioLam { get; set; }
-        public double MucLuongTheoGio { get; set; } 
+        public double MucLuongTheoGio { get; set; }
+        public double SoGioLamTrongThang { get; set; }
 
         public PartTimeEmployee()
         {
@@ -33,7 +34,7 @@ namespace HyperionHR_meta.Scripts.Class.Person
         // ==========================================
         public override double TinhLuong()
         {
-            return SoGioLam * MucLuongTheoGio;
+            return SoGioLamTrongThang * 30000;
         }
     }
 }

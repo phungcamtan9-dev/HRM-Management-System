@@ -8,8 +8,8 @@ namespace HyperionHR_meta.Scripts.Interface
 {
     public interface IAttendanceService
     {
-        void CheckIn(DateTime gioVao);
-        void CheckOut(DateTime gioRa);
+        string CheckIn(DateTime gioVao);
+        string CheckOut(DateTime gioRa);
         double CalculateWorkingHours();
     }
 }

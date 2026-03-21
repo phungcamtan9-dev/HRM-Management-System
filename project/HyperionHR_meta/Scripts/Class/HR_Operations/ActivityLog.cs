@@ -11,8 +11,8 @@ namespace HyperionHR_meta.Scripts.Class.HR_Operations
     public class ActivityLog
     {
         public string LogId { get; set; }
-        public string TenTaiKhoan { get; set; } // Sửa Version thành string
-        public string HanhDong { get; set; }
+        public string TenTaiKhoan { get; set; }
+        public string HanhDong { get; set; } // tui không biết nói sao bro giúp tui
         public DateTime ThoiGian { get; set; }
 
         public ActivityLog() { }

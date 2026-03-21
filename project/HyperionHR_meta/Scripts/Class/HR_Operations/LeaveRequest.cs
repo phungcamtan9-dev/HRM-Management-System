@@ -8,51 +8,60 @@ namespace HyperionHR_meta.Scripts.Class.HR_Operations
     {
         public string MaDon { get; set; }
         public Employee NhanVien { get; set; }
-        public string LoaiNghiPhep { get; set; } // các kiểu lý do: "Nghỉ ốm", "Nghỉ phép năm", "Nghỉ việc"
+        public string LoaiNghiPhep { get; set; } // Nghỉ việc, nghỉ phép
         public int SoNgayNghi { get; set; }
+        public string LyDo { get; set; } // Ốm, việc riêng, đu lịch,...
 
-        private string TrangThaiDuyet;
+        private string TrangThai; // Pending, Approved, Rejected
 
         // ==========================================
-        // KHAI BÁO SỰ KIỆN (EVENT)
+        // KHAI BÁO CÁC SỰ KIỆN (EVENTS) CỐT LÕI
         // ==========================================
+        public delegate void LeaveRequestHandler(LeaveRequest sender);
+        [field: NonSerialized] // Em tắt chỗ này để nó kh lỗi vì delegate lưu trên Ram nên nó kh cho Save file về@@ khi mở app sẽ tự nối lại ở hàm khác
+        public event LeaveRequestHandler OnLeaveRequestCreated;
 
-        // Khai báo delegate quy định định dạng của sự kiện
-        public delegate void LeaveRequestApprovedHandler(LeaveRequest sender);
+        [field: NonSerialized]
+        public event LeaveRequestHandler OnLeaveRequestApproved;
 
-        // Khai báo sự kiện dựa trên delegate trên
-        public event LeaveRequestApprovedHandler OnLeaveRequestApproved;
+        [field: NonSerialized]
+        public event LeaveRequestHandler OnLeaveRequestRejected;
 
-        public LeaveRequest()
-        {
-            TrangThaiDuyet = "Pending";
-        }
-
-        public LeaveRequest(string maDon, Employee nhanVien, string loaiNghiPhep, int soNgayNghi)
+        // Constructor
+        public LeaveRequest(string maDon, Employee nhanVien, string loaiNghiPhep, int soNgay, string lyDo)
         {
             MaDon = maDon;
             NhanVien = nhanVien;
             LoaiNghiPhep = loaiNghiPhep;
-            SoNgayNghi = soNgayNghi;
-            TrangThaiDuyet = "Pending";
+            SoNgayNghi = soNgay;
+            LyDo = lyDo;
+            TrangThai = "Pending";
         }
 
         // ==========================================
-        // KÍCH HOẠT SỰ KIỆN KHI DUYỆT ĐƠN
+        // CÁC HÀM XỬ LÝ KÍCH HOẠT SỰ KIỆN
         // ==========================================
+        public void Submit()
+        {
+            // Nếu có ai đang "nghe" sự kiện này thì báo cho họ
+            if (OnLeaveRequestCreated != null) OnLeaveRequestCreated(this);
+        }
+
         public void Approve()
         {
-            TrangThaiDuyet = "Approved";
-
-            // Nếu có ai đó đang "lắng nghe" sự kiện này (khác null)
-            if (OnLeaveRequestApproved != null)
-            {
-                // Thì kích hoạt sự kiện, báo cho họ biết đơn này (this) vừa được duyệt!
-                OnLeaveRequestApproved(this);
-            }
+            TrangThai = "Approved";
+            if (OnLeaveRequestApproved != null) OnLeaveRequestApproved(this);
         }
 
-        public void Reject() { TrangThaiDuyet = "Rejected"; }
-        public string GetStatus() { return TrangThaiDuyet; }
+        public void Reject()
+        {
+            TrangThai = "Rejected";
+            if (OnLeaveRequestRejected != null) OnLeaveRequestRejected(this);
+        }
+
+        public string GetStatus()
+        {
+            return TrangThai;
+        }
     }
 }

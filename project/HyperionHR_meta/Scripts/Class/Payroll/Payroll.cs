@@ -51,17 +51,13 @@ namespace HyperionHR_meta.Scripts.Class.Payrolls
                 // Xử lý Phụ cấp theo Chức vụ
                 if (ftEmp.ChucVu != null)
                 {
-                    if (ftEmp.ChucVu.MaChucVu == "QLIT001")
+                    if (ftEmp.ChucVu.MaChucVu == "GD" || ftEmp.ChucVu.MaChucVu == "TP")
                     {
-                        DanhSachPhuCap.Add(new Allowance("PC01", "Phụ cấp Quản lý IT", 200000));
-                    }
-                    else if (ftEmp.ChucVu.MaChucVu.Contains("QL"))
-                    {
-                        DanhSachPhuCap.Add(new Allowance("PC02", "Phụ cấp Quản lý", 150000));
+                        DanhSachPhuCap.Add(new Allowance("PC01", "Phụ cấp Quản lý", 200000));
                     }
                     else
                     {
-                        DanhSachPhuCap.Add(new Allowance("PC03", "Phụ cấp Fulltime", 100000));
+                        DanhSachPhuCap.Add(new Allowance("PC_FT", "Phụ cấp Fulltime", 100000));
                     }
                 }
 

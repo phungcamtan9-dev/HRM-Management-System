@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using HyperionHR_meta.Scripts.Class.Person;
 
 namespace HyperionHR_meta.Scripts.Class.HR_Operations
 {
@@ -11,15 +6,13 @@ namespace HyperionHR_meta.Scripts.Class.HR_Operations
     public class AttendanceRecord
     {
         public DateTime Ngay { get; set; }
-        public TimeSpan GioVao { get; set; }
-        public TimeSpan GioRa { get; set; }
+        public TimeSpan? GioVao { get; set; } // Đã thêm ?
+        public TimeSpan? GioRa { get; set; }  // Đã thêm ?
         public string TrangThai { get; set; }
 
-        public AttendanceRecord()
-        {
-        }
+        public AttendanceRecord() { }
 
-        public AttendanceRecord(DateTime ngay, TimeSpan gioVao, TimeSpan gioRa, string trangThai)
+        public AttendanceRecord(DateTime ngay, TimeSpan? gioVao, TimeSpan? gioRa, string trangThai)
         {
             Ngay = ngay;
             GioVao = gioVao;
@@ -27,4 +20,4 @@ namespace HyperionHR_meta.Scripts.Class.HR_Operations
             TrangThai = trangThai;
         }
     }
-}
+} 

@@ -33,15 +33,17 @@ namespace HyperionHR_meta.Scripts.Class.Person
         // ==========================================
         public override double TinhLuong()
         {
-            double tongLuong = LuongCoBan;
-
-            // Kiểm tra nếu là quản lý (Mã chức vụ có chữ "QL") thì cộng phụ cấp
-            if (ChucVu != null && ChucVu.MaChucVu.Contains("QL"))
+            // Sếp (Giám đốc hoặc Trưởng phòng) lương 30 củ
+            if (ChucVu != null && (ChucVu.MaChucVu == "TP"))
             {
-                tongLuong = tongLuong + PhuCapQuanLy;
+                return 30000000;
             }
-
-            return tongLuong;
+            else if (ChucVu != null && (ChucVu.MaChucVu == "GD") )
+            {
+                return 50000000;
+            }    
+            // Lính Full-time lương 15 củ
+            return 15000000;
         }
     }
 }
