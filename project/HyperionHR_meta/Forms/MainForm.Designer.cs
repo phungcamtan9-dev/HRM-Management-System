@@ -3836,7 +3836,6 @@ namespace HyperionHR_meta
             // 
             cbbNhanVienRanh2.Font = new Font("Inter", 12.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cbbNhanVienRanh2.FormattingEnabled = true;
-            cbbNhanVienRanh2.Items.AddRange(new object[] { "HR", "Employee", "Manager", "Admin" });
             cbbNhanVienRanh2.Location = new Point(402, 38);
             cbbNhanVienRanh2.Name = "cbbNhanVienRanh2";
             cbbNhanVienRanh2.Size = new Size(164, 32);
@@ -4297,16 +4296,16 @@ namespace HyperionHR_meta
             Controls.Add(pnlFormBar);
             Controls.Add(pnlSideBar_HR);
             Controls.Add(pnlSideBar_Employee);
+            Controls.Add(pnl_HeThong);
+            Controls.Add(pnl_ToChuc);
             Controls.Add(pnl_HoSoCaNhan);
             Controls.Add(pnl_QuanLyNhanSu);
             Controls.Add(pnl_ChamCong);
-            Controls.Add(pnlThongBao);
             Controls.Add(pnl_Dashboard);
+            Controls.Add(pnlThongBao);
             Controls.Add(pnl_Luong);
             Controls.Add(pnl_DonXin);
             Controls.Add(pnl_QuanLyHopDong);
-            Controls.Add(pnl_HeThong);
-            Controls.Add(pnl_ToChuc);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 2, 3, 2);
             Name = "MainForm";
