@@ -39,13 +39,13 @@ namespace HyperionHR_meta
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle10 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle11 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle12 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle13 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle14 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
             pnlFormBar = new Panel();
             picLogo = new PictureBox();
             lblAppName = new Label();
@@ -360,6 +360,8 @@ namespace HyperionHR_meta
             pictureBox11 = new PictureBox();
             label60 = new Label();
             pnl_Luong = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
+            label72 = new Label();
+            nudNam = new NumericUpDown();
             label71 = new Label();
             nudThang = new NumericUpDown();
             label64 = new Label();
@@ -372,8 +374,6 @@ namespace HyperionHR_meta
             roundedPanel28 = new HyperionHR_meta.Scripts.MakeupScripts.RoundedPanel();
             pictureBox12 = new PictureBox();
             label63 = new Label();
-            nudNam = new NumericUpDown();
-            label72 = new Label();
             pnlFormBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picLogo).BeginInit();
             pnlWelcomeBar.SuspendLayout();
@@ -502,13 +502,13 @@ namespace HyperionHR_meta
             roundedPanel25.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             pnl_Luong.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)nudNam).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudThang).BeginInit();
             roundedPanel23.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvTinhLuong).BeginInit();
             roundedPanel27.SuspendLayout();
             roundedPanel28.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)nudNam).BeginInit();
             SuspendLayout();
             // 
             // pnlFormBar
@@ -1233,7 +1233,7 @@ namespace HyperionHR_meta
             label31.Name = "label31";
             label31.Size = new Size(213, 30);
             label31.TabIndex = 44;
-            label31.Text = "tốt";
+            label31.Text = "Tốt";
             label31.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // label32
@@ -1271,7 +1271,7 @@ namespace HyperionHR_meta
             lbLoaiNhanVien.Font = new Font("Inter SemiBold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbLoaiNhanVien.Location = new Point(457, 276);
             lbLoaiNhanVien.Name = "lbLoaiNhanVien";
-            lbLoaiNhanVien.Size = new Size(213, 30);
+            lbLoaiNhanVien.Size = new Size(364, 30);
             lbLoaiNhanVien.TabIndex = 40;
             lbLoaiNhanVien.Text = "m";
             lbLoaiNhanVien.TextAlign = ContentAlignment.MiddleLeft;
@@ -2394,14 +2394,14 @@ namespace HyperionHR_meta
             // dgvNhanVien
             // 
             dgvNhanVien.BackgroundColor = Color.FromArgb(217, 229, 255);
-            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = Color.FromArgb(217, 229, 255);
-            dataGridViewCellStyle8.Font = new Font("Inter Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle8.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = Color.FromArgb(192, 192, 255);
-            dataGridViewCellStyle8.SelectionForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle8.WrapMode = DataGridViewTriState.True;
-            dgvNhanVien.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(217, 229, 255);
+            dataGridViewCellStyle1.Font = new Font("Inter Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(192, 192, 255);
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dgvNhanVien.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgvNhanVien.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvNhanVien.Dock = DockStyle.Fill;
             dgvNhanVien.Location = new Point(0, 0);
@@ -2526,14 +2526,14 @@ namespace HyperionHR_meta
             // dgvDanhSachTheoPhong
             // 
             dgvDanhSachTheoPhong.BackgroundColor = Color.FromArgb(217, 229, 255);
-            dataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = Color.FromArgb(217, 229, 255);
-            dataGridViewCellStyle9.Font = new Font("Inter Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle9.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = Color.FromArgb(192, 192, 255);
-            dataGridViewCellStyle9.SelectionForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle9.WrapMode = DataGridViewTriState.True;
-            dgvDanhSachTheoPhong.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(217, 229, 255);
+            dataGridViewCellStyle2.Font = new Font("Inter Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(192, 192, 255);
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dgvDanhSachTheoPhong.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             dgvDanhSachTheoPhong.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvDanhSachTheoPhong.Dock = DockStyle.Fill;
             dgvDanhSachTheoPhong.Location = new Point(0, 0);
@@ -2555,14 +2555,14 @@ namespace HyperionHR_meta
             // dgvPhongBan
             // 
             dgvPhongBan.BackgroundColor = Color.FromArgb(217, 229, 255);
-            dataGridViewCellStyle10.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = Color.FromArgb(217, 229, 255);
-            dataGridViewCellStyle10.Font = new Font("Inter Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle10.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = Color.FromArgb(192, 192, 255);
-            dataGridViewCellStyle10.SelectionForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle10.WrapMode = DataGridViewTriState.True;
-            dgvPhongBan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.FromArgb(217, 229, 255);
+            dataGridViewCellStyle3.Font = new Font("Inter Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(192, 192, 255);
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dgvPhongBan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             dgvPhongBan.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvPhongBan.Dock = DockStyle.Fill;
             dgvPhongBan.Location = new Point(0, 0);
@@ -3059,14 +3059,14 @@ namespace HyperionHR_meta
             // dgvHopDong
             // 
             dgvHopDong.BackgroundColor = Color.FromArgb(217, 229, 255);
-            dataGridViewCellStyle11.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = Color.FromArgb(217, 229, 255);
-            dataGridViewCellStyle11.Font = new Font("Inter Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle11.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle11.SelectionBackColor = Color.FromArgb(192, 192, 255);
-            dataGridViewCellStyle11.SelectionForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle11.WrapMode = DataGridViewTriState.True;
-            dgvHopDong.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = Color.FromArgb(217, 229, 255);
+            dataGridViewCellStyle4.Font = new Font("Inter Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle4.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = Color.FromArgb(192, 192, 255);
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
+            dgvHopDong.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             dgvHopDong.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvHopDong.Dock = DockStyle.Fill;
             dgvHopDong.Location = new Point(0, 0);
@@ -3547,14 +3547,14 @@ namespace HyperionHR_meta
             // dgvNghiPhep
             // 
             dgvNghiPhep.BackgroundColor = Color.FromArgb(217, 229, 255);
-            dataGridViewCellStyle12.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = Color.FromArgb(217, 229, 255);
-            dataGridViewCellStyle12.Font = new Font("Inter Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle12.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = Color.FromArgb(192, 192, 255);
-            dataGridViewCellStyle12.SelectionForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle12.WrapMode = DataGridViewTriState.True;
-            dgvNghiPhep.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = Color.FromArgb(217, 229, 255);
+            dataGridViewCellStyle5.Font = new Font("Inter Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle5.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = Color.FromArgb(192, 192, 255);
+            dataGridViewCellStyle5.SelectionForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
+            dgvNghiPhep.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             dgvNghiPhep.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvNghiPhep.Dock = DockStyle.Fill;
             dgvNghiPhep.Location = new Point(0, 0);
@@ -3733,14 +3733,14 @@ namespace HyperionHR_meta
             // dgvLichSu
             // 
             dgvLichSu.BackgroundColor = Color.FromArgb(217, 229, 255);
-            dataGridViewCellStyle13.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = Color.FromArgb(217, 229, 255);
-            dataGridViewCellStyle13.Font = new Font("Inter Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle13.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle13.SelectionBackColor = Color.FromArgb(192, 192, 255);
-            dataGridViewCellStyle13.SelectionForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle13.WrapMode = DataGridViewTriState.True;
-            dgvLichSu.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = Color.FromArgb(217, 229, 255);
+            dataGridViewCellStyle6.Font = new Font("Inter Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle6.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(192, 192, 255);
+            dataGridViewCellStyle6.SelectionForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.True;
+            dgvLichSu.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             dgvLichSu.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvLichSu.Dock = DockStyle.Fill;
             dgvLichSu.Location = new Point(0, 0);
@@ -3936,14 +3936,14 @@ namespace HyperionHR_meta
             // dgvTaiKhoan
             // 
             dgvTaiKhoan.BackgroundColor = Color.FromArgb(217, 229, 255);
-            dataGridViewCellStyle14.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = Color.FromArgb(217, 229, 255);
-            dataGridViewCellStyle14.Font = new Font("Inter Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle14.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle14.SelectionBackColor = Color.FromArgb(192, 192, 255);
-            dataGridViewCellStyle14.SelectionForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle14.WrapMode = DataGridViewTriState.True;
-            dgvTaiKhoan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = Color.FromArgb(217, 229, 255);
+            dataGridViewCellStyle7.Font = new Font("Inter Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle7.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = Color.FromArgb(192, 192, 255);
+            dataGridViewCellStyle7.SelectionForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle7.WrapMode = DataGridViewTriState.True;
+            dgvTaiKhoan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             dgvTaiKhoan.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvTaiKhoan.Dock = DockStyle.Fill;
             dgvTaiKhoan.Location = new Point(0, 0);
@@ -4131,6 +4131,27 @@ namespace HyperionHR_meta
             pnl_Luong.Size = new Size(1054, 640);
             pnl_Luong.TabIndex = 8;
             // 
+            // label72
+            // 
+            label72.Font = new Font("Inter SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label72.Location = new Point(342, 100);
+            label72.Name = "label72";
+            label72.Size = new Size(59, 27);
+            label72.TabIndex = 23;
+            label72.Text = "Năm:";
+            label72.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // nudNam
+            // 
+            nudNam.Font = new Font("Inter Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            nudNam.Location = new Point(407, 101);
+            nudNam.Maximum = new decimal(new int[] { 2100, 0, 0, 0 });
+            nudNam.Minimum = new decimal(new int[] { 2000, 0, 0, 0 });
+            nudNam.Name = "nudNam";
+            nudNam.Size = new Size(120, 27);
+            nudNam.TabIndex = 22;
+            nudNam.Value = new decimal(new int[] { 2000, 0, 0, 0 });
+            // 
             // label71
             // 
             label71.Font = new Font("Inter SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -4265,27 +4286,6 @@ namespace HyperionHR_meta
             label63.TabIndex = 0;
             label63.Text = "Lịch Trình";
             // 
-            // nudNam
-            // 
-            nudNam.Font = new Font("Inter Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            nudNam.Location = new Point(407, 101);
-            nudNam.Maximum = new decimal(new int[] { 2100, 0, 0, 0 });
-            nudNam.Minimum = new decimal(new int[] { 2000, 0, 0, 0 });
-            nudNam.Name = "nudNam";
-            nudNam.Size = new Size(120, 27);
-            nudNam.TabIndex = 22;
-            nudNam.Value = new decimal(new int[] { 2000, 0, 0, 0 });
-            // 
-            // label72
-            // 
-            label72.Font = new Font("Inter SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label72.Location = new Point(342, 100);
-            label72.Name = "label72";
-            label72.Size = new Size(59, 27);
-            label72.TabIndex = 23;
-            label72.Text = "Năm:";
-            label72.TextAlign = ContentAlignment.MiddleLeft;
-            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -4297,16 +4297,16 @@ namespace HyperionHR_meta
             Controls.Add(pnlFormBar);
             Controls.Add(pnlSideBar_HR);
             Controls.Add(pnlSideBar_Employee);
-            Controls.Add(pnl_Luong);
-            Controls.Add(pnl_DonXin);
-            Controls.Add(pnl_QuanLyHopDong);
-            Controls.Add(pnl_HeThong);
-            Controls.Add(pnl_ToChuc);
             Controls.Add(pnl_HoSoCaNhan);
             Controls.Add(pnl_QuanLyNhanSu);
             Controls.Add(pnl_ChamCong);
             Controls.Add(pnlThongBao);
             Controls.Add(pnl_Dashboard);
+            Controls.Add(pnl_Luong);
+            Controls.Add(pnl_DonXin);
+            Controls.Add(pnl_QuanLyHopDong);
+            Controls.Add(pnl_HeThong);
+            Controls.Add(pnl_ToChuc);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 2, 3, 2);
             Name = "MainForm";
@@ -4463,6 +4463,7 @@ namespace HyperionHR_meta
             roundedPanel25.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             pnl_Luong.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)nudNam).EndInit();
             ((System.ComponentModel.ISupportInitialize)nudThang).EndInit();
             roundedPanel23.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgvTinhLuong).EndInit();
@@ -4470,7 +4471,6 @@ namespace HyperionHR_meta
             roundedPanel28.ResumeLayout(false);
             roundedPanel28.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
-            ((System.ComponentModel.ISupportInitialize)nudNam).EndInit();
             ResumeLayout(false);
         }
 

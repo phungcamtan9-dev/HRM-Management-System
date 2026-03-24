@@ -163,6 +163,7 @@ namespace HyperionHR_meta
                     pnlSideBar_Employee.Visible = true;
                     pnlBottomSideBar_Employee.Visible = true;
                     pnlHoSoCaNhan.Visible = true;
+                    BomThongTin();
 
 
                     //ẩn
@@ -231,7 +232,7 @@ namespace HyperionHR_meta
         // ==========================================
         private void picAva3_Click(object sender, EventArgs e)
         {
-            if (!pnlLogout.Visible) pnlLogout.Visible = true;
+            if (!pnlLogout.Visible) { pnlLogout.Visible = true; pnlLogout.BringToFront(); } 
             else pnlLogout.Visible = false;
         }
         private void btnTatBangThongTin_Click(object sender, EventArgs e)
@@ -257,7 +258,7 @@ namespace HyperionHR_meta
 
         private void picAva1_Click(object sender, EventArgs e)
         {
-            if (!pnlLogout.Visible) pnlLogout.Visible = true;
+            if (!pnlLogout.Visible) { pnlLogout.Visible = true; pnlLogout.BringToFront(); }
             else pnlLogout.Visible = false;
         }
 
