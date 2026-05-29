@@ -8,9 +8,6 @@ namespace HyperionHR_meta.Scripts.Class.System
 {
     public enum Role
     {
-        Admin,
-        HR,
-        Manager,
-        Employee
+        
     }
 }
